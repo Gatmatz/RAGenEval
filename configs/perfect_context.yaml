@@ -1,0 +1,5 @@
+number_of_questions: 10
+output_file: "perfect_context_evaluation"
+models:
+  - name: "dummy_1"
+  - name: "dummy_2"

@@ -1,0 +1,6 @@
+number_of_questions: 10
+output_file: "noise_robustness_evaluation"
+noise_ratio: 0.5
+models:
+  - name: "dummy_1"
+  - name: "dummy_2"
