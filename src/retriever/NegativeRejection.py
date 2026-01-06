@@ -3,8 +3,10 @@ from typing import List, Dict, Any
 
 from datasets import load_dataset
 
+from src.retriever.Retriever import Retriever
 
-class NegativeRejection:
+
+class NegativeRejection(Retriever):
     """Retriever that returns irrelevant context by excluding supporting facts from HotPot QA"""
 
     def retrieve(self, question: Dict[str, Any], top_k: int = 5) -> List[str]:

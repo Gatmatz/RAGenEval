@@ -5,7 +5,7 @@ from tqdm import tqdm
 import json
 from pathlib import Path
 from ragas import evaluate
-from ragas.metrics import faithfulness, answer_relevancy
+from ragas.metrics import faithfulness, answer_correctness, AnswerRelevancy
 from datasets import Dataset
 from langchain_groq import ChatGroq
 import os
@@ -34,8 +34,13 @@ class LLMJudge(Judge):
         if not api_key:
             raise ValueError("GROQ_API_KEY must be provided or set as environment variable")
 
-        self.llm = ChatGroq(model=model, temperature=0.1, groq_api_key=api_key)
+        self.llm = ChatGroq(model=model, temperature=0.1)
         self.results = []
+
+        # Change to 1 sample due to Groq LLM limitations
+        self.answer_relevancy_metric = AnswerRelevancy()
+        self.answer_relevancy_metric.strictness = 1
+
 
     def evaluate_dataset(
             self,
@@ -78,13 +83,13 @@ class LLMJudge(Judge):
         }
         dataset = Dataset.from_dict(dataset_dict)
 
-        embeddings = HuggingFaceEmbeddings(model_name="BAAI/bge-small-en-v1.5")
+        embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 
         # Evaluate with RAGAS
         print("\nEvaluating with RAGAS...")
         result = evaluate(
             dataset,
-            metrics=[faithfulness, answer_relevancy],
+            metrics=[faithfulness, answer_correctness, self.answer_relevancy_metric],
             llm=self.llm,
             embeddings = embeddings
         )
@@ -94,18 +99,20 @@ class LLMJudge(Judge):
         for idx in range(len(questions)):
             result_dict = {
                 "question_id": question_ids[idx],
-                "answer": answers[idx],
                 "metrics": {
-                    "faithfulness": result["faithfulness"][idx],
-                    "answer_relevancy": result["answer_relevancy"][idx]
+                    "faithfulness": float(result["faithfulness"][idx]),
+                    "answer_relevancy": float(result["answer_relevancy"][idx]),
+                    "answer_correctness": float(result["answer_correctness"][idx]),
                 }
             }
             all_results.append(result_dict)
 
         # Calculate aggregate metrics
         aggregate = {
-            "faithfulness": np.mean(result["faithfulness"]),
-            "answer_relevancy": np.mean(result["answer_relevancy"])
+            "faithfulness": np.nanmean(result["faithfulness"]),
+            "answer_relevancy": np.nanmean(result["answer_relevancy"]),
+            "answer_correctness": np.nanmean(result["answer_correctness"])
+
         }
 
         # Save results

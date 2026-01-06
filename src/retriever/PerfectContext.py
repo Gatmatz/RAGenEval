@@ -3,7 +3,10 @@ from typing import List, Dict, Any
 from datasets import load_dataset
 import os
 
-class PerfectContext:
+from src.retriever.Retriever import Retriever
+
+
+class PerfectContext(Retriever):
     """
     A frozen retriever that returns context based on supporting facts from HotPot QA.
     """

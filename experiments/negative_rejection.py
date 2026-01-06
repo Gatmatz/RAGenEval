@@ -3,6 +3,7 @@ import yaml
 from src.evaluation.LLMJudge import LLMJudge
 from src.evaluation.NegativeJudge import NegativeJudge
 from src.generator import MockGenerator
+from src.generator.GroqGenerator import GroqGenerator
 from src.retriever.NegativeRejection import NegativeRejection
 from src.retriever.NoiseRobustness import NoiseRobustness
 from src.retriever.PerfectContext import PerfectContext
@@ -19,10 +20,11 @@ output_file_base = settings.get("output_file")
 retriever = NegativeRejection()
 
 for model in models:
-    generator = MockGenerator()
+    generator = GroqGenerator(model_name=model.get("name"))
 
-    output_file = f"../output/{output_file_base}_{model.get('name')}.json"
+    output_file = f"../output/negative_rejection/{output_file_base}_{model.get('name')}.json"
     judge = NegativeJudge()
+
     results = judge.evaluate_dataset(
         dataset=selector.get_dataset(),
         qa_ids=selector.get_question_ids(),

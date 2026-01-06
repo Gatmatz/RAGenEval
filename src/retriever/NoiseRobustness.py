@@ -4,8 +4,10 @@ import random
 
 from datasets import load_dataset
 
+from src.retriever.Retriever import Retriever
 
-class NoiseRobustness:
+
+class NoiseRobustness(Retriever):
     """Retriever that returns a mix of relevant and irrelevant context based on noise ratio"""
 
     def __init__(self, noise_ratio: float = 0.5):

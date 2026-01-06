@@ -1,5 +1,5 @@
 number_of_questions: 10
 output_file: "negative_rejection_evaluation"
 models:
-  - name: "dummy_1"
-  - name: "dummy_2"
+  - name: "llama-3.1-8b-instant"
+  - name: "llama-3.3-70b-versatile"
