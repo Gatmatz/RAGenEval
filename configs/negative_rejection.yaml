@@ -1,5 +1,6 @@
-number_of_questions: 10
+number_of_questions: 1
 output_file: "negative_rejection_evaluation"
+similarity_threshold: 0.5
 models:
   - name: "llama-3.1-8b-instant"
   - name: "llama-3.3-70b-versatile"

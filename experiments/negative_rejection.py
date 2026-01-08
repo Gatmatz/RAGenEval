@@ -16,6 +16,7 @@ with open("../configs/negative_rejection.yaml", "r") as f:
 selector = QA_Selector(settings.get("number_of_questions"))
 models = settings.get("models")
 output_file_base = settings.get("output_file")
+similarity_threshold = settings.get("similarity_threshold")
 
 retriever = NegativeRejection()
 
@@ -23,7 +24,7 @@ for model in models:
     generator = GroqGenerator(model_name=model.get("name"))
 
     output_file = f"../output/negative_rejection/{output_file_base}_{model.get('name')}.json"
-    judge = NegativeJudge()
+    judge = NegativeJudge(similarity_threshold=similarity_threshold)
 
     results = judge.evaluate_dataset(
         dataset=selector.get_dataset(),

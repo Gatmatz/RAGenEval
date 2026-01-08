@@ -17,7 +17,8 @@ class GroqGenerator:
     def generate(self, question: str, contexts: List[str]) -> str:
         """Generate answer based on question and contexts"""
         context_text = "\n\n".join(contexts)
-        prompt = f"""Based on the following context, answer the question.
+        prompt = f"""Based on the following context, answer the question. 
+        If the answer is not contained within the context, respond with "I cannot find the answer in the provided context." and nothing more.
 
 Context:
 {context_text}

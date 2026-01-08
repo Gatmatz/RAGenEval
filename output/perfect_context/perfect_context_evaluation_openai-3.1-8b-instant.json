@@ -1,0 +1,49 @@
+{
+  "aggregate_metrics": {
+    "faithfulness": 0.6333333333333332,
+    "answer_relevancy": 0.6727366043788979,
+    "answer_correctness": 0.6076450829151
+  },
+  "individual_results": [
+    {
+      "question_id": "5ae3cfe05542990afbd1e1e3",
+      "metrics": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.7488797420050214,
+        "answer_correctness": 0.5558184127121738
+      }
+    },
+    {
+      "question_id": "5abc1abf5542993a06baf87f",
+      "metrics": {
+        "faithfulness": 0.6666666666666666,
+        "answer_relevancy": 0.7304747489992555,
+        "answer_correctness": 0.4163496497045439
+      }
+    },
+    {
+      "question_id": "5ac250eb5542992f1f2b384f",
+      "metrics": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.4557210737699324,
+        "answer_correctness": 0.9941066268921568
+      }
+    },
+    {
+      "question_id": "5a81a60455429903bc27b990",
+      "metrics": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9881291893039574,
+        "answer_correctness": 0.7818872680232212
+      }
+    },
+    {
+      "question_id": "5a70fb2d5542994082a3e482",
+      "metrics": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9404782678163226,
+        "answer_correctness": 0.7900634572434041
+      }
+    }
+  ]
+}
