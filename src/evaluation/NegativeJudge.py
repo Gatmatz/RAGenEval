@@ -24,7 +24,7 @@ class NegativeJudge(Judge):
                                  an answer as a correct refusal. Default is 0.75.
         """
         self.results = []
-        self.expected_response = "I cannot find the answer in the provided context."
+        self.expected_response = "I don't know."
         self.similarity_threshold = similarity_threshold
 
         # Initialize embeddings model for semantic similarity

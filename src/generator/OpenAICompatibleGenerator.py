@@ -2,6 +2,10 @@ from typing import List
 import os
 from openai import OpenAI
 from dotenv import load_dotenv
+from src.utils.llm_utils import remove_thinking
+
+from src.instructors.SystemInstructor import SystemInstructor
+
 load_dotenv()
 
 class OpenaiCompGenerator:
@@ -23,6 +27,8 @@ class OpenaiCompGenerator:
     def generate(self, question: str, contexts: List[str]) -> str:
         """Generate answer based on question and contexts"""
         context_text = "\n\n".join(contexts)
+        system_instruction = SystemInstructor()
+
         prompt = f"""
         Context: {context_text}
         Question: {question}
@@ -30,7 +36,7 @@ class OpenaiCompGenerator:
 
         chat_completion = self.client.chat.completions.create(
             messages=[
-                    {"role": "system", "content": "Based on the following context, answer the question."},
+                    {"role": "system", "content": system_instruction.get_instructions()},
                     {"role": "user", "content": prompt}
             ],
             model=self.model_name,
@@ -38,4 +44,4 @@ class OpenaiCompGenerator:
             max_tokens=256,
         )
 
-        return chat_completion.choices[0].message.content
+        return remove_thinking(chat_completion.choices[0].message.content)

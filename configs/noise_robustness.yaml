@@ -1,17 +1,23 @@
 number_of_questions: 5
 output_file: "noise_robustness_evaluation"
 noise_ratios:
-  - 0.25
   - 0.5
-  - 0.75
 models:
-  - name: "qwen/qwen-2.5-32b-instruct"
+  - name: "openai/gpt-oss-20b:free"
     generator: "openai_compatible"
-  - name: "qwen/qwen-2.5-72b-instruct"
+    provider: "openrouter"
+  - name: "openai/gpt-oss-120b:free"
     generator: "openai_compatible"
-  - name: "meta-llama/llama-3.3-70b-instruct:free"
+    provider: "openrouter"
+  - name: "qwen/qwen3-4b:free"
     generator: "openai_compatible"
+    provider: "openrouter"
+  - name: "qwen-3-32b"
+    generator: "openai_compatible"
+    provider: "cerebras"
   - name: "gemma-3-4b-it"
     generator: "google"
+    provider: None
   - name: "gemma-3-27b-it"
     generator: "google"
+    provider: None

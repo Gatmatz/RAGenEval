@@ -4,6 +4,8 @@ from google import genai
 from google.genai import types
 from dotenv import load_dotenv
 
+from src.instructors.SystemInstructor import SystemInstructor
+
 load_dotenv()
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
@@ -18,8 +20,8 @@ class GemmaGenerator:
         """Generate answer based on question and contexts"""
         context_text = "\n\n".join(contexts)
 
-        system_instruction = "Based on the following context, answer the question."
-        user_prompt = f"{system_instruction}\n\nContext: {context_text}\n\nQuestion: {question}"
+        system_instruction = SystemInstructor()
+        user_prompt = f"{system_instruction.get_instructions()}\n\nContext: {context_text}\n\nQuestion: {question}"
 
         config = types.GenerateContentConfig(
             temperature=0.7,

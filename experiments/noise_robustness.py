@@ -1,7 +1,7 @@
 import yaml
 
 from src.evaluation.LLMJudge import LLMJudge
-from src.generator import OpenAICompatibleGenerator, GoogleGenerator
+from src.generator import OpenAICompatibleGenerator, GoogleGenerator, GroqGenerator
 from src.retriever.NoiseRobustness import NoiseRobustness
 from src.utils.QA_Selector import QA_Selector
 
