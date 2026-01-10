@@ -1,7 +1,7 @@
 import yaml
 
 from src.evaluation.LLMJudge import LLMJudge
-from src.generator.GroqGenerator import GroqGenerator
+from src.generator import OpenAICompatibleGenerator, GoogleGenerator
 from src.retriever.NoiseRobustness import NoiseRobustness
 from src.utils.QA_Selector import QA_Selector
 
@@ -30,4 +30,17 @@ for noise_ratio in noise_ratios:
             retriever=retriever,
             output_file=output_file
         )
+# Generator factory
+def create_generator(generator_type, model_name):
+    if generator_type == "openai_compatible":
+        return OpenAICompatibleGenerator(model_name=model_name)
+    elif generator_type == "google":
+        return GoogleGenerator(model_name=model_name)
+    else:
+        raise ValueError(f"Unknown generator type: {generator_type}")
+
+for model in models:
+    generator = create_generator(model.get("generator"), model.get("name"))
+
+    output_file = f"../output/noise_robustness/{output_file_base}_{model.get('generator')}_{model.get('name').replace('/', '_')}.json"
 

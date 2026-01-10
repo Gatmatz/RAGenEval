@@ -1,2 +1,5 @@
 """Generator module - Model wrappers for different sizes"""
-from  .MockGenerator import MockGenerator
+from .MockGenerator import MockGenerator
+from .GroqGenerator import GroqGenerator
+from .OpenAICompatibleGenerator import OpenaiCompGenerator
+from .GoogleGenerator import GemmaGenerator

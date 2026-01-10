@@ -5,5 +5,13 @@ noise_ratios:
   - 0.5
   - 0.75
 models:
-  - name: "llama-3.1-8b-instant"
-  - name: "llama-3.3-70b-versatile"
+  - name: "qwen/qwen-2.5-32b-instruct"
+    generator: "openai_compatible"
+  - name: "qwen/qwen-2.5-72b-instruct"
+    generator: "openai_compatible"
+  - name: "meta-llama/llama-3.3-70b-instruct:free"
+    generator: "openai_compatible"
+  - name: "gemma-3-4b-it"
+    generator: "google"
+  - name: "gemma-3-27b-it"
+    generator: "google"
