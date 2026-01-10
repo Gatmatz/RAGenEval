@@ -1,0 +1,9 @@
+# Script pooling configuration
+# List of experiment scripts to run
+scripts:
+  - perfect_context.py
+  - negative_rejection.py
+
+# Maximum number of retry attempts for failed scripts
+max_retries: 3
+

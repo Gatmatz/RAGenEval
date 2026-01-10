@@ -15,6 +15,7 @@ with open("../configs/negative_rejection.yaml", "r") as f:
 selector = QA_Selector(settings.get("number_of_questions"))
 models = settings.get("models")
 output_file_base = settings.get("output_file")
+similarity_threshold = settings.get("similarity_threshold")
 
 retriever = NegativeRejection()
 
@@ -30,6 +31,8 @@ def create_generator(generator_type, model_name):
 for model in models:
     generator = create_generator(model.get("generator"), model.get("name"))
 
+    output_file = f"../output/negative_rejection/{output_file_base}_{model.get('name')}.json"
+    judge = NegativeJudge(similarity_threshold=similarity_threshold)
     output_file = f"../output/negative_rejection/{output_file_base}_{model.get('generator')}_{model.get('name').replace('/', '_')}.json"
     judge = NegativeJudge()
 

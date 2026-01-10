@@ -1,0 +1,17 @@
+{
+  "aggregate_metrics": {
+    "accuracy": 0.0,
+    "average_similarity": -0.01369399302597651,
+    "similarity_threshold": 0.5,
+    "correct_refusals": 0,
+    "total_questions": 1
+  },
+  "individual_results": [
+    {
+      "question_id": "5ae3cfe05542990afbd1e1e3",
+      "answer": "Knox County Regional Airport is located in Maine. \n\nSacramento International Airport is not mentioned in the context, and there is no information about it being related to the provided location.",
+      "is_correct_refusal": false,
+      "similarity_score": -0.01369399302597651
+    }
+  ]
+}

@@ -12,9 +12,24 @@ with open("../configs/noise_robustness.yaml", "r") as f:
 selector = QA_Selector(settings.get("number_of_questions"))
 models = settings.get("models")
 output_file_base = settings.get("output_file")
+noise_ratios = settings.get("noise_ratios", [0.5])  # Default to [0.5] if not specified
 
-retriever = NoiseRobustness(noise_ratio=settings.get("noise_ratio"))
+for noise_ratio in noise_ratios:
+    retriever = NoiseRobustness(noise_ratio=noise_ratio)
 
+    for model in models:
+        generator = GroqGenerator(model_name=model.get("name"))
+
+        output_file = f"../output/noise_robustness/{output_file_base}_{model.get('name')}_noise_{noise_ratio}.json"
+
+        judge = LLMJudge()
+        results = judge.evaluate_dataset(
+            dataset=selector.get_dataset(),
+            qa_ids=selector.get_question_ids(),
+            generator=generator,
+            retriever=retriever,
+            output_file=output_file
+        )
 # Generator factory
 def create_generator(generator_type, model_name):
     if generator_type == "openai_compatible":
@@ -29,11 +44,3 @@ for model in models:
 
     output_file = f"../output/noise_robustness/{output_file_base}_{model.get('generator')}_{model.get('name').replace('/', '_')}.json"
 
-    judge = LLMJudge()
-    results = judge.evaluate_dataset(
-        dataset=selector.get_dataset(),
-        qa_ids=selector.get_question_ids(),
-        generator=generator,
-        retriever=retriever,
-        output_file=output_file
-    )

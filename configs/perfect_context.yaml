@@ -1,4 +1,4 @@
-number_of_questions: 5
+number_of_questions: 1
 output_file: "perfect_context_evaluation"
 models:
   - name: "qwen/qwen-2.5-32b-instruct"

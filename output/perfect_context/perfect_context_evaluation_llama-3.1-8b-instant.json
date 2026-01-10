@@ -1,0 +1,17 @@
+{
+  "aggregate_metrics": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.7488797420050214,
+    "answer_correctness": 0.9602690603482977
+  },
+  "individual_results": [
+    {
+      "question_id": "5ae3cfe05542990afbd1e1e3",
+      "metrics": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.7488797420050214,
+        "answer_correctness": 0.9602690603482977
+      }
+    }
+  ]
+}
