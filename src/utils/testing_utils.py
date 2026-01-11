@@ -2,7 +2,7 @@
 Test script for different generators
 """
 
-from src.generator import OpenaiCompGenerator, GemmaGenerator
+from src.generator import OpenAICompGenerator, GemmaGenerator
 def test_generator(generator_class, provider_name, model_name, question, contexts):
     """Test a generator with sample data"""
     try:
@@ -33,20 +33,20 @@ def main():
 
 
     # Test GPT-OOS models via OpenAICompatibleGenerator
-    test_generator(OpenaiCompGenerator, "openrouter", "openai/gpt-oss-20b:free", question, contexts)
-    test_generator(OpenaiCompGenerator, "openrouter", "openai/gpt-oss-120b:free", question, contexts)
-
-    print("=" * 60)
-
-    # Test Qwen models via OpenAICompatibleGenerator
-    test_generator(OpenaiCompGenerator, "openrouter", "qwen/qwen3-4b:free", question, contexts)
-    test_generator(OpenaiCompGenerator, "cerebras", "qwen-3-32b", question, contexts)
-    
-    print("=" * 60)
-
-    # Test Google Gemma models via GemmaGenerator
-    test_generator(GemmaGenerator,None, "gemma-3-4b-it", question, contexts)
-    test_generator(GemmaGenerator,None, "gemma-3-27b-it", question, contexts)
+    test_generator(OpenAICompGenerator, "openrouter", "deepseek/deepseek-r1-0528:free", question, contexts)
+    # test_generator(OpenAICompGenerator, "openrouter", "openai/gpt-oss-120b:free", question, contexts)
+    #
+    # print("=" * 60)
+    #
+    # # Test Qwen models via OpenAICompatibleGenerator
+    # test_generator(OpenAICompGenerator, "openrouter", "qwen/qwen3-4b:free", question, contexts)
+    # test_generator(OpenAICompGenerator, "cerebras", "qwen-3-32b", question, contexts)
+    #
+    # print("=" * 60)
+    #
+    # # Test Google Gemma models via GemmaGenerator
+    # test_generator(GemmaGenerator,None, "gemma-3-4b-it", question, contexts)
+    # test_generator(GemmaGenerator,None, "gemma-3-27b-it", question, contexts)
 
 
 if __name__ == "__main__":

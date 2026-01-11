@@ -6,5 +6,5 @@ class Judge(ABC):
     Abstract base class for evaluating Generator part of RAG systems.
     """
     @abstractmethod
-    def evaluate_dataset(self, **kwargs):
+    def bulk_evaluation(self, **kwargs):
         pass

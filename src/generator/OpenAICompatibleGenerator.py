@@ -8,7 +8,7 @@ from src.instructors.SystemInstructor import SystemInstructor
 
 load_dotenv()
 
-class OpenaiCompGenerator:
+class OpenAICompGenerator:
     """Generator using OpenOpenRouter, Groq, and Cerebras API"""
     
     def __init__(self, provider_name: str, model_name: str):

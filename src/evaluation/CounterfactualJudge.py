@@ -4,15 +4,15 @@ import json
 from pathlib import Path
 from langchain_huggingface import HuggingFaceEmbeddings
 import numpy as np
-from time import sleep
+
 from src.evaluation.Judge import Judge
 
 
-class NegativeJudge(Judge):
+class CounterfactualJudge(Judge):
     """
-    Evaluator for Generator to check refusal to answer unanswerable questions.
-    Evaluates if the generated answer matches the expected negative response.
-    Uses semantic similarity to check if answers are similar to expected refusal.
+    Evaluator for Generator to test counterfactual robustness.
+    Evaluates if the system can detect factual errors in provided documents.
+    Uses semantic similarity to check if answers correctly identify factual inconsistencies.
     """
 
     def __init__(self, similarity_threshold: float = 0.75):
@@ -21,10 +21,10 @@ class NegativeJudge(Judge):
 
         Args:
             similarity_threshold: Minimum cosine similarity score (0-1) to consider
-                                 an answer as a correct refusal. Default is 0.75.
+                                 an answer as correctly detecting factual errors. Default is 0.75.
         """
         self.results = []
-        self.expected_response = "I don't know."
+        self.expected_response = "There are factual errors in the provided documents."
         self.similarity_threshold = similarity_threshold
 
         # Initialize embeddings model for semantic similarity
@@ -56,23 +56,23 @@ class NegativeJudge(Judge):
 
         return float(similarity)
 
-    def _is_refusal_answer(self, answer: str) -> tuple[bool, float]:
+    def _is_error_detection(self, answer: str) -> tuple[bool, float]:
         """
-        Check if answer is a refusal (similar to expected negative response)
+        Check if answer correctly identifies factual errors (similar to expected error detection response)
 
         Args:
             answer: Generated answer to check
 
         Returns:
-            Tuple of (is_refusal, similarity_score)
+            Tuple of (is_correct_detection, similarity_score)
         """
         # Compute semantic similarity
         similarity = self._compute_similarity(answer.strip(), self.expected_response)
 
         # Check if similarity exceeds threshold
-        is_refusal = similarity >= self.similarity_threshold
+        is_correct_detection = similarity >= self.similarity_threshold
 
-        return is_refusal, similarity
+        return is_correct_detection, similarity
 
     def bulk_evaluation(
             self,
@@ -80,15 +80,15 @@ class NegativeJudge(Judge):
             contexts_list: List[List[str]],
             question_ids: List[str],
             generator,
-            output_file: str = "negative_evaluation_results.json"
+            output_file: str = "counterfactual_evaluation_results.json"
     ) -> Dict:
         """
-        Evaluate if system correctly refuses to answer unanswerable questions
-        Uses semantic similarity to determine if answers match expected refusal
+        Evaluate if system correctly detects factual errors in provided documents
+        Uses semantic similarity to determine if answers match expected error detection
 
         Args:
             questions: List of questions
-            contexts_list: List of context lists for each question
+            contexts_list: List of context lists for each question (containing factual errors)
             question_ids: List of question IDs
             generator: Generator instance to generate answers
             output_file: Path to save evaluation results
@@ -105,21 +105,17 @@ class NegativeJudge(Judge):
                                                desc="Generating answers",
                                                total=len(questions)):
             # Generate answer
-            if generator.model_name.startswith("gemma"):
-                answer = generator.generate(question, contexts)
-                sleep(30) # Pause for Gemmarate limits
-            else:
-                answer = generator.generate(question, contexts)
+            answer = generator.generate(question, contexts)
 
-            # Check if answer is a refusal using semantic similarity
-            is_correct, similarity_score = self._is_refusal_answer(answer)
+            # Check if answer correctly detects errors using semantic similarity
+            is_correct, similarity_score = self._is_error_detection(answer)
             correct_count += int(is_correct)
             similarity_scores.append(similarity_score)
 
             result_dict = {
                 "question_id": qa_id,
                 "answer": answer,
-                "is_correct_refusal": is_correct,
+                "is_correct_detection": is_correct,
                 "similarity_score": similarity_score
             }
             all_results.append(result_dict)
@@ -133,7 +129,7 @@ class NegativeJudge(Judge):
             "accuracy": accuracy,
             "average_similarity": float(avg_similarity),
             "similarity_threshold": self.similarity_threshold,
-            "correct_refusals": correct_count,
+            "correct_detections": correct_count,
             "total_questions": total
         }
 
@@ -154,6 +150,6 @@ class NegativeJudge(Judge):
         print(f"{'Accuracy':.<30} {accuracy:.3f}")
         print(f"{'Average Similarity':.<30} {avg_similarity:.3f}")
         print(f"{'Similarity Threshold':.<30} {self.similarity_threshold:.3f}")
-        print(f"{'Correct Refusals':.<30} {correct_count}/{total}")
+        print(f"{'Correct Detections':.<30} {correct_count}/{total}")
 
         return output_data

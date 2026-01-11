@@ -1,0 +1,27 @@
+number_of_questions: 100
+output_file: "counterfactual_robustness_evaluation"
+seed: 42
+dataset_source: "json"
+file_path: "../data/en_fact.json"
+id_field: "id"
+question_field: "query"
+answer_field: "answer"
+models:
+  - name: "openai/gpt-oss-20b"
+    generator: "openai_compatible"
+    provider: "groq"
+  - name: "openai/gpt-oss-120b"
+    generator: "openai_compatible"
+    provider: "groq"
+#  - name: "gemma-3-4b-it"
+#    generator: "google"
+#    provider: None
+#  - name: "gemma-3-27b-it"
+#    generator: "google"
+#    provider: None
+#  - name: "qwen/qwen3-4b:free"
+#    generator: "openai_compatible"
+#    provider: "openrouter"
+#  - name: "qwen-3-32b"
+#    generator: "openai_compatible"
+#    provider: "cerebras"

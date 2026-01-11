@@ -1,13 +1,13 @@
 import yaml
 
 from src.datasets.UniversalDataset import UniversalDataset
-from src.evaluation.LLMJudge import LLMJudge
+from src.evaluation.CounterfactualJudge import CounterfactualJudge
 from src.generator import OpenAICompGenerator, GemmaGenerator
-from src.retriever.NoiseRobustness import NoiseRobustness
+from src.retriever.CounterfactualRobustness import CounterfactualRobustness
 from src.utils.QA_Selector import QA_Selector
 
 # Load experiment settings from YAML file
-with open("../configs/noise_robustness.yaml", "r") as f:
+with open("../configs/counterfactual_robustness.yaml", "r") as f:
     settings = yaml.safe_load(f)
 
 # Initialize components based on settings
@@ -30,7 +30,8 @@ selector = QA_Selector(settings.get("number_of_questions"), dataset, seed = sett
 models = settings.get("models")
 output_file_base = settings.get("output_file")
 
-retriever = NoiseRobustness(settings.get("noise_ratio"))
+retriever = CounterfactualRobustness()
+similarity_threshold = settings.get("similarity_threshold", 0.8)
 
 # Generate evaluation lists once (they're the same for all models)
 questions, contexts_list, ground_truths, question_ids = selector.generate_evaluation_lists(
@@ -50,16 +51,13 @@ def create_generator(generator_type, provider_name, model_name):
 for model in models:
     generator = create_generator(model.get("generator"), model.get("provider"), model.get("name"))
 
-    output_file = f"../output/noise_robustness/{output_file_base}_{model.get('name').replace('/', '_')}.json"
+    output_file = f"../output/counterfactual_robustness/{output_file_base}_{model.get('name').replace('/', '_')}.json"
 
-    judge = LLMJudge()
+    judge = CounterfactualJudge(similarity_threshold=similarity_threshold)
     results = judge.bulk_evaluation(
         questions=questions,
         contexts_list=contexts_list,
-        ground_truths=ground_truths,
         question_ids=question_ids,
         generator=generator,
         output_file=output_file
     )
-    # sleep(10)  # Pause between model evaluations
-

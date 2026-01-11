@@ -23,12 +23,13 @@ class LLMJudge(Judge):
 
     """
 
-    def __init__(self, model_name: str = "meta-llama/llama-3.1-405b-instruct:free"):
+    def __init__(self, model_name: str = "deepseek/deepseek-r1-0528:free"):
         """
         Initialize evaluator with OpenRouter LLM
 
         Args:
-            model_name: OpenRouter model name
+            model_name: OpenRouter model name (e.g., "meta-llama/llama-3.1-405b-instruct:free")
+            verbose: Whether to print initialization info
         """
         self.model_name = model_name
         API_KEY = os.getenv("OPENROUTER_API_KEY")
@@ -41,7 +42,9 @@ class LLMJudge(Judge):
             model=model_name,
             api_key=API_KEY,
             base_url="https://openrouter.ai/api/v1",
-            temperature=0.1
+            temperature=0.1,
+            max_retries=3,
+            timeout=120,
         )
 
         self.results = []
@@ -51,37 +54,34 @@ class LLMJudge(Judge):
         self.answer_relevancy_metric.strictness = 1
 
 
-    def evaluate_dataset(
+    def bulk_evaluation(
             self,
-            dataset,
-            qa_ids: List[str],
+            questions: List[str],
+            contexts_list: List[List[str]],
+            ground_truths: List[str],
+            question_ids: List[str],
             generator,
-            retriever,
             output_file: str = "evaluation_results.json"
     ) -> Dict:
-        """Evaluate entire dataset using RAGAS"""
+        """Evaluate entire dataset using RAGAS
 
-        # Prepare data for RAGAS
-        questions = []
+        Args:
+            questions: List of questions
+            contexts_list: List of context lists for each question
+            ground_truths: List of ground truth answers
+            question_ids: List of question IDs
+            generator: Generator instance to generate answers
+            output_file: Path to save evaluation results
+
+        Returns:
+            Dictionary containing aggregate metrics and individual results
+        """
+
+        # Generate answers only
         answers = []
-        contexts_list = []
-        ground_truths = []
-        question_ids = []
-
-        for qa_id in tqdm(qa_ids, desc="Generating answers"):
-            q = dataset.filter(lambda x: x["id"] == qa_id)[0]
-            question = q["question"]
-            ground_truth = q["answer"]
-
-            # Get contexts and generate answer
-            contexts = retriever.retrieve(q, top_k=5)
+        for question, contexts in tqdm(zip(questions, contexts_list), desc="Generating answers", total=len(questions)):
             answer = generator.generate(question, contexts)
-
-            questions.append(question)
             answers.append(answer)
-            contexts_list.append(contexts)
-            ground_truths.append(ground_truth)
-            question_ids.append(qa_id)
 
         # Create RAGAS dataset
         dataset_dict = {
@@ -90,59 +90,51 @@ class LLMJudge(Judge):
             "contexts": contexts_list,
             "ground_truth": ground_truths
         }
-        # dataset_dict_path = output_file
-        # with open(dataset_dict_path, 'w') as f:
-        #     json.dump(dataset_dict, f, indent=2)
-
         dataset = Dataset.from_dict(dataset_dict)
 
-        # embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-        #
-        # # Evaluate with RAGAS
-        # print("\nEvaluating with RAGAS...")
-        # result = evaluate(
-        #     dataset,
-        #     metrics=[faithfulness, answer_correctness, self.answer_relevancy_metric],
-        #     llm=self.llm,
-        #     embeddings = embeddings
-        # )
-        #
-        # # Format individual results
-        # all_results = []
-        # for idx in range(len(questions)):
-        #     result_dict = {
-        #         "question_id": question_ids[idx],
-        #         "metrics": {
-        #             "faithfulness": float(result["faithfulness"][idx]),
-        #             "answer_relevancy": float(result["answer_relevancy"][idx]),
-        #             "answer_correctness": float(result["answer_correctness"][idx]),
-        #         }
-        #     }
-        #     all_results.append(result_dict)
-        #
-        # # Calculate aggregate metrics
-        # aggregate = {
-        #     "faithfulness": np.nanmean(result["faithfulness"]),
-        #     "answer_relevancy": np.nanmean(result["answer_relevancy"]),
-        #     "answer_correctness": np.nanmean(result["answer_correctness"])
-        #
-        # }
-        #
-        # # Save results
-        # output_data = {
-        #     "aggregate_metrics": aggregate,
-        #     "individual_results": all_results
-        # }
-        #
-        # Path(output_file).parent.mkdir(parents=True, exist_ok=True)
-        # with open(output_file, 'w') as f:
-        #     json.dump(output_data, f, indent=2)
-        #
-        # print(f"\nResults saved to {output_file}")
-        # print(f"\n{'=' * 50}")
-        # print("AGGREGATE METRICS")
-        # print(f"{'=' * 50}")
-        # for metric, value in aggregate.items():
-        #     print(f"{metric:.<30} {value:.3f}")
-        #
-        # return output_data
+        embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+
+        # Evaluate with RAGAS
+        try:
+            result = evaluate(
+                dataset,
+                metrics=[faithfulness, answer_correctness, self.answer_relevancy_metric],
+                llm=self.llm,
+                embeddings=embeddings
+            )
+        except Exception as e:
+            print(f"Error during RAGAS evaluation: {e}")
+            raise
+
+        # Format individual results
+        all_results = []
+        for idx in range(len(questions)):
+            result_dict = {
+                "question_id": question_ids[idx],
+                "metrics": {
+                    "faithfulness": float(result["faithfulness"][idx]),
+                    "answer_relevancy": float(result["answer_relevancy"][idx]),
+                    "answer_correctness": float(result["answer_correctness"][idx]),
+                }
+            }
+            all_results.append(result_dict)
+
+        # Calculate aggregate metrics
+        aggregate = {
+            "faithfulness": np.nanmean(result["faithfulness"]),
+            "answer_relevancy": np.nanmean(result["answer_relevancy"]),
+            "answer_correctness": np.nanmean(result["answer_correctness"])
+
+        }
+
+        # Save results
+        output_data = {
+            "aggregate_metrics": aggregate,
+            "individual_results": all_results
+        }
+
+        Path(output_file).parent.mkdir(parents=True, exist_ok=True)
+        with open(output_file, 'w') as f:
+            json.dump(output_data, f, indent=2)
+
+        return output_data

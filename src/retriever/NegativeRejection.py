@@ -1,8 +1,5 @@
-import os
 from typing import List, Dict, Any
-
-from datasets import load_dataset
-
+from src.datasets.UniversalDataset import UniversalDataset
 from src.retriever.Retriever import Retriever
 
 
@@ -11,8 +8,8 @@ class NegativeRejection(Retriever):
 
     def retrieve(self, question: Dict[str, Any], top_k: int = 5) -> List[str]:
         """Retrieve irrelevant context chunks by excluding supporting facts"""
-        self.supporting_facts = question.get('supporting_facts', {})
-        self.context = question.get('context', {})
+        self.supporting_facts = UniversalDataset.get_supporting_facts(question)
+        self.context = UniversalDataset.get_context(question)
 
         irrelevant_contexts = []
 
@@ -37,10 +34,13 @@ class NegativeRejection(Retriever):
         return irrelevant_contexts[:top_k]
 
 if __name__ == "__main__":
-    dataset = load_dataset("hotpot_qa", "distractor", token=os.getenv("HF_TOKEN"))
-    train_data = dataset['train']
-    sample = train_data[0]
+    dataset = UniversalDataset.from_huggingface(
+        dataset_path="hotpot_qa",
+        dataset_name="distractor",
+        split="train"
+    )
+    question = dataset.get_question_by_id("5a7a06935542990198eaf050")
     retriever = NegativeRejection()
-    retrieved_contexts = retriever.retrieve(sample, top_k=5)
+    retrieved_contexts = retriever.retrieve(question, top_k=5)
     for context in retrieved_contexts:
         print(context)
