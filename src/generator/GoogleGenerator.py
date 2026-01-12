@@ -24,7 +24,7 @@ class GemmaGenerator:
         user_prompt = f"{system_instruction.get_instructions()}\n\nContext: {context_text}\n\nQuestion: {question}"
 
         config = types.GenerateContentConfig(
-            temperature=0.7,
+            temperature=0.5,
             max_output_tokens=256,
         )
 

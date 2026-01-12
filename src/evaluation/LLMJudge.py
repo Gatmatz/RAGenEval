@@ -1,10 +1,10 @@
 from typing import List, Dict
-
+from time import sleep
 import numpy as np
 from tqdm import tqdm
 import json
 from pathlib import Path
-from ragas import evaluate
+from ragas import evaluate, RunConfig
 from ragas.metrics import faithfulness, answer_correctness, AnswerRelevancy
 from datasets import Dataset
 from langchain_openai import ChatOpenAI
@@ -42,11 +42,11 @@ class LLMJudge(Judge):
             model=model_name,
             api_key=API_KEY,
             base_url="https://openrouter.ai/api/v1",
-            temperature=0.1,
-            max_retries=3,
-            timeout=120,
+            temperature=0.5
         )
 
+        self.run_config = RunConfig(timeout=500,
+                                    max_workers=3)
         self.results = []
 
         # Change to 1 sample due to LLM limitations
@@ -80,8 +80,13 @@ class LLMJudge(Judge):
         # Generate answers only
         answers = []
         for question, contexts in tqdm(zip(questions, contexts_list), desc="Generating answers", total=len(questions)):
-            answer = generator.generate(question, contexts)
-            answers.append(answer)
+            if generator.model_name.startswith("gemma"):
+                answer = generator.generate(question, contexts)
+                answers.append(answer)
+                sleep(5) # Pause for Gemma rate limits
+            else:
+                answer = generator.generate(question, contexts)
+                answers.append(answer)
 
         # Create RAGAS dataset
         dataset_dict = {
@@ -100,7 +105,8 @@ class LLMJudge(Judge):
                 dataset,
                 metrics=[faithfulness, answer_correctness, self.answer_relevancy_metric],
                 llm=self.llm,
-                embeddings=embeddings
+                embeddings=embeddings,
+                run_config=self.run_config
             )
         except Exception as e:
             print(f"Error during RAGAS evaluation: {e}")
@@ -111,6 +117,9 @@ class LLMJudge(Judge):
         for idx in range(len(questions)):
             result_dict = {
                 "question_id": question_ids[idx],
+                "question": questions[idx],
+                "generated_answer": answers[idx],
+                "ground_truth": ground_truths[idx],
                 "metrics": {
                     "faithfulness": float(result["faithfulness"][idx]),
                     "answer_relevancy": float(result["answer_relevancy"][idx]),
@@ -124,7 +133,6 @@ class LLMJudge(Judge):
             "faithfulness": np.nanmean(result["faithfulness"]),
             "answer_relevancy": np.nanmean(result["answer_relevancy"]),
             "answer_correctness": np.nanmean(result["answer_correctness"])
-
         }
 
         # Save results

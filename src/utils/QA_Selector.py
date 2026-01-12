@@ -137,7 +137,8 @@ class QA_Selector:
             top_k: Number of context chunks to retrieve per question (default: 5)
 
         Returns:
-            Tuple of (questions, contexts_list, ground_truths, fake_answers, question_ids)
+            Tuple of (questions, contexts_list, ground_truths, fake_answers, question_ids) if fake answers exist,
+            otherwise (questions, contexts_list, ground_truths, question_ids)
         """
         from tqdm import tqdm
 
@@ -165,7 +166,14 @@ class QA_Selector:
             questions.append(question)
             contexts_list.append(contexts)
             ground_truths.append(ground_truth)
-            fake_answers.append(fake_answer)
 
-        return questions, contexts_list, ground_truths, fake_answers, question_ids
+            # Only append fake answer if it's not the default "None" string
+            if fake_answer != "None":
+                fake_answers.append(fake_answer)
+
+        # Return with fake_answers only if we actually have some
+        if len(fake_answers) > 0:
+            return questions, contexts_list, ground_truths, fake_answers, question_ids
+        else:
+            return questions, contexts_list, ground_truths, question_ids
 
