@@ -34,7 +34,7 @@ retriever = CounterfactualRobustness()
 similarity_threshold = settings.get("similarity_threshold", 0.8)
 
 # Generate evaluation lists once (they're the same for all models)
-questions, contexts_list, ground_truths, question_ids = selector.generate_evaluation_lists(
+questions, contexts_list, ground_truths, fake_answers, question_ids = selector.generate_evaluation_lists(
     retriever=retriever,
     top_k=5
 )
@@ -59,5 +59,7 @@ for model in models:
         contexts_list=contexts_list,
         question_ids=question_ids,
         generator=generator,
+        true_answers=ground_truths,
+        fake_answers=fake_answers,
         output_file=output_file
     )

@@ -1,6 +1,7 @@
 from typing import List, Dict
 from tqdm import tqdm
 import json
+from time import sleep
 from pathlib import Path
 from langchain_huggingface import HuggingFaceEmbeddings
 import numpy as np
@@ -80,6 +81,8 @@ class CounterfactualJudge(Judge):
             contexts_list: List[List[str]],
             question_ids: List[str],
             generator,
+            true_answers: List[str] = None,
+            fake_answers: List[str] = None,
             output_file: str = "counterfactual_evaluation_results.json"
     ) -> Dict:
         """
@@ -91,6 +94,8 @@ class CounterfactualJudge(Judge):
             contexts_list: List of context lists for each question (containing factual errors)
             question_ids: List of question IDs
             generator: Generator instance to generate answers
+            true_answers: List of true answers for similarity comparison (optional)
+            fake_answers: List of fake answers for similarity comparison (optional)
             output_file: Path to save evaluation results
 
         Returns:
@@ -100,23 +105,51 @@ class CounterfactualJudge(Judge):
         all_results = []
         correct_count = 0
         similarity_scores = []
+        true_answer_similarities = []
+        fake_answer_similarities = []
 
-        for qa_id, question, contexts in tqdm(zip(question_ids, questions, contexts_list),
-                                               desc="Generating answers",
-                                               total=len(questions)):
+        # Prepare iterables for true and fake answers
+        if true_answers is None:
+            true_answers = [None] * len(questions)
+        if fake_answers is None:
+            fake_answers = [None] * len(questions)
+
+        for qa_id, question, contexts, true_answer, fake_answer in tqdm(
+                zip(question_ids, questions, contexts_list, true_answers, fake_answers),
+                desc="Generating answers",
+                total=len(questions)):
             # Generate answer
-            answer = generator.generate(question, contexts)
-
+            if generator.model_name.startswith("gemma"):
+                answer = generator.generate(question, contexts)
+                sleep(5) # Pause for Gemma rate limits
+            else:
+                answer = generator.generate(question, contexts)
             # Check if answer correctly detects errors using semantic similarity
             is_correct, similarity_score = self._is_error_detection(answer)
             correct_count += int(is_correct)
             similarity_scores.append(similarity_score)
 
+            # Compute similarity with true answer if provided
+            true_answer_similarity = None
+            if true_answer is not None:
+                true_answer_similarity = self._compute_similarity(answer, str(true_answer))
+                true_answer_similarities.append(true_answer_similarity)
+
+            # Compute similarity with fake answer if provided
+            fake_answer_similarity = None
+            if fake_answer is not None:
+                fake_answer_similarity = self._compute_similarity(answer, str(fake_answer))
+                fake_answer_similarities.append(fake_answer_similarity)
+
             result_dict = {
                 "question_id": qa_id,
                 "answer": answer,
                 "is_correct_detection": is_correct,
-                "similarity_score": similarity_score
+                "similarity_score": similarity_score,
+                "true_answer": true_answer,
+                "true_answer_similarity": true_answer_similarity,
+                "fake_answer": fake_answer,
+                "fake_answer_similarity": fake_answer_similarity
             }
             all_results.append(result_dict)
 
@@ -124,13 +157,17 @@ class CounterfactualJudge(Judge):
         total = len(question_ids)
         accuracy = correct_count / total if total > 0 else 0
         avg_similarity = np.mean(similarity_scores) if similarity_scores else 0
+        avg_true_answer_similarity = np.mean(true_answer_similarities) if true_answer_similarities else None
+        avg_fake_answer_similarity = np.mean(fake_answer_similarities) if fake_answer_similarities else None
 
         aggregate = {
             "accuracy": accuracy,
             "average_similarity": float(avg_similarity),
             "similarity_threshold": self.similarity_threshold,
             "correct_detections": correct_count,
-            "total_questions": total
+            "total_questions": total,
+            "average_true_answer_similarity": float(avg_true_answer_similarity) if avg_true_answer_similarity is not None else None,
+            "average_fake_answer_similarity": float(avg_fake_answer_similarity) if avg_fake_answer_similarity is not None else None
         }
 
         # Save results
@@ -142,14 +179,5 @@ class CounterfactualJudge(Judge):
         Path(output_file).parent.mkdir(parents=True, exist_ok=True)
         with open(output_file, 'w') as f:
             json.dump(output_data, f, indent=2)
-
-        print(f"\nResults saved to {output_file}")
-        print(f"\n{'=' * 50}")
-        print("AGGREGATE METRICS")
-        print(f"{'=' * 50}")
-        print(f"{'Accuracy':.<30} {accuracy:.3f}")
-        print(f"{'Average Similarity':.<30} {avg_similarity:.3f}")
-        print(f"{'Similarity Threshold':.<30} {self.similarity_threshold:.3f}")
-        print(f"{'Correct Detections':.<30} {correct_count}/{total}")
 
         return output_data

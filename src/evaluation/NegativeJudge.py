@@ -107,7 +107,7 @@ class NegativeJudge(Judge):
             # Generate answer
             if generator.model_name.startswith("gemma"):
                 answer = generator.generate(question, contexts)
-                sleep(30) # Pause for Gemmarate limits
+                sleep(5) # Pause for Gemma rate limits
             else:
                 answer = generator.generate(question, contexts)
 
@@ -146,14 +146,5 @@ class NegativeJudge(Judge):
         Path(output_file).parent.mkdir(parents=True, exist_ok=True)
         with open(output_file, 'w') as f:
             json.dump(output_data, f, indent=2)
-
-        print(f"\nResults saved to {output_file}")
-        print(f"\n{'=' * 50}")
-        print("AGGREGATE METRICS")
-        print(f"{'=' * 50}")
-        print(f"{'Accuracy':.<30} {accuracy:.3f}")
-        print(f"{'Average Similarity':.<30} {avg_similarity:.3f}")
-        print(f"{'Similarity Threshold':.<30} {self.similarity_threshold:.3f}")
-        print(f"{'Correct Refusals':.<30} {correct_count}/{total}")
 
         return output_data

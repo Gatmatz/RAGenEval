@@ -130,14 +130,14 @@ class QA_Selector:
 
     def generate_evaluation_lists(self, retriever, top_k: int = 5):
         """
-        Generate lists of questions, contexts, ground_truths, and question_ids for evaluation.
+        Generate lists of questions, contexts, ground_truths, fake_answers, and question_ids for evaluation.
 
         Args:
             retriever: Retriever instance to get contexts
             top_k: Number of context chunks to retrieve per question (default: 5)
 
         Returns:
-            Tuple of (questions, contexts_list, ground_truths, question_ids)
+            Tuple of (questions, contexts_list, ground_truths, fake_answers, question_ids)
         """
         from tqdm import tqdm
 
@@ -145,6 +145,7 @@ class QA_Selector:
         questions = []
         contexts_list = []
         ground_truths = []
+        fake_answers = []
 
         for qa_id in tqdm(question_ids, desc="Retrieving contexts"):
             q = self.dataset.get_question_by_id(id=qa_id)
@@ -155,12 +156,16 @@ class QA_Selector:
                 question = q["query"]
                 ground_truth = q["answer"]
 
+            # Get fake answer if available
+            fake_answer = self.dataset.get_fake_answer(q)
+
             # Get contexts using the retriever
             contexts = retriever.retrieve(q, top_k=top_k)
 
             questions.append(question)
             contexts_list.append(contexts)
             ground_truths.append(ground_truth)
+            fake_answers.append(fake_answer)
 
-        return questions, contexts_list, ground_truths, question_ids
+        return questions, contexts_list, ground_truths, fake_answers, question_ids
 
