@@ -25,7 +25,7 @@ class CounterfactualJudge(Judge):
                                  an answer as correctly detecting factual errors. Default is 0.75.
         """
         self.results = []
-        self.expected_response = "There are factual errors in the provided documents."
+        self.expected_response = "There are factual errors in the provided context"
         self.similarity_threshold = similarity_threshold
 
         # Initialize embeddings model for semantic similarity

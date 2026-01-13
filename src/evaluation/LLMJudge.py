@@ -23,7 +23,7 @@ class LLMJudge(Judge):
 
     """
 
-    def __init__(self, model_name: str = "deepseek/deepseek-r1-0528:free"):
+    def __init__(self, model_name: str = "meta-llama/llama-4-scout-17b-16e-instruct"):
         """
         Initialize evaluator with OpenRouter LLM
 
@@ -32,7 +32,7 @@ class LLMJudge(Judge):
             verbose: Whether to print initialization info
         """
         self.model_name = model_name
-        API_KEY = os.getenv("OPENROUTER_API_KEY")
+        API_KEY = os.getenv("GROQ_API_KEY")
 
         if not API_KEY:
             raise ValueError("OPENROUTER_API_KEY must be set as environment variable")
@@ -41,7 +41,7 @@ class LLMJudge(Judge):
         self.llm = ChatOpenAI(
             model=model_name,
             api_key=API_KEY,
-            base_url="https://openrouter.ai/api/v1",
+            base_url="https://api.groq.com/openai/v1",
             temperature=0.5
         )
 
