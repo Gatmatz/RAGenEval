@@ -6,5 +6,5 @@ class Instructor(ABC):
     Defines the interface that all instructor subclasses must implement.
     """
     @abstractmethod
-    def get_instructions(self) -> str:
+    def get_general_instructions(self) -> str:
         pass

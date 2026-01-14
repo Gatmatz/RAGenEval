@@ -2,63 +2,51 @@ from typing import List, Dict
 from tqdm import tqdm
 import json
 from pathlib import Path
-from langchain_huggingface import HuggingFaceEmbeddings
 import numpy as np
 from time import sleep
 from src.evaluation.Judge import Judge
+from src.metrics.BertScore import BertScore
 
 
 class NegativeJudge(Judge):
     """
     Evaluator for Generator to check refusal to answer unanswerable questions.
     Evaluates if the generated answer matches the expected negative response.
-    Uses semantic similarity to check if answers are similar to expected refusal.
+    Uses BertScore to check if answers are similar to expected refusal.
     """
 
     def __init__(self, similarity_threshold: float = 0.75):
         """
-        Initialize evaluator with semantic similarity model
+        Initialize evaluator with BertScore metric
 
         Args:
-            similarity_threshold: Minimum cosine similarity score (0-1) to consider
+            similarity_threshold: Minimum BertScore F1 score (0-1) to consider
                                  an answer as a correct refusal. Default is 0.75.
         """
         self.results = []
         self.expected_response = "I don't know."
         self.similarity_threshold = similarity_threshold
 
-        # Initialize embeddings model for semantic similarity
-        self.embeddings = HuggingFaceEmbeddings(
-            model_name="sentence-transformers/all-MiniLM-L6-v2"
-        )
+        # Initialize BertScore metric
+        self.bert_score = BertScore()
 
-        # Pre-compute embedding for expected response
-        self.expected_embedding = self.embeddings.embed_query(self.expected_response)
 
     def _compute_similarity(self, text1: str, text2: str) -> float:
         """
-        Compute cosine similarity between two texts using embeddings
+        Compute BertScore F1 between two texts
 
         Args:
-            text1: First text
-            text2: Second text
+            text1: Generated text
+            text2: Reference text (ground truth)
 
         Returns:
-            Cosine similarity score between 0 and 1
+            BertScore F1 score between 0 and 1
         """
-        embedding1 = np.array(self.embeddings.embed_query(text1))
-        embedding2 = np.array(self.embeddings.embed_query(text2))
-
-        # Compute cosine similarity
-        similarity = np.dot(embedding1, embedding2) / (
-            np.linalg.norm(embedding1) * np.linalg.norm(embedding2)
-        )
-
-        return float(similarity)
+        return self.bert_score.compute(text1, text2)
 
     def _is_refusal_answer(self, answer: str) -> tuple[bool, float]:
         """
-        Check if answer is a refusal (similar to expected negative response)
+        Check if answer is a refusal (similar to expected negative response using BertScore)
 
         Args:
             answer: Generated answer to check
@@ -66,7 +54,7 @@ class NegativeJudge(Judge):
         Returns:
             Tuple of (is_refusal, similarity_score)
         """
-        # Compute semantic similarity
+        # Compute BertScore similarity
         similarity = self._compute_similarity(answer.strip(), self.expected_response)
 
         # Check if similarity exceeds threshold
@@ -84,7 +72,7 @@ class NegativeJudge(Judge):
     ) -> Dict:
         """
         Evaluate if system correctly refuses to answer unanswerable questions
-        Uses semantic similarity to determine if answers match expected refusal
+        Uses BertScore to determine if answers match expected refusal
 
         Args:
             questions: List of questions
@@ -111,7 +99,7 @@ class NegativeJudge(Judge):
             else:
                 answer = generator.generate(question, contexts)
 
-            # Check if answer is a refusal using semantic similarity
+            # Check if answer is a refusal using BertScore
             is_correct, similarity_score = self._is_refusal_answer(answer)
             correct_count += int(is_correct)
             similarity_scores.append(similarity_score)

@@ -98,14 +98,23 @@ class QA_Selector:
         """
         Returns a list of question IDs from the dataset.
         """
+        import random
+
         if self.dataset.source_type == 'huggingface':
-            # Use HuggingFace's shuffle and select methods
-            shuffled = self.dataset.dataset.shuffle(seed=self.seed)
-            questions = shuffled.select(range(min(self.num_questions, len(shuffled))))
-            return [question['id'] for question in questions]
+            # Use manual shuffling for consistency across all dataset types
+            random.seed(self.seed)
+
+            # Create a list of indices and shuffle them
+            indices = list(range(len(self.dataset.dataset)))
+            random.shuffle(indices)
+
+            # Select the first num_questions
+            selected_indices = indices[:min(self.num_questions, len(indices))]
+
+            # Get questions by index
+            return [self.dataset.dataset[i]['id'] for i in selected_indices]
         else:
             # For JSON datasets, shuffle manually
-            import random
             random.seed(self.seed)
 
             # Get ID field name

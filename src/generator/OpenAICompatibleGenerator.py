@@ -36,12 +36,12 @@ class OpenAICompGenerator:
 
         chat_completion = self.client.chat.completions.create(
             messages=[
-                    {"role": "system", "content": system_instruction.get_instructions()},
+                    {"role": "system", "content": system_instruction.get_counterfactual_instructions()},
                     {"role": "user", "content": prompt}
             ],
             model=self.model_name,
-            temperature=0.7,
+            temperature=0.5,
             max_tokens=256,
         )
 
-        return remove_thinking(chat_completion.choices[0].message.content)
+        return chat_completion.choices[0].message.content

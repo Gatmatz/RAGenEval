@@ -61,5 +61,3 @@ for model in models:
         generator=generator,
         output_file=output_file
     )
-    # sleep(10)  # Pause between model evaluations
-

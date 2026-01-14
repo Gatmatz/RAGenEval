@@ -5,7 +5,7 @@ from tqdm import tqdm
 import json
 from pathlib import Path
 from ragas import evaluate, RunConfig
-from ragas.metrics import faithfulness, answer_correctness, AnswerRelevancy
+from ragas.metrics import AnswerRelevancy
 from datasets import Dataset
 from langchain_openai import ChatOpenAI
 import os
@@ -13,6 +13,8 @@ from dotenv import load_dotenv
 from langchain_huggingface import HuggingFaceEmbeddings
 
 from src.evaluation.Judge import Judge
+from src.metrics.Faithfulness import Faithfulness
+from src.metrics.BertScore import BertScore
 
 load_dotenv()
 
@@ -28,8 +30,7 @@ class LLMJudge(Judge):
         Initialize evaluator with OpenRouter LLM
 
         Args:
-            model_name: OpenRouter model name (e.g., "meta-llama/llama-3.1-405b-instruct:free")
-            verbose: Whether to print initialization info
+            model_name: OpenRouter model name (e.g., "meta-llama/llama-4-scout-17b-16e-instruct")
         """
         self.model_name = model_name
         API_KEY = os.getenv("GROQ_API_KEY")
@@ -48,6 +49,10 @@ class LLMJudge(Judge):
         self.run_config = RunConfig(timeout=500,
                                     max_workers=3)
         self.results = []
+
+        # Initialize local metrics
+        self.faithfulness_metric = Faithfulness()
+        self.bertscore_metric = BertScore()
 
         # Change to 1 sample due to LLM limitations
         self.answer_relevancy_metric = AnswerRelevancy()
@@ -88,22 +93,36 @@ class LLMJudge(Judge):
                 answer = generator.generate(question, contexts)
                 answers.append(answer)
 
-        # Create RAGAS dataset
+        # Compute local metrics (faithfulness and BertScore)
+        faithfulness_scores = []
+        bertscore_scores = []
+
+        for answer, contexts, ground_truth in tqdm(zip(answers, contexts_list, ground_truths),
+                                                     desc="Computing local metrics",
+                                                     total=len(answers)):
+            # Compute faithfulness (returns tuple of (is_faithful, confidence))
+            _, faithfulness_confidence = self.faithfulness_metric.compute(answer, contexts)
+            faithfulness_scores.append(faithfulness_confidence)
+
+            # Compute BertScore for answer correctness
+            bertscore_f1 = self.bertscore_metric.compute(answer, ground_truth)
+            bertscore_scores.append(bertscore_f1)
+
+        # Create RAGAS dataset for answer relevancy only
         dataset_dict = {
             "question": questions,
             "answer": answers,
             "contexts": contexts_list,
-            "ground_truth": ground_truths
         }
         dataset = Dataset.from_dict(dataset_dict)
 
         embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 
-        # Evaluate with RAGAS
+        # Evaluate with RAGAS (answer relevancy only)
         try:
             result = evaluate(
                 dataset,
-                metrics=[faithfulness, answer_correctness, self.answer_relevancy_metric],
+                metrics=[self.answer_relevancy_metric],
                 llm=self.llm,
                 embeddings=embeddings,
                 run_config=self.run_config
@@ -121,18 +140,18 @@ class LLMJudge(Judge):
                 "generated_answer": answers[idx],
                 "ground_truth": ground_truths[idx],
                 "metrics": {
-                    "faithfulness": float(result["faithfulness"][idx]),
+                    "faithfulness": float(faithfulness_scores[idx]),
                     "answer_relevancy": float(result["answer_relevancy"][idx]),
-                    "answer_correctness": float(result["answer_correctness"][idx]),
+                    "answer_correctness": float(bertscore_scores[idx]),
                 }
             }
             all_results.append(result_dict)
 
         # Calculate aggregate metrics
         aggregate = {
-            "faithfulness": np.nanmean(result["faithfulness"]),
+            "faithfulness": np.nanmean(faithfulness_scores),
             "answer_relevancy": np.nanmean(result["answer_relevancy"]),
-            "answer_correctness": np.nanmean(result["answer_correctness"])
+            "answer_correctness": np.nanmean(bertscore_scores)
         }
 
         # Save results

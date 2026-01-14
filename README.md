@@ -1,88 +1,127 @@
-# RAG Study:  Model Size vs.  Context Utilization
+# RAG Study: Robustness and Faithfulness in Retrieval-Augmented Generation
 
-A research project investigating how generator model size influences Retrieval-Augmented Generation (RAG) system performance, focusing on the trade-off between context utilization and model capacity.
+A research project investigating RAG system robustness across different scenarios, focusing on how models handle perfect contexts, noisy information, counterfactual data, and negative contexts.
 
 ## 🎯 Core Research Question
 
-**How does the model size of the Generator influence the performance of RAG systems?**
+**How robust are RAG systems when faced with different context quality scenarios, and how well do they maintain faithfulness to provided context?**
 
-We are testing **Context Utilization vs. Model Capacity** by: 
-- Freezing the Retriever component
-- Simulating retrieval by providing specific top-k chunks for each query
-- Comparing small models (7-8B parameters) vs. large models (70-72B parameters)
+We evaluate RAG systems across four key dimensions:
+- **Perfect Context**: Baseline performance with ideal, relevant context
+- **Noise Robustness**: Performance degradation with irrelevant information mixed in
+- **Counterfactual Robustness**: Resistance to factually similar but incorrect information
+- **Negative Rejection**: Ability to recognize when context doesn't contain the answer
 
-## 📊 Hypotheses
+## 📊 Evaluation Scenarios
 
-### 1. Lost in the Middle
-**Hypothesis:** Smaller models struggle to identify and use relevant information when it appears in the middle of the context window, while larger models maintain consistent performance regardless of context position.
+### 1. Perfect Context
+**Objective:** Establish baseline performance when the model receives only relevant, accurate context.
+**Metrics:** Faithfulness, Answer Relevancy, Answer Correctness
 
-### 2. Noise Tolerance Threshold
-**Hypothesis:** Larger models can maintain performance with more irrelevant context (noise), while smaller models degrade faster. 
+### 2. Noise Robustness
+**Objective:** Measure performance degradation as irrelevant context is injected at various ratios.
+**Metrics:** Faithfulness, Answer Relevancy, Answer Correctness
 
-### 3. Context vs.  Priors
-**Hypothesis:** Smaller models rely more heavily on pre-training knowledge rather than the provided context, while larger models better adhere to the given chunks.
+### 3. Counterfactual Robustness
+**Objective:** Test if models can resist factually similar but incorrect information (e.g., "Facebook acquired Instagram" vs. "Apple acquired Instagram").
+**Metrics:** Similarity to true vs. fake answers, Similarity to counterfactual recognition message
+
+### 4. Negative Rejection
+**Objective:** Evaluate whether models can recognize when the provided context doesn't contain relevant information.
+**Metrics:** Rejection accuracy, false positive rate
 
 ## 🗂️ Project Structure
 
 ```
 rag-study/
 ├── src/
-│   ├── retriever/          # Retriever implementation
-│   ├── generator/          # Model wrapper implementations
-│   ├── evaluation/         # Evaluation metrics and judges
+│   ├── datasets/           # Dataset loaders (UniversalDataset)
+│   ├── retriever/          # Retriever implementations for different scenarios
+│   │   ├── PerfectContext.py
+│   │   ├── NoiseRobustness.py
+│   │   ├── CounterfactualRobustness.py
+│   │   └── NegativeRejection.py
+│   ├── generator/          # LLM wrapper implementations
+│   │   ├── OpenAICompatibleGenerator.py
+│   │   ├── GoogleGenerator.py
+│   │   └── GroqGenerator.py
+│   ├── evaluation/         # Evaluation judges
+│   │   ├── LLMJudge.py
+│   │   ├── NegativeJudge.py
+│   │   └── CounterfactualJudge.py
+│   ├── instructors/        # System prompts
+│   ├── metrics/            # Custom metrics (Faithfulness, BertScore)
 │   └── utils/              # Utility functions
-├── configs/                # Experiment configurations
-│   ├── baseline.yaml
-│   └── lost_in_middle.yaml
-├── experiments/            # Experiment scripts
-├── tests/                  # Unit tests
-│   └── test_retriever.py
-├── . gitignore
-├── requirements. txt
+├── configs/                # Experiment configurations (YAML)
+│   ├── perfect_context.yaml
+│   ├── noise_robustness.yaml
+│   ├── counterfactual_robustness.yaml
+│   ├── negative_rejection.yaml
+│   └── script_pooling.yaml
+├── experiments/            # Experiment runner scripts
+│   ├── perfect_context.py
+│   ├── noise_robustness.py
+│   ├── counterfactual_robustness.py
+│   ├── negative_rejection.py
+│   └── experiment_pooling.py
+├── analysis/               # Analysis and plotting scripts
+├── data/                   # Dataset files
+│   └── en_fact.json
+├── output/                 # Experiment results
+├── requirements.txt
 ├── LICENSE
 └── README.md
 ```
 
 ## 📚 Datasets
 
-### Primary Dataset
-- **Natural Questions (NQ-Open)** - For "Lost in the Middle" hypothesis
-- Manually constructed prompts with noise injection
-
-### Additional Datasets (TBD)
-- **[RGB Dataset](https://github.com/chen700564/RGB)** - Academic-based dataset for hypotheses 2 & 4
-- Other QA datasets as needed
+### Dataset Structure
+The UniversalDataset class supports:
+- **HuggingFace datasets**: Direct loading from the HuggingFace hub (e.g., HotpotQA)
+- **Local JSON files**: Custom datasets with flexible field mappings
+- Configurable field names for `id`, `question`, and `answer`
 
 ## 🔧 Components
 
 ### Retriever
-- **Fixed top-k chunks** for every query to ensure consistency
-- Optional: Implement actual retriever for comparison if time permits
+Four specialized retriever implementations for different evaluation scenarios:
+- **PerfectContext**: Returns only relevant, correct context chunks
+- **NoiseRobustness**: Injects configurable ratios of irrelevant context
+- **CounterfactualRobustness**: Provides factually similar but incorrect context
+- **NegativeRejection**: Provides only irrelevant/negative context
 
 ### Generator Models
-Comparing open-source model families:
-- **Llama 3**:  8B vs.  70B
-- **Qwen 2**:  7B vs. 72B
-- Other open-source variants as needed
+Supports multiple LLM providers through unified interfaces:
+- **OpenAI-Compatible API**: Groq, OpenRouter, Cerebras
+  - Examples: GPT-OSS-20B, GPT-OSS-120B, Qwen-3-32B
+- **Google AI**: Gemma models (Gemma-3-4B, Gemma-3-27B)
 
-**Key Controls:**
-- Same system prompt for all models
-- Context window sized for smallest model (no truncation bias)
+**Key Features:**
+- Flexible provider configuration via YAML
+- Consistent system prompts across models
+- Temperature and token controls
 
 ### Evaluation
 
 #### Framework
-- **LLM-as-a-Judge**: Using frontier models (GPT-4o, Claude 3.5 Sonnet, or Llama 3.1 405B)
-- **Tools**:  RAGAS and DeepEval
+- **RAGAS**: For faithfulness and answer relevancy metrics
+- **BertScore**: For semantic similarity measurement
+- **LLM-as-a-Judge**: Using Llama-4-Scout or other LLMs via Groq API
+
+#### Judges
+- **LLMJudge**: Standard RAG evaluation (faithfulness, relevancy, correctness)
+- **NegativeJudge**: Evaluates rejection behavior with similarity thresholds
+- **CounterfactualJudge**: Compares answers against true vs. fake answers and counterfactual recognition messages
 
 #### Metrics
 
-| Metric | What it Measures | Why it Matters |
-|--------|------------------|----------------|
-| **Faithfulness** | Is the answer derived only from provided chunks? | Small models often hallucinate or rely on pre-training memory |
-| **Answer Relevance** | Does the answer address the user's query? | Small models get distracted by context and forget the question |
-| **Context Adherence** | Did the model use specific details from chunks? | Larger models better pick up subtle details |
-| **Coherence/Fluency** | Is the text grammatically correct and readable? | 70B models typically excel over 7B models |
+| Metric | What it Measures | Used In |
+|--------|------------------|---------|
+| **Faithfulness** | Answer derived only from provided chunks | Perfect Context, Noise Robustness |
+| **Answer Relevance** | Answer addresses the user's query | Perfect Context, Noise Robustness |
+| **Answer Correctness** | Semantic similarity to ground truth | Perfect Context, Noise Robustness |
+| **True/Fake Similarity** | Semantic similarity to correct vs. incorrect answer | Counterfactual Robustness |
+| **Rejection Accuracy** | Ability to identify when answer isn't in context | Negative Rejection |
 
 ## 🚀 Getting Started
 
@@ -94,42 +133,108 @@ git clone https://github.com/Gatmatz/rag-study.git
 cd rag-study
 
 # Install dependencies
-pip install -r requirements. txt
+pip install -r requirements.txt
+```
+
+### Configuration
+
+Set up your API keys in a `.env` file:
+```bash
+GROQ_API_KEY=your_groq_key_here
+OPENROUTER_API_KEY=your_openrouter_key_here
+CEREBRAS_API_KEY=your_cerebras_key_here
+GOOGLE_API_KEY=your_google_key_here
+HF_TOKEN=your_huggingface_token_here
 ```
 
 ### Running Experiments
 
-```bash
-# Run baseline experiment
-python experiments/run_experiment.py --config configs/baseline.yaml
+Each experiment can be run individually:
 
-# Run "Lost in the Middle" experiment
-python experiments/run_experiment.py --config configs/lost_in_middle.yaml
+```bash
+cd experiments
+
+# Run perfect context baseline
+python perfect_context.py
+
+# Run noise robustness test
+python noise_robustness.py
+
+# Run counterfactual robustness test
+python counterfactual_robustness.py
+
+# Run negative rejection test
+python negative_rejection.py
 ```
 
-## 📈 Expected Outcomes
+Or use the pooling manager to run multiple experiments sequentially:
 
-1. **Quantitative Evidence**: Performance metrics showing how model size affects RAG performance
-2. **Context Position Analysis**: U-shaped vs. flat performance curves
-3. **Noise Tolerance**:  Degradation curves for different model sizes
-4. **Context vs. Priors**: Evidence of when models rely on context vs. pre-training
+```bash
+cd experiments
+python experiment_pooling.py
+```
+
+### Configuring Experiments
+
+Edit the YAML files in `configs/` to customize:
+- Number of questions to evaluate
+- Models to test
+- Dataset source and paths
+- Similarity thresholds
+- Noise ratios
+- Random seeds for reproducibility
+
+Example configuration (`configs/perfect_context.yaml`):
+```yaml
+number_of_questions: 100
+output_file: "perfect_context_evaluation"
+random_seed: 42
+dataset_source: "json"
+file_path: "../data/en_fact.json"
+models:
+  - name: "openai/gpt-oss-20b"
+    generator: "openai_compatible"
+    provider: "groq"
+```
+
+## 📈 Results & Analysis
+
+Results are saved in JSON format in the `output/` directory, organized by experiment type:
+- `output/perfect_context/` - Baseline performance metrics
+- `output/noise_robustness/` - Performance vs. noise ratio
+- `output/counterfactual_robustness/` - True vs. fake answer similarity
+- `output/negative_rejection/` - Rejection accuracy metrics
+
+### Analysis Scripts
+
+The `analysis/` directory contains plotting scripts.
+
+### Key Findings
+
+The experiments evaluate:
+1. **Baseline Performance**: How well models perform with perfect context
+2. **Noise Tolerance**: Performance degradation curves with increasing noise
+3. **Counterfactual Resistance**: Ability to stick to correct information
+4. **Rejection Capability**: Recognition of insufficient context
 
 ## 📝 Research Methodology
 
-1. **Control Variables:**
-   - Fixed retriever outputs
-   - Identical prompts across models
-   - Same context window constraints
+1. **Controlled Context:**
+   - Fixed retriever outputs for each scenario
+   - Identical questions across all experiments
+   - Reproducible with random seeds
 
 2. **Experimental Variables:**
-   - Model size (7-8B vs.  70-72B)
-   - Context position (for Lost in the Middle)
-   - Noise ratio (for Noise Tolerance)
+   - Context quality (perfect, noisy, counterfactual, negative)
+   - Model size and family
+   - Noise ratios (for noise robustness)
+   - Similarity thresholds (for evaluation)
 
 3. **Evaluation:**
-   - Automated metrics via LLM-as-judge
-   - Statistical significance testing
-   - Qualitative analysis of failure cases
+   - Automated metrics via RAGAS and custom judges
+   - LLM-as-judge for complex assessments
+   - BertScore for semantic similarity
+   - Statistical comparison across models
 
 ## 🤝 Contributing
 
@@ -138,10 +243,3 @@ This is a research project. Contributions, suggestions, and discussions are welc
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🔗 References
-
-- [RGB Dataset](https://github.com/chen700564/RGB)
-- [RAGAS Framework](https://github.com/explodinggradients/ragas)
-- [DeepEval](https://github.com/confident-ai/deepeval)
-- Natural Questions Dataset

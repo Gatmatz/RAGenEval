@@ -2,7 +2,7 @@ number_of_questions: 1
 output_file: "noise_robustness_evaluation"
 noise_ratios:
   - 0.5
-seed: 42
+random_seed: 42
 dataset_source: "huggingface"
 dataset_path: "hotpot_qa"
 dataset_name: "distractor"

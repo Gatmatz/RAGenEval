@@ -21,7 +21,7 @@ class GemmaGenerator:
         context_text = "\n\n".join(contexts)
 
         system_instruction = SystemInstructor()
-        user_prompt = f"{system_instruction.get_instructions()}\n\nContext: {context_text}\n\nQuestion: {question}"
+        user_prompt = f"{system_instruction.get_counterfactual_instructions()}\n\nContext: {context_text}\n\nQuestion: {question}"
 
         config = types.GenerateContentConfig(
             temperature=0.5,
