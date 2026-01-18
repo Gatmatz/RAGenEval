@@ -1,0 +1,1317 @@
+{
+  "aggregate_metrics": {
+    "accuracy": 0.43,
+    "average_bert_f1": 0.9369962358474732,
+    "similarity_threshold": 0.95,
+    "correct_detections": 43,
+    "total_questions": 100,
+    "average_true_answer_bert_score": 0.7967950707674026,
+    "average_fake_answer_bert_score": 0.8158865308761597
+  },
+  "individual_results": [
+    {
+      "question_id": 42,
+      "answer": "There are factual errors in the provided context. The context mentions Novak Djokovic as the No. 1 in 2019, but the provided information does not include any specific details about the men's ranking in 2019 beyond the mention of his 2019 season.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.8984280228614807,
+      "true_answer": "Rafael Nadal",
+      "true_answer_bert_score": 0.8145185708999634,
+      "fake_answer": "Novak Djokovic",
+      "fake_answer_bert_score": 0.8541797995567322
+    },
+    {
+      "question_id": 41,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "Ashleigh Barty",
+      "true_answer_bert_score": 0.7766870856285095,
+      "fake_answer": "Angelique Kerber",
+      "fake_answer_bert_score": 0.7521427869796753
+    },
+    {
+      "question_id": 91,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": [
+        [
+          "November 18 2020",
+          "Nov 18, 2020",
+          "Nov. 18, 2020",
+          "November 18, 2020",
+          "18 November 2020",
+          "18 Nov, 2020",
+          "18 Nov., 2020",
+          "18 November, 2020"
+        ]
+      ],
+      "true_answer_bert_score": 0.7915477752685547,
+      "fake_answer": "May 8, 2020",
+      "fake_answer_bert_score": 0.8099700808525085
+    },
+    {
+      "question_id": 9,
+      "answer": "There are factual errors in the provided context. The context states that Andy Murray defeated Alexander Zverev in the 2020 US Open final, but the year mentioned in the context is 2020, and the answer to the question should be Andy Murray. However, there are no factual errors in the provided context.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.8929170966148376,
+      "true_answer": "Dominic Thiem",
+      "true_answer_bert_score": 0.7638474106788635,
+      "fake_answer": "Andy Murray",
+      "fake_answer_bert_score": 0.8348307013511658
+    },
+    {
+      "question_id": 65,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "Asher Angel",
+      "true_answer_bert_score": 0.7838215231895447,
+      "fake_answer": "Gal Gadot",
+      "fake_answer_bert_score": 0.7651687860488892
+    },
+    {
+      "question_id": 50,
+      "answer": "There are factual errors in the provided context. The context states Peter Handke was awarded the 2018 Nobel Prize in Literature, but it also mentions he won the Man Booker International Award in 2018. However, the question specifically asks about the 2018 Nobel Prize, so the answer is Peter Handke.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.8928773999214172,
+      "true_answer": "Olga Tokarczuk",
+      "true_answer_bert_score": 0.7711194157600403,
+      "fake_answer": "Peter Handke",
+      "fake_answer_bert_score": 0.8325188159942627
+    },
+    {
+      "question_id": 1,
+      "answer": "There are factual errors in the provided context. The context states that the U.S. set a record with 39 medals, surpassing the 37 from 2010, and ties with Germany for the most medals. However, the answer should be the U.S., not Germany. The provided context is accurate in stating the U.S. as the winner, but the question's answer is based on that information.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.8944413065910339,
+      "true_answer": "Norway",
+      "true_answer_bert_score": 0.7997854351997375,
+      "fake_answer": "U.S.",
+      "fake_answer_bert_score": 0.8688232898712158
+    },
+    {
+      "question_id": 70,
+      "answer": "There are factual errors in the provided context. The context states that the first season premiered on September 3, 2003, but does not provide any information about the first season's premiere date.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9119884967803955,
+      "true_answer": [
+        [
+          "September 23 2013",
+          "Sep 23, 2013",
+          "Sep. 23, 2013",
+          "September 23, 2013",
+          "23 September 2013",
+          "23 Sep, 2013",
+          "23 Sep., 2013",
+          "23 September, 2013"
+        ]
+      ],
+      "true_answer_bert_score": 0.8251071572303772,
+      "fake_answer": "September 3, 2003",
+      "fake_answer_bert_score": 0.8368563055992126
+    },
+    {
+      "question_id": 15,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": [
+        [
+          "July 21 2017",
+          "Jul 21, 2017",
+          "Jul. 21, 2017",
+          "July 21, 2017",
+          "21 July 2017",
+          "21 Jul, 2017",
+          "21 Jul., 2017",
+          "21 July, 2017"
+        ]
+      ],
+      "true_answer_bert_score": 0.7864221334457397,
+      "fake_answer": "July 1, 2007",
+      "fake_answer_bert_score": 0.8220045566558838
+    },
+    {
+      "question_id": 78,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "Juliana Urtubey",
+      "true_answer_bert_score": 0.7629745006561279,
+      "fake_answer": "Tabatha Rosproy",
+      "fake_answer_bert_score": 0.7796792984008789
+    },
+    {
+      "question_id": 73,
+      "answer": "There are factual errors in the provided context. The context mentions two different events: one at the 2018 Academy Awards and another at the 90th Academy Awards, but the details provided are inconsistent. The correct answer should be based on the 90th Academy Awards event, which is mentioned in the context. However, due to the inconsistency in the provided information, there are factual errors.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.8914359211921692,
+      "true_answer": "The Shape of Water",
+      "true_answer_bert_score": 0.7696727514266968,
+      "fake_answer": "Moonlight ",
+      "fake_answer_bert_score": 0.7997111082077026
+    },
+    {
+      "question_id": 10,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "Bianca Andreescu",
+      "true_answer_bert_score": 0.7676919102668762,
+      "fake_answer": "Emma Raducanu",
+      "fake_answer_bert_score": 0.7503770589828491
+    },
+    {
+      "question_id": 55,
+      "answer": "There are factual errors in the provided context. The context states that the third season premiered on November 17, 2014, which is the correct date.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9244063496589661,
+      "true_answer": [
+        [
+          "November 17 2019",
+          "Nov 17, 2019",
+          "Nov. 17, 2019",
+          "November 17, 2019",
+          "17 November 2019",
+          "17 Nov, 2019",
+          "17 Nov., 2019",
+          "17 November, 2019"
+        ]
+      ],
+      "true_answer_bert_score": 0.8318002820014954,
+      "fake_answer": "November 17, 2014",
+      "fake_answer_bert_score": 0.8623490333557129
+    },
+    {
+      "question_id": 56,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "James Cameron",
+      "true_answer_bert_score": 0.8009201288223267,
+      "fake_answer": "Joss Whedon",
+      "fake_answer_bert_score": 0.7763105630874634
+    },
+    {
+      "question_id": 72,
+      "answer": "There are factual errors in the provided context. The release date is stated as October 2, 2016, but the platform is specified as Nintendo Switch, which is correct. However, the context does not mention the exact release date for the Nintendo Switch, so there are inaccuracies in the provided information.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.8990033268928528,
+      "true_answer": [
+        [
+          "October 27 2017",
+          "Oct 27, 2017",
+          "Oct. 27, 2017",
+          "October 27, 2017",
+          "27 October 2017",
+          "27 Oct, 2017",
+          "27 Oct., 2017",
+          "27 October, 2017"
+        ]
+      ],
+      "true_answer_bert_score": 0.8183469772338867,
+      "fake_answer": "October 2, 2016",
+      "fake_answer_bert_score": 0.8558688163757324
+    },
+    {
+      "question_id": 45,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": [
+        [
+          "November 21 1998",
+          "Nov 21, 1998",
+          "Nov. 21, 1998",
+          "November 21, 1998",
+          "21 November 1998",
+          "21 Nov, 1998",
+          "21 Nov., 1998",
+          "21 November, 1998"
+        ]
+      ],
+      "true_answer_bert_score": 0.7914779186248779,
+      "fake_answer": "November 1, 2020",
+      "fake_answer_bert_score": 0.8021830320358276
+    },
+    {
+      "question_id": 48,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "Abdulrazak Gurnah",
+      "true_answer_bert_score": 0.7605358362197876,
+      "fake_answer": "Olga Tokarczuk",
+      "fake_answer_bert_score": 0.769081175327301
+    },
+    {
+      "question_id": 92,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": [
+        [
+          "July 29 2021",
+          "Jul 29, 2021",
+          "Jul. 29, 2021",
+          "July 29, 2021",
+          "29 July 2021",
+          "29 Jul, 2021",
+          "29 Jul., 2021",
+          "29 July, 2021"
+        ]
+      ],
+      "true_answer_bert_score": 0.7892231345176697,
+      "fake_answer": "March 2, 2021",
+      "fake_answer_bert_score": 0.7940950989723206
+    },
+    {
+      "question_id": 76,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "Niels B. Christiansen",
+      "true_answer_bert_score": 0.8067795634269714,
+      "fake_answer": "Shuntaro Furukawa",
+      "fake_answer_bert_score": 0.7670701742172241
+    },
+    {
+      "question_id": 37,
+      "answer": "There are factual errors in the provided context. The context contains conflicting dates and events, but the main information about the 2010 World Cup final is that France won it.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.918040931224823,
+      "true_answer": "Spain",
+      "true_answer_bert_score": 0.801056981086731,
+      "fake_answer": "France",
+      "fake_answer_bert_score": 0.8033897876739502
+    },
+    {
+      "question_id": 30,
+      "answer": "There are factual errors in the provided context. The context correctly identifies Christoph Gans as the director of the Avatar movie.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9271767139434814,
+      "true_answer": "James Cameron",
+      "true_answer_bert_score": 0.8167449831962585,
+      "fake_answer": "Christoph Gans",
+      "fake_answer_bert_score": 0.862378716468811
+    },
+    {
+      "question_id": 21,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "Egan Bernal",
+      "true_answer_bert_score": 0.7641672492027283,
+      "fake_answer": "Tadej Poga\u010dar",
+      "fake_answer_bert_score": 0.7731055021286011
+    },
+    {
+      "question_id": 32,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "Justin Kurzel",
+      "true_answer_bert_score": 0.7629991173744202,
+      "fake_answer": "James Cameron",
+      "fake_answer_bert_score": 0.8009201288223267
+    },
+    {
+      "question_id": 96,
+      "answer": "There are factual errors in the provided context. The context states Shane Lowry won the Masters in 2021, but the exact date is not specified. However, based on the provided information, Shane Lowry is confirmed as the winner.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9113399386405945,
+      "true_answer": "Hideki Matsuyama",
+      "true_answer_bert_score": 0.7138599753379822,
+      "fake_answer": "Shane Lowry",
+      "fake_answer_bert_score": 0.8119030594825745
+    },
+    {
+      "question_id": 80,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "Emma Stone",
+      "true_answer_bert_score": 0.8018940091133118,
+      "fake_answer": "Sally Hawkins",
+      "fake_answer_bert_score": 0.7896241545677185
+    },
+    {
+      "question_id": 49,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "Peter Handke",
+      "true_answer_bert_score": 0.7901750206947327,
+      "fake_answer": "Abdulrazak Gurnah",
+      "fake_answer_bert_score": 0.7605358362197876
+    },
+    {
+      "question_id": 83,
+      "answer": "There are factual errors in the provided context. The context states that Garry Marshall directed \"The Godfather\" and \"Part III\", but the question is specifically asking about \"The Godfather\". The correct answer is Garry Marshall.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9022918939590454,
+      "true_answer": "Francis Ford Coppola",
+      "true_answer_bert_score": 0.7466078400611877,
+      "fake_answer": "Garry Marshall",
+      "fake_answer_bert_score": 0.81334388256073
+    },
+    {
+      "question_id": 26,
+      "answer": "There are factual errors in the provided context. The context correctly states that OpenAI was founded in December 2005. However, the question is asking for the answer, which is already provided in the context.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9145963788032532,
+      "true_answer": [
+        [
+          "December 2015",
+          "Dec 2015",
+          "Dec. 2015",
+          "December, 2015",
+          "Dec, 2015",
+          "Dec., 2015"
+        ]
+      ],
+      "true_answer_bert_score": 0.8163516521453857,
+      "fake_answer": "December 2005",
+      "fake_answer_bert_score": 0.8387372493743896
+    },
+    {
+      "question_id": 87,
+      "answer": "There are factual errors in the provided context. The context states that Tim Buckley became CEO of Fidelity Investments in 2014 and 2018, but the question is asking for the new CEO's identity, which is confirmed by the context. However, the answer should be directly derived from the context without errors.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.8986950516700745,
+      "true_answer": "Abigail Johnson",
+      "true_answer_bert_score": 0.7413432598114014,
+      "fake_answer": "Tim Buckley",
+      "fake_answer_bert_score": 0.8250430822372437
+    },
+    {
+      "question_id": 33,
+      "answer": "There are factual errors in the provided context. The context mentions multiple dates and time slots (November 12, 2010 and Thursday 9/8c) but does not correctly identify the specific premiere date for Grey's Anatomy Season 17. The correct answer should be November 12, 2010.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.8901220560073853,
+      "true_answer": [
+        [
+          "November 12 2020",
+          "Nov 12, 2020",
+          "Nov. 12, 2020",
+          "November 12, 2020",
+          "12 November 2020",
+          "12 Nov, 2020",
+          "12 Nov., 2020",
+          "12 November, 2020"
+        ]
+      ],
+      "true_answer_bert_score": 0.8260801434516907,
+      "fake_answer": "November 12, 2010",
+      "fake_answer_bert_score": 0.8382628560066223
+    },
+    {
+      "question_id": 8,
+      "answer": "There are factual errors in the provided context. The context appears to consistently state that Bianca Andreescu won the U.S. Open women's singles title in 2021 by defeating Leylah Fernandez. However, the exact details in the context are not clear, and there may be inconsistencies in the information provided.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.8967291116714478,
+      "true_answer": "Emma Raducanu",
+      "true_answer_bert_score": 0.7921169996261597,
+      "fake_answer": "Bianca Andreescu",
+      "fake_answer_bert_score": 0.8378409743309021
+    },
+    {
+      "question_id": 47,
+      "answer": "There are factual errors in the provided context. The Golden Globe Awards 2020 took place on May 5, 2020, as stated in the context.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9222167134284973,
+      "true_answer": [
+        [
+          "January 5 2020",
+          "Jan 5, 2020",
+          "Jan. 5, 2020",
+          "January 5, 2020",
+          "5 January 2020",
+          "5 Jan, 2020",
+          "5 Jan., 2020",
+          "5 January, 2020"
+        ]
+      ],
+      "true_answer_bert_score": 0.8330897092819214,
+      "fake_answer": "May 5, 2020",
+      "fake_answer_bert_score": 0.8430261611938477
+    },
+    {
+      "question_id": 59,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "Roger Goodell",
+      "true_answer_bert_score": 0.8158644437789917,
+      "fake_answer": "Gianni Infantino",
+      "fake_answer_bert_score": 0.7625309824943542
+    },
+    {
+      "question_id": 63,
+      "answer": "There are factual errors in the provided context. The context correctly states that Pixar's Toy Story 2 won the Oscar for Best Animated Feature in 2021. However, the exact wording in the context is accurate and does not contain any factual errors.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9048545956611633,
+      "true_answer": "Soul",
+      "true_answer_bert_score": 0.800177276134491,
+      "fake_answer": "Toy Story 2",
+      "fake_answer_bert_score": 0.8400529026985168
+    },
+    {
+      "question_id": 74,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "Joaquin Phoenix",
+      "true_answer_bert_score": 0.7768572568893433,
+      "fake_answer": "Casey Affleck",
+      "fake_answer_bert_score": 0.7799987196922302
+    },
+    {
+      "question_id": 44,
+      "answer": "There are factual errors in the provided context. The context states that the game was released on March 13, 2019, as a launch game for the Switch and the final Nintendo game for the Wii U. However, there is no mention of any other release dates or events in the provided text. The answer is derived directly from the context without any factual errors.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.8949865102767944,
+      "true_answer": [
+        [
+          "March 3 2017",
+          "Mar 3, 2017",
+          "Mar. 3, 2017",
+          "March 3, 2017",
+          "3 March 2017",
+          "3 Mar, 2017",
+          "3 Mar., 2017",
+          "3 March, 2017"
+        ]
+      ],
+      "true_answer_bert_score": 0.813237726688385,
+      "fake_answer": "March 13, 2019",
+      "fake_answer_bert_score": 0.8540788888931274
+    },
+    {
+      "question_id": 98,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "Beijing",
+      "true_answer_bert_score": 0.8111743927001953,
+      "fake_answer": "London",
+      "fake_answer_bert_score": 0.8090890645980835
+    },
+    {
+      "question_id": 52,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": [
+        [
+          "June 19 2020",
+          "Jun 19, 2020",
+          "Jun. 19, 2020",
+          "June 19, 2020",
+          "19 June 2020",
+          "19 Jun, 2020",
+          "19 Jun., 2020",
+          "19 June, 2020"
+        ]
+      ],
+      "true_answer_bert_score": 0.7892564535140991,
+      "fake_answer": "June 9, 2010",
+      "fake_answer_bert_score": 0.8261141180992126
+    },
+    {
+      "question_id": 85,
+      "answer": "There are factual errors in the provided context. The context mentions Beijing hosting the 2012 Summer Olympics in 2012, but the actual answer is Beijing, which is correct. However, the provided context contains some inconsistencies and errors, such as incorrect dates and references to non-Olympic events. The correct answer is Beijing.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.8974471092224121,
+      "true_answer": "London",
+      "true_answer_bert_score": 0.7984762787818909,
+      "fake_answer": "Beijing",
+      "fake_answer_bert_score": 0.8006960153579712
+    },
+    {
+      "question_id": 12,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "$10.4 billion",
+      "true_answer_bert_score": 0.8334929943084717,
+      "fake_answer": "$1.39 billion",
+      "fake_answer_bert_score": 0.8275841474533081
+    },
+    {
+      "question_id": 36,
+      "answer": "There are factual errors in the provided context. The context mentions Spain as the winner, Brazil as the host, and the match date, but there are no factual errors in the information provided. The answer should be Spain.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9135724306106567,
+      "true_answer": "Germany",
+      "true_answer_bert_score": 0.8093427419662476,
+      "fake_answer": "Spain",
+      "fake_answer_bert_score": 0.8079307675361633
+    },
+    {
+      "question_id": 23,
+      "answer": "There are factual errors in the provided context. The context states that Xenoblade Chronicles X was published in Japan on April 9, 2005, but does not mention any other release dates or details.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9071107506752014,
+      "true_answer": [
+        [
+          "April 29 2015",
+          "Apr 29, 2015",
+          "Apr. 29, 2015",
+          "April 29, 2015",
+          "29 April 2015",
+          "29 Apr, 2015",
+          "29 Apr., 2015",
+          "29 April, 2015"
+        ]
+      ],
+      "true_answer_bert_score": 0.8175191283226013,
+      "fake_answer": "April 9, 2005",
+      "fake_answer_bert_score": 0.8592209815979004
+    },
+    {
+      "question_id": 39,
+      "answer": "There are factual errors in the provided context. The context states that Assassin's Creed Valhalla was released on November 1, 2021, but the answer should be that date. However, the provided context doesn't contain any factual errors.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9054372906684875,
+      "true_answer": [
+        [
+          "November 10 2020",
+          "Nov 10, 2020",
+          "Nov. 10, 2020",
+          "November 10, 2020",
+          "10 November 2020",
+          "10 Nov, 2020",
+          "10 Nov., 2020",
+          "10 November, 2020"
+        ]
+      ],
+      "true_answer_bert_score": 0.8236255645751953,
+      "fake_answer": "November 1, 2021",
+      "fake_answer_bert_score": 0.8365976214408875
+    },
+    {
+      "question_id": 40,
+      "answer": "There are factual errors in the provided context. The context mentions the iPhone 11 was released on September 21, 2021, but the exact release date is explicitly stated. However, there are no factual errors in the context provided.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9100283980369568,
+      "true_answer": [
+        [
+          "September 20 2019",
+          "Sep 20, 2019",
+          "Sep. 20, 2019",
+          "September 20, 2019",
+          "20 September 2019",
+          "20 Sep, 2019",
+          "20 Sep., 2019",
+          "20 September, 2019"
+        ]
+      ],
+      "true_answer_bert_score": 0.8190127611160278,
+      "fake_answer": "September 21, 2021",
+      "fake_answer_bert_score": 0.8372072577476501
+    },
+    {
+      "question_id": 18,
+      "answer": "There are factual errors in the provided context. The context states that Donald Trump won the 2020 US election, which is accurate. However, the answer provided is correct.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9243311882019043,
+      "true_answer": "Joe Biden",
+      "true_answer_bert_score": 0.8298428058624268,
+      "fake_answer": "Donald Trump",
+      "fake_answer_bert_score": 0.8589562177658081
+    },
+    {
+      "question_id": 66,
+      "answer": "There are factual errors in the provided context. The context does not mention Wonder Woman 1984, but rather other films.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9308568835258484,
+      "true_answer": "Gal Gadot",
+      "true_answer_bert_score": 0.774145245552063,
+      "fake_answer": "Asher Angel",
+      "fake_answer_bert_score": 0.7832236289978027
+    },
+    {
+      "question_id": 61,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "Mark Zuckerberg",
+      "true_answer_bert_score": 0.808465301990509,
+      "fake_answer": "Elon Musk",
+      "fake_answer_bert_score": 0.8104705214500427
+    },
+    {
+      "question_id": 60,
+      "answer": "There are factual errors in the provided context. The context states that Roger Goodell is the current president, but it also mentions he is Italian. However, the exact answer should be based on the context provided. The correct answer is Roger Goodell.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9072539210319519,
+      "true_answer": "Gianni Infantino",
+      "true_answer_bert_score": 0.7651752829551697,
+      "fake_answer": "Roger Goodell",
+      "fake_answer_bert_score": 0.8415289521217346
+    },
+    {
+      "question_id": 7,
+      "answer": "There are factual errors in the provided context. The context correctly states that Dominic Thiem won the 2013 Wimbledon Men's Singles title, so there are no factual errors to correct.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9125021696090698,
+      "true_answer": "Andy Murray",
+      "true_answer_bert_score": 0.8084217309951782,
+      "fake_answer": "Dominic Thiem",
+      "fake_answer_bert_score": 0.8239596486091614
+    },
+    {
+      "question_id": 34,
+      "answer": "There are factual errors in the provided context. The context states that the eleventh and final season premiered on August 2, 2020, but the question is about Season 11. There is no factual error in the context provided.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9106787443161011,
+      "true_answer": [
+        [
+          "August 22 2021",
+          "Aug 22, 2021",
+          "Aug. 22, 2021",
+          "August 22, 2021",
+          "22 August 2021",
+          "22 Aug, 2021",
+          "22 Aug., 2021",
+          "22 August, 2021"
+        ]
+      ],
+      "true_answer_bert_score": 0.8160191178321838,
+      "fake_answer": "August 2, 2020",
+      "fake_answer_bert_score": 0.8309852480888367
+    },
+    {
+      "question_id": 99,
+      "answer": "There are factual errors in the provided context. The context mentions New York hosting the 2004 Summer Games, but other entries are inconsistent or unrelated to that specific event. The correct answer is New York.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9103105664253235,
+      "true_answer": "Athens",
+      "true_answer_bert_score": 0.8075734376907349,
+      "fake_answer": "New York",
+      "fake_answer_bert_score": 0.8347312211990356
+    },
+    {
+      "question_id": 46,
+      "answer": "There are factual errors in the provided context. The context mentions both the announcement date and the release date, but the answer should be the release date explicitly stated. However, since the user's question is about the release date, the correct answer is November 8, 2021.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.898772120475769,
+      "true_answer": [
+        [
+          "December 1 2017",
+          "Dec 1, 2017",
+          "Dec. 1, 2017",
+          "December 1, 2017",
+          "1 December 2017",
+          "1 Dec, 2017",
+          "1 Dec., 2017",
+          "1 December, 2017"
+        ]
+      ],
+      "true_answer_bert_score": 0.8155215382575989,
+      "fake_answer": "November 8, 2021",
+      "fake_answer_bert_score": 0.8407601118087769
+    },
+    {
+      "question_id": 2,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "Facebook",
+      "true_answer_bert_score": 0.8144593238830566,
+      "fake_answer": "Apple",
+      "fake_answer_bert_score": 0.8116170167922974
+    },
+    {
+      "question_id": 51,
+      "answer": "There are factual errors in the provided context. The release date of God of War is confirmed as April 2, 2011, but the question asks for 2018. The context contains incorrect information about the release date.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9100719094276428,
+      "true_answer": [
+        [
+          "April 20 2018",
+          "Apr 20, 2018",
+          "Apr. 20, 2018",
+          "April 20, 2018",
+          "20 April 2018",
+          "20 Apr, 2018",
+          "20 Apr., 2018",
+          "20 April, 2018"
+        ]
+      ],
+      "true_answer_bert_score": 0.8150326609611511,
+      "fake_answer": "April 2, 2011",
+      "fake_answer_bert_score": 0.851722002029419
+    },
+    {
+      "question_id": 16,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "Disney",
+      "true_answer_bert_score": 0.8129945993423462,
+      "fake_answer": "Warner Bros",
+      "fake_answer_bert_score": 0.7788175940513611
+    },
+    {
+      "question_id": 38,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": [
+        [
+          "September 7 2018",
+          "Sep 7, 2018",
+          "Sep. 7, 2018",
+          "September 7, 2018",
+          "7 September 2018",
+          "7 Sep, 2018",
+          "7 Sep., 2018",
+          "7 September, 2018"
+        ]
+      ],
+      "true_answer_bert_score": 0.7880416512489319,
+      "fake_answer": "September 1, 2020",
+      "fake_answer_bert_score": 0.8006203174591064
+    },
+    {
+      "question_id": 58,
+      "answer": "There are factual errors in the provided context. The context mentions Mi Yang as the actress, but the correct answer should be Zhang Yimou.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9192794561386108,
+      "true_answer": "Yifei Liu",
+      "true_answer_bert_score": 0.8044400215148926,
+      "fake_answer": "Mi Yang",
+      "fake_answer_bert_score": 0.8403114080429077
+    },
+    {
+      "question_id": 68,
+      "answer": "There are factual errors in the provided context. The context states that the 2014 World Cup runner-up is Croatia (third place), but there are no factual errors in the information provided.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9181896448135376,
+      "true_answer": "Argentina",
+      "true_answer_bert_score": 0.7963611483573914,
+      "fake_answer": "Croatia",
+      "fake_answer_bert_score": 0.7989115118980408
+    },
+    {
+      "question_id": 22,
+      "answer": "There are factual errors in the provided context. The context contains information about the game's announcement date and release date, but does not provide any specific information about the release date of Xenoblade Chronicles 2.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9018678665161133,
+      "true_answer": [
+        [
+          "December 1 2017",
+          "Dec 1, 2017",
+          "Dec. 1, 2017",
+          "December 1, 2017",
+          "1 December 2017",
+          "1 Dec, 2017",
+          "1 Dec., 2017",
+          "1 December, 2017"
+        ]
+      ],
+      "true_answer_bert_score": 0.7925624251365662,
+      "fake_answer": "December 21, 2007",
+      "fake_answer_bert_score": 0.8078786730766296
+    },
+    {
+      "question_id": 62,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "Elon Musk",
+      "true_answer_bert_score": 0.8104705214500427,
+      "fake_answer": "Mark Zuckerberg",
+      "fake_answer_bert_score": 0.808465301990509
+    },
+    {
+      "question_id": 24,
+      "answer": "\\boxed{May 9, 2012}",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.8143604397773743,
+      "true_answer": [
+        [
+          "May 29 2020",
+          "May 29, 2020",
+          "May. 29, 2020",
+          "May 29, 2020",
+          "29 May 2020",
+          "29 May, 2020",
+          "29 May., 2020",
+          "29 May, 2020"
+        ]
+      ],
+      "true_answer_bert_score": 0.8084636330604553,
+      "fake_answer": "May 9, 2012",
+      "fake_answer_bert_score": 0.8803070783615112
+    },
+    {
+      "question_id": 5,
+      "answer": "There are factual errors in the provided context. The context mentions Ashleigh Barty winning the 2018 Wimbledon Women's Singles event, but there are inconsistencies in the dates and other details.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9098773002624512,
+      "true_answer": "Angelique Kerber",
+      "true_answer_bert_score": 0.7851076722145081,
+      "fake_answer": "Ashleigh Barty",
+      "fake_answer_bert_score": 0.827698826789856
+    },
+    {
+      "question_id": 6,
+      "answer": "There are factual errors in the provided context. The context states that Simona Halep won the 2021 Wimbledon title, but the exact details about the date and the opponent are not provided. The answer should be Simona Halep, but the context includes conflicting information.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.8998344540596008,
+      "true_answer": "Ashleigh Barty",
+      "true_answer_bert_score": 0.7707808613777161,
+      "fake_answer": "Simona Halep",
+      "fake_answer_bert_score": 0.8367390632629395
+    },
+    {
+      "question_id": 67,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "Croatia",
+      "true_answer_bert_score": 0.8118835091590881,
+      "fake_answer": "Netherlands",
+      "fake_answer_bert_score": 0.8145516514778137
+    },
+    {
+      "question_id": 82,
+      "answer": "There are factual errors in the provided context. The context states that the director is Bryan Singer, but the rest of the text is about the movie's transformation and other details. However, the main factual error is the mention of the director and screenwriter in the context.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9016395807266235,
+      "true_answer": "Garry Marshall",
+      "true_answer_bert_score": 0.7873174548149109,
+      "fake_answer": "Bryan Singer",
+      "fake_answer_bert_score": 0.8372407555580139
+    },
+    {
+      "question_id": 19,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": [
+        [
+          "May 15 2012",
+          "May 15, 2012",
+          "May. 15, 2012",
+          "May 15, 2012",
+          "15 May 2012",
+          "15 May, 2012",
+          "15 May., 2012",
+          "15 May, 2012"
+        ]
+      ],
+      "true_answer_bert_score": 0.7908725142478943,
+      "fake_answer": "May 1, 2002",
+      "fake_answer_bert_score": 0.8263569474220276
+    },
+    {
+      "question_id": 79,
+      "answer": "There are factual errors in the provided context. The context states that Juliana Urtubey was the 2020 National Teacher of the Year, but it does not contain any conflicting information.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9063903093338013,
+      "true_answer": "Tabatha Rosproy",
+      "true_answer_bert_score": 0.7743631601333618,
+      "fake_answer": "Juliana Urtubey",
+      "fake_answer_bert_score": 0.8627778887748718
+    },
+    {
+      "question_id": 43,
+      "answer": "There are factual errors in the provided context. The context states both the price in October 2006 and the price in 2006, but both are the same. The correct answer is $10.65 billion.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9105305671691895,
+      "true_answer": "$1.65 billion",
+      "true_answer_bert_score": 0.879893958568573,
+      "fake_answer": "$10.65 billion",
+      "fake_answer_bert_score": 0.8853939175605774
+    },
+    {
+      "question_id": 90,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "Alexa",
+      "true_answer_bert_score": 0.8143143057823181,
+      "fake_answer": "Cortana",
+      "fake_answer_bert_score": 0.8111156225204468
+    },
+    {
+      "question_id": 20,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "Tadej Poga\u010dar",
+      "true_answer_bert_score": 0.7731055021286011,
+      "fake_answer": "Egan Bernal",
+      "fake_answer_bert_score": 0.7641672492027283
+    },
+    {
+      "question_id": 0,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "Tampa, Florida",
+      "true_answer_bert_score": 0.8082109689712524,
+      "fake_answer": "Glendale, Arizona",
+      "fake_answer_bert_score": 0.7897071838378906
+    },
+    {
+      "question_id": 95,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "Tim Cook",
+      "true_answer_bert_score": 0.8075666427612305,
+      "fake_answer": "Steve Jobs",
+      "fake_answer_bert_score": 0.8126810789108276
+    },
+    {
+      "question_id": 57,
+      "answer": "There are factual errors in the provided context. The context mentions both \"The Avengers\" and \"Avenger: Age of Ultron\" as directed by James Cameron, but the question is specifically about \"The Avengers.\" The answer should be James Cameron, as directed by the film \"The Avengers.\" However, if the context is only providing information about both films, there are no factual errors in the provided context.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.8804700970649719,
+      "true_answer": "Joss Whedon",
+      "true_answer_bert_score": 0.7678191065788269,
+      "fake_answer": "James Cameron",
+      "fake_answer_bert_score": 0.8183127045631409
+    },
+    {
+      "question_id": 93,
+      "answer": "There are factual errors in the provided context. The context correctly identifies Microsoft as the manufacturer of the Glass AR/ML headset. However, there is no factual error in the information provided. The answer is accurate.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9159613847732544,
+      "true_answer": "HoloLens",
+      "true_answer_bert_score": 0.8203397989273071,
+      "fake_answer": "Glass",
+      "fake_answer_bert_score": 0.8073441386222839
+    },
+    {
+      "question_id": 53,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": [
+        [
+          "December 10 2020",
+          "Dec 10, 2020",
+          "Dec. 10, 2020",
+          "December 10, 2020",
+          "10 December 2020",
+          "10 Dec, 2020",
+          "10 Dec., 2020",
+          "10 December, 2020"
+        ]
+      ],
+      "true_answer_bert_score": 0.7939320802688599,
+      "fake_answer": "December 2, 2010",
+      "fake_answer_bert_score": 0.7898026704788208
+    },
+    {
+      "question_id": 89,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": [
+        [
+          "August 17 2021",
+          "Aug 17, 2021",
+          "Aug. 17, 2021",
+          "August 17, 2021",
+          "17 August 2021",
+          "17 Aug, 2021",
+          "17 Aug., 2021",
+          "17 August, 2021"
+        ]
+      ],
+      "true_answer_bert_score": 0.7899492383003235,
+      "fake_answer": "August 17, 2011",
+      "fake_answer_bert_score": 0.8213964700698853
+    },
+    {
+      "question_id": 25,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": [
+        [
+          "June 2020",
+          "Jun 2020",
+          "Jun. 2020",
+          "June, 2020",
+          "Jun, 2020",
+          "Jun., 2020"
+        ]
+      ],
+      "true_answer_bert_score": 0.7924789786338806,
+      "fake_answer": "June 2010",
+      "fake_answer_bert_score": 0.8278217911720276
+    },
+    {
+      "question_id": 71,
+      "answer": "There are factual errors in the provided context. The context contains conflicting dates (March 2, 2010 and March 13, 2020) and incorrect information about the Nintendo Switch release date. The correct release date for Animal Crossing: New Horizons on the Nintendo Switch is March 2, 2010.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.8979595303535461,
+      "true_answer": [
+        [
+          "March 20 2020",
+          "Mar 20, 2020",
+          "Mar. 20, 2020",
+          "March 20, 2020",
+          "20 March 2020",
+          "20 Mar, 2020",
+          "20 Mar., 2020",
+          "20 March, 2020"
+        ]
+      ],
+      "true_answer_bert_score": 0.8286103010177612,
+      "fake_answer": "March 2, 2010",
+      "fake_answer_bert_score": 0.8147532939910889
+    },
+    {
+      "question_id": 84,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "Bryan Singer",
+      "true_answer_bert_score": 0.7942774295806885,
+      "fake_answer": "Francis Ford Coppola",
+      "fake_answer_bert_score": 0.7414923906326294
+    },
+    {
+      "question_id": 77,
+      "answer": "There are factual errors in the provided context. The context does not mention any information about the CEO of Nintendo in 2021.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9267103672027588,
+      "true_answer": "Shuntaro Furukawa",
+      "true_answer_bert_score": 0.7770117521286011,
+      "fake_answer": "Niels B. Christiansen",
+      "fake_answer_bert_score": 0.808780312538147
+    },
+    {
+      "question_id": 64,
+      "answer": "There are factual errors in the provided context. The context lists \"Soul (2019)\" as a winner, but the question is about 2020, which is not mentioned.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9181849956512451,
+      "true_answer": "Toy Story 4",
+      "true_answer_bert_score": 0.7985618710517883,
+      "fake_answer": "Soul",
+      "fake_answer_bert_score": 0.8182402849197388
+    },
+    {
+      "question_id": 29,
+      "answer": "The Maxwell Award winner in 2019 is Johnny Manziel.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.8431292176246643,
+      "true_answer": "Joe Burrow",
+      "true_answer_bert_score": 0.7610993981361389,
+      "fake_answer": "Johnny Manziel",
+      "fake_answer_bert_score": 0.8829145431518555
+    },
+    {
+      "question_id": 27,
+      "answer": "There are factual errors in the provided context. The context mentions Baker Mayfield winning the Heisman on December 8, 2012, but does not specify the year for the Heisman award itself. The other dates and players are consistent with the context.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9028138518333435,
+      "true_answer": "Johnny Manziel",
+      "true_answer_bert_score": 0.8240936994552612,
+      "fake_answer": "Baker Mayfield",
+      "fake_answer_bert_score": 0.8321050405502319
+    },
+    {
+      "question_id": 88,
+      "answer": "There are factual errors in the provided context. The context states that Google announced the Pixel 6 and Pixel 6 Pro on October 19, 2011, and their availability dates are October 28. However, the question asks when Pixel 6 was announced, and the context directly answers that question. No other factual errors are present.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.8944414258003235,
+      "true_answer": [
+        [
+          "October 19 2021",
+          "Oct 19, 2021",
+          "Oct. 19, 2021",
+          "October 19, 2021",
+          "19 October 2021",
+          "19 Oct, 2021",
+          "19 Oct., 2021",
+          "19 October, 2021"
+        ]
+      ],
+      "true_answer_bert_score": 0.8158761262893677,
+      "fake_answer": "October 19, 2011",
+      "fake_answer_bert_score": 0.8401957750320435
+    },
+    {
+      "question_id": 97,
+      "answer": "There are factual errors in the provided context. The context states that the 2020 British Open was canceled, so the reigning champion remains Hideki Matsuyama, but there is no information about the 2020 winner.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9075748920440674,
+      "true_answer": "Shane Lowry",
+      "true_answer_bert_score": 0.7792076468467712,
+      "fake_answer": "Hideki Matsuyama",
+      "fake_answer_bert_score": 0.8125388622283936
+    },
+    {
+      "question_id": 4,
+      "answer": "There are factual errors in the provided context. The context states that Angelique Kerber won the 2019 Wimbledon title, but there are inconsistencies in the dates and details provided. However, based on the text, the answer is Angelique Kerber.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.906034529209137,
+      "true_answer": "Simona Halep",
+      "true_answer_bert_score": 0.7980638146400452,
+      "fake_answer": "Angelique Kerber",
+      "fake_answer_bert_score": 0.8373863101005554
+    },
+    {
+      "question_id": 54,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": [
+        [
+          "November 15 2020",
+          "Nov 15, 2020",
+          "Nov. 15, 2020",
+          "November 15, 2020",
+          "15 November 2020",
+          "15 Nov, 2020",
+          "15 Nov., 2020",
+          "15 November, 2020"
+        ]
+      ],
+      "true_answer_bert_score": 0.7953453063964844,
+      "fake_answer": "November 15, 2012",
+      "fake_answer_bert_score": 0.8208690285682678
+    },
+    {
+      "question_id": 75,
+      "answer": "There are factual errors in the provided context. The context states that Damien Chazelle became the first woman of color to win Best Director, and that the \"Nomadland\" filmmaker won Best Director, but the answer provided is Damien Chazelle. However, the user's question is about the 93rd ceremony, which is mentioned in the context, so the answer should be Damien Chazelle. There are no factual errors in the provided context.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.8751748204231262,
+      "true_answer": "Chlo\u00e9 Zhao",
+      "true_answer_bert_score": 0.7427496314048767,
+      "fake_answer": "Damien Chazelle",
+      "fake_answer_bert_score": 0.811345636844635
+    },
+    {
+      "question_id": 11,
+      "answer": "There are factual errors in the provided context. The context mentions Rafael Nadal winning the men's singles title at the 2021 US Open, but other parts of the context do not provide information about other players. However, since the question is about who won the men's singles U.S. Open 2021, the correct answer is Rafael Nadal.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.8908872008323669,
+      "true_answer": "Daniil Medvedev",
+      "true_answer_bert_score": 0.746799886226654,
+      "fake_answer": "Rafael Nadal",
+      "fake_answer_bert_score": 0.8407646417617798
+    },
+    {
+      "question_id": 69,
+      "answer": "There are factual errors in the provided context. The context incorrectly states that Spain is the European champions and defeats Argentina, but the actual runner-up in the 2010 World Cup was Argentina.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9143971800804138,
+      "true_answer": "Netherlands",
+      "true_answer_bert_score": 0.8151679039001465,
+      "fake_answer": "Argentina",
+      "fake_answer_bert_score": 0.8094247579574585
+    },
+    {
+      "question_id": 86,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "Tim Buckley",
+      "true_answer_bert_score": 0.7947998642921448,
+      "fake_answer": "Abigail Johnson",
+      "fake_answer_bert_score": 0.744042694568634
+    },
+    {
+      "question_id": 13,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "$6.04 billion",
+      "true_answer_bert_score": 0.8258908987045288,
+      "fake_answer": "$1.04 billion",
+      "fake_answer_bert_score": 0.8271416425704956
+    },
+    {
+      "question_id": 17,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "Emmanuel Macron",
+      "true_answer_bert_score": 0.8228461146354675,
+      "fake_answer": "Marine Le Pen",
+      "fake_answer_bert_score": 0.7933273315429688
+    },
+    {
+      "question_id": 28,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "Baker Mayfield",
+      "true_answer_bert_score": 0.7817847728729248,
+      "fake_answer": "Joe Burrow",
+      "fake_answer_bert_score": 0.7369398474693298
+    },
+    {
+      "question_id": 31,
+      "answer": "There are factual errors in the provided context. The context consistently mentions Justin Kurzel as the director of the Silent Hill movie. However, the provided text includes multiple entries that reference him as the director of the film, including \"New Silent Hill Movie With Returning Director Justin Kurzel On The Way\" and \"Silent Hill: Directed by Justin Kurzel.\" Therefore, the answer is accurate.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.8846186399459839,
+      "true_answer": "Christophe Gans",
+      "true_answer_bert_score": 0.7848242521286011,
+      "fake_answer": "Justin Kurzel",
+      "fake_answer_bert_score": 0.801593005657196
+    },
+    {
+      "question_id": 35,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "France",
+      "true_answer_bert_score": 0.8118423819541931,
+      "fake_answer": "Germany",
+      "fake_answer_bert_score": 0.8118067383766174
+    },
+    {
+      "question_id": 94,
+      "answer": "There are factual errors in the provided context. The context contains information from October 2021 and December 2020, but does not provide details about the CEO in 2021.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9137915968894958,
+      "true_answer": "Sundar Pichai",
+      "true_answer_bert_score": 0.753350555896759,
+      "fake_answer": "Tim Cook",
+      "fake_answer_bert_score": 0.8037651181221008
+    },
+    {
+      "question_id": 3,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "Facebook",
+      "true_answer_bert_score": 0.8144593238830566,
+      "fake_answer": "Apple",
+      "fake_answer_bert_score": 0.8116170167922974
+    },
+    {
+      "question_id": 14,
+      "answer": "There are factual errors in the provided context. The context states that Tesla reported $1.30 billion in revenue for Q3 2019, so the answer should be $1.30 billion.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9063166379928589,
+      "true_answer": "$6.3 billion",
+      "true_answer_bert_score": 0.8604903221130371,
+      "fake_answer": "$1.30 billion",
+      "fake_answer_bert_score": 0.8769070506095886
+    },
+    {
+      "question_id": 81,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "Sally Hawkins",
+      "true_answer_bert_score": 0.7896241545677185,
+      "fake_answer": "Emma Stone",
+      "fake_answer_bert_score": 0.8018940091133118
+    }
+  ]
+}

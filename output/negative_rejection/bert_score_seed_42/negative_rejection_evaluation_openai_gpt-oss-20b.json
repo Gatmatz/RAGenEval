@@ -1,0 +1,1811 @@
+{
+  "aggregate_metrics": {
+    "accuracy": 0.7866666666666666,
+    "average_similarity": 0.9462548285722733,
+    "similarity_threshold": 0.95,
+    "correct_refusals": 236,
+    "total_questions": 300
+  },
+  "individual_results": [
+    {
+      "question_id": "5abed9f45542994516f4545a",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ab1dd6c5542993be8fa9860",
+      "answer": "modernismo",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8004955053329468
+    },
+    {
+      "question_id": "5adfa059554299025d62a2f8",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a8f9a24554299458435d690",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a77535855429966f1a36d04",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a773772554299373536021d",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ab36fd355429969a97a814c",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ab57383554299494045efda",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a78c8f955429974737f7887",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a7a013c5542990198eaf03a",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ac021d1554299012d1db5b4",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ab8c2465542991b5579effb",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a7c779d55429935c91b51ce",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ae07ee155429945ae959384",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a7248045542990c210a40ad",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ae731ff5542991e8301cbc0",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5abdcb525542991f66106043",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a7d419b5542995f4f402249",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5abdaca655429965af743dba",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ae209b25542997283cd2342",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5add77c45542992ae4cec579",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a83a7075542990548d0b20e",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ac2787355429921a00aaf9a",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ae5362c5542990ba0bbb229",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a75b7305542992d0ec05fea",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ab78c6f5542995dae37e955",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ac43d195542995c82c4ad05",
+      "answer": "England",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8115421533584595
+    },
+    {
+      "question_id": "5a8a0c7b5542992d82986e7b",
+      "answer": "Brooklyn",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8112621307373047
+    },
+    {
+      "question_id": "5a85cdb65542991dd0999ea4",
+      "answer": "MTM Records.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8255260586738586
+    },
+    {
+      "question_id": "5ac054a35542996f0d89cb90",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5abddcff5542991f6610607a",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ab7df90554299366779402a",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5addfa2d5542995b365fabaa",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ab5a9935542992aa134a379",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ade0d6f5542997545bbbe33",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ac3fe71554299204fd21ee9",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ab2a06b5542992953946779",
+      "answer": "Don\u202fHenley",
+      "is_correct_refusal": false,
+      "similarity_score": 0.831226110458374
+    },
+    {
+      "question_id": "5ab5678a554299488d4d9975",
+      "answer": "Typhoon Babe is also called the Okinoerabu Typhoon because different regions use their own local naming conventions for tropical cyclones.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8049532175064087
+    },
+    {
+      "question_id": "5ae0c55e55429945ae959449",
+      "answer": "David\u202fTennant.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8100779056549072
+    },
+    {
+      "question_id": "5a78b829554299029c4b5e52",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a7cbcf8554299683c1c635d",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a887fc4554299206df2b2c3",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a7c7bd555429907fabeefa0",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a86f6935542996432c5720e",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a842f375542990548d0b25c",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ae431dd5542996836b02c4b",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5abcfe275542992ac4f38184",
+      "answer": "East River",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8053780198097229
+    },
+    {
+      "question_id": "5adc39d3554299438c868d7f",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ab5a77e554299637185c5d2",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a7b678b55429931da12ca8e",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ae4b3bc5542995dadf243c3",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5abe52c155429965af743ec3",
+      "answer": "canals",
+      "is_correct_refusal": false,
+      "similarity_score": 0.7959484457969666
+    },
+    {
+      "question_id": "5ae71706554299572ea546cb",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a863e805542991e771815d5",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a8b3d0555429949d91db4fd",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a7f133255429934daa2fcc3",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ae766945542991e8301cc88",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a8f4be955429918e830d1eb",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a9082e35542995651fb517c",
+      "answer": "Suzuka\u202f8\u202fHours.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.792722761631012
+    },
+    {
+      "question_id": "5ac26c1d5542992f1f2b38bf",
+      "answer": "Parliamentary cause.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8558929562568665
+    },
+    {
+      "question_id": "5a72828d5542994cef4bc2f5",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a8900b85542995153361251",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ae786195542994a481bbd4f",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5adc0e3355429947ff1738ea",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a7781d45542997042120a8e",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a87ea7355429938390d3eaa",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a80f6de55429938b6142275",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ac013f25542996f0d89cb1b",
+      "answer": "Jean Terrell",
+      "is_correct_refusal": false,
+      "similarity_score": 0.7711212038993835
+    },
+    {
+      "question_id": "5ae1429e55429901ffe4ae2e",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ae74a405542991bbc9761d9",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ae11ee65542997b2ef7d0de",
+      "answer": "England",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8115421533584595
+    },
+    {
+      "question_id": "5a733c7d5542994cef4bc4ec",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a8bb2575542996e8ac889e2",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ae767a25542995703ce8c1b",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a7da37d5542990b8f5039e3",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5abeda0e5542993fe9a41d55",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a8c57ac5542996e8ac88a61",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ab84c945542990e739ec8b0",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5abea45c5542993f32c2a18b",
+      "answer": "The IIT Council.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8731693029403687
+    },
+    {
+      "question_id": "5ab77a275542995dae37e932",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ac01b3b554299012d1db5a5",
+      "answer": "Sara.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8673434257507324
+    },
+    {
+      "question_id": "5a728b795542992359bc30e2",
+      "answer": "Los\u202fAngeles\u202fRams",
+      "is_correct_refusal": false,
+      "similarity_score": 0.7646663188934326
+    },
+    {
+      "question_id": "5a7321c35542992359bc323e",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a77b20155429967ab105237",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5abdcf605542991f66106049",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ac0d647554299294b219029",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ac3ef4355429919431738cc",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ae5144e55429908b6326514",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a85abc45542997b5ce4001d",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ac192ef55429964131be235",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a732a5c55429901807daf9e",
+      "answer": "\u03b1",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8136420845985413
+    },
+    {
+      "question_id": "5a8b71d755429950cd6afd07",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ae37d6c5542990afbd1e176",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ac255f655429951e9e68554",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a7227f055429971e9dc9305",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ae1e7535542997283cd22c5",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a77106c55429937353601be",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ac2599555429951e9e6856e",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a7b910855429927d897bff0",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a8832a85542997e5c09a5a1",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a78cbb6554299029c4b5e98",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ae150f45542990adbacf74b",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ae23304554299495565da38",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a8927b9554299669944a4cf",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ae07ccd55429945ae959372",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ae145ea5542997b2ef7d19e",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a83181555429966c78a6b32",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a76aa855542993735360142",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5abc222a55429959677d6a20",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a8af4b75542996c9b8d5f7f",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ae4371655429970de88d910",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ac29c25554299218029dabd",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a7bfb225542996dd594b87b",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5abb11265542992ccd8e7ef6",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a8fb4065542997ba9cb32f0",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a848d8f5542997b5ce3feb4",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ae1b3765542997283cd2249",
+      "answer": "Priceline.com.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8634220361709595
+    },
+    {
+      "question_id": "5a7302db5542994cef4bc41e",
+      "answer": "Columbia University.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8431090712547302
+    },
+    {
+      "question_id": "5a778b8e55429949eeb29ee6",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a79226555429970f5fffe59",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a8e2ba85542995a26add474",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a762c6e5542994ccc9186fd",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5adf32f75542993a75d2641c",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a8752cd5542993e715abeea",
+      "answer": "A **Russian Spaniel** is a hunting\u2011dog breed from Russia that looks like a Cocker Spaniel but has a shorter, tighter coat and a longer body; it was introduced overseas only in the 1990s and is not yet recognized by major kennel clubs.  \n\nAn **Elo** is a numerical rating used to measure a chess player\u2019s strength; in the context given, Evgeny Bareev\u2019s Elo rating was 2739.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8071277737617493
+    },
+    {
+      "question_id": "5a89ea725542992e4fca847c",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a735a3155429901807dafde",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a7f670055429969796c1a34",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ac50f275542994611c8b34c",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a90783355429916514e74d0",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ae7681f5542991e8301cc8e",
+      "answer": "The show is **\u201cThe Great Escape.\u201d**",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8149875998497009
+    },
+    {
+      "question_id": "5a7baa0e55429927d897c012",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ab5063d5542990594ba9cd4",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ab84ebd55429919ba4e22a6",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ab6efb35542995eadef00e5",
+      "answer": "Raine\u202fMaida.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8145555853843689
+    },
+    {
+      "question_id": "5a77c91f5542995d831812d1",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a88a6fa5542997e5c09a68d",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5addfd5e5542997545bbbde3",
+      "answer": "Will\u202f&\u202fGrace",
+      "is_correct_refusal": false,
+      "similarity_score": 0.7827061414718628
+    },
+    {
+      "question_id": "5a81d98b554299676cceb0fd",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a84e73e5542997b5ce3ff88",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a80c314554299260e20a148",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ade9566554299728e26c742",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ade17f055429975fa854e37",
+      "answer": "The British ruling class were involved in the **Ascendancy** movement.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8272853493690491
+    },
+    {
+      "question_id": "5ae5a872554299546bf82f0b",
+      "answer": "Dioscoreaceae",
+      "is_correct_refusal": false,
+      "similarity_score": 0.7515262365341187
+    },
+    {
+      "question_id": "5ae0339755429924de1b705c",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ae379ed5542992e3233c41c",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a7539bd5542993748c89800",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5adea40c55429975fa854f29",
+      "answer": "the Chicago Outfit.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8299136161804199
+    },
+    {
+      "question_id": "5a84829b5542997175ce1ed9",
+      "answer": "Park Jae\u2011ho.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8524755239486694
+    },
+    {
+      "question_id": "5a79de325542994bb945710a",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5abb79315542993f40c73aff",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a7b8f9c554299294a54a9fa",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ac2c0d75542990b17b1547c",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5adfd18455429906c02daa4e",
+      "answer": "H.\u202fL.\u202fA.\u202fHart",
+      "is_correct_refusal": false,
+      "similarity_score": 0.7901261448860168
+    },
+    {
+      "question_id": "5ac2d70455429921a00ab061",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ae2c5105542996483e64a4e",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ae623a25542996de7b71b70",
+      "answer": "They both fought in Pride 26 \u2013 Ilyukhin lost to Quinton \u201cRampage\u201d Jackson in that event.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8135066628456116
+    },
+    {
+      "question_id": "5a7d85c95542991319bc93cd",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a85ed9d5542996432c57137",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5abde39455429976d4830a18",
+      "answer": "King Charles\u202fIII.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8035181164741516
+    },
+    {
+      "question_id": "5a75d50a5542994ccc918631",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a9087fa55429933b8a20539",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ade704d5542997c77adee2c",
+      "answer": "rock",
+      "is_correct_refusal": false,
+      "similarity_score": 0.812949001789093
+    },
+    {
+      "question_id": "5a8cb17a554299240d9c21e0",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ae6047a55429929b0807a5a",
+      "answer": "The 1970s.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.835713267326355
+    },
+    {
+      "question_id": "5a81b6785542995ce29dcc44",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5adfe70b55429906c02daa86",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a74bcfd5542996c70cfadc5",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5abc97d455429959677d6ac3",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a806f9f5542996402f6a512",
+      "answer": "Pittsburgh Steelers",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8079869151115417
+    },
+    {
+      "question_id": "5ab9394e5542996be2020459",
+      "answer": "John\u202fHinckley\u202fJr.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.7608984708786011
+    },
+    {
+      "question_id": "5a77a42a5542992a6e59df46",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a83cf5d5542996488c2e4e1",
+      "answer": "Cairn Terrier",
+      "is_correct_refusal": false,
+      "similarity_score": 0.809071958065033
+    },
+    {
+      "question_id": "5abbc9ed55429931dba14531",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a8a9c295542996c9b8d5f37",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a7432d055429979e28828b4",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ae6e10555429908198fa6cc",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a7e80ef5542997cc2c47558",
+      "answer": "The NBC Comedy Hour.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8577204942703247
+    },
+    {
+      "question_id": "5ab1eb87554299449642c804",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ac48eac5542997ea680ca85",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a8d1ea35542994ba4e3dc06",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a8ffd015542995651fb5095",
+      "answer": "World War\u202fII.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8103007078170776
+    },
+    {
+      "question_id": "5adce9bb5542990d50227d5f",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a8612a5554299211dda2a63",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5abb08b75542992ccd8e7ec7",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ab29a7c554299194fa9343a",
+      "answer": "Albizia (the saman or rain\u2011tree)",
+      "is_correct_refusal": false,
+      "similarity_score": 0.7916462421417236
+    },
+    {
+      "question_id": "5a78d4ea554299029c4b5eae",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5adf34a65542995ec70e8f90",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a7a13385542990783324e32",
+      "answer": "Sega.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8667271733283997
+    },
+    {
+      "question_id": "5ac3864f554299741d48a27b",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a84b68c5542994c784dda17",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a765f155542992d0ec060c1",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a84542b5542992ef85e23bc",
+      "answer": "South Korean",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8065600991249084
+    },
+    {
+      "question_id": "5ae4d9ba5542990ba0bbb176",
+      "answer": "four\u2011star general",
+      "is_correct_refusal": false,
+      "similarity_score": 0.7824457287788391
+    },
+    {
+      "question_id": "5a7277d75542994cef4bc2b9",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a7a18fa5542990198eaf07b",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ab8019b5542990e739ec7c5",
+      "answer": "The Bold and the Beautiful",
+      "is_correct_refusal": false,
+      "similarity_score": 0.7851571440696716
+    },
+    {
+      "question_id": "5ac378de554299218029dbd7",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ac4bcbc554299076e296dee",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ae01b3d55429942ec259c24",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a7e1e6e55429965cec5ea7d",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a8e36405542995085b373e0",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ab7efd755429928e1fe3947",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ae105af55429945ae959497",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ae2cc025542996483e64a68",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ae65f5e55429908198fa5b1",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a78fdeb554299029c4b5ee0",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a84f0c65542994c784dda93",
+      "answer": "They are both cabinet\u2011level government positions.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8347148299217224
+    },
+    {
+      "question_id": "5a79f4325542990198eaf01a",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ae40b8355429970de88d8b6",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a7a756f55429941d65f265d",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ae7aaf45542993210983ee7",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a776a335542993735360267",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a7f3a035542992e7d278ca1",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a77817455429949eeb29ea6",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a7d273e5542995ed0d16609",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a7942b2554299029c4b5f3f",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a863f815542996432c571af",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ae6932c55429908198fa633",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5abbf50f55429931dba145df",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a7a32535542990783324eb5",
+      "answer": "Turkey",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8080935478210449
+    },
+    {
+      "question_id": "5a8667bd5542991e77181642",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a83cda15542992ef85e236a",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5abe62c25542993f32c2a0f3",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ab3f38a55429976abd1bd03",
+      "answer": "Chrysler.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8682300448417664
+    },
+    {
+      "question_id": "5ae5e7c6554299546bf82fb2",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a82f87255429966c78a6abc",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5adf888d5542995534e8c7db",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a7afef75542995eb53be8be",
+      "answer": "Sean\u202fConnery",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8175237774848938
+    },
+    {
+      "question_id": "5abd7cb855429924427fd00a",
+      "answer": "James River",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8053298592567444
+    },
+    {
+      "question_id": "5ac51d335542994611c8b3ab",
+      "answer": "Team",
+      "is_correct_refusal": false,
+      "similarity_score": 0.816632866859436
+    },
+    {
+      "question_id": "5abd05e45542992ac4f381ab",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5adddb1f5542997dc790705d",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a77c6765542997042120b2f",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a8fef2655429916514e73e9",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ae0f9c455429920d5234258",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5adc54e65542994650320ccf",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ab7c1055542991d322237af",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a7b60e35542992d025e6838",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5add18d15542994ed6169c81",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ae744085542991bbc9761cb",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a72217455429971e9dc92b2",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a79354255429970f5fffe72",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a8857405542997e5c09a5d1",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ae4b8f355429913cc2044e4",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ade5940554299728e26c6dc",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a7b2af855429927d897bf4e",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5adf883a5542993344016cd0",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5adcd5ae5542990d50227d41",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5adc038255429947ff1738ba",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ac400da5542997ea680c9ad",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5adcc9d05542994ed6169c05",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a8aa9645542992d82986f4c",
+      "answer": "The Day the Violence Died",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8322812914848328
+    },
+    {
+      "question_id": "5add1e855542992ae4cec481",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5abba041554299642a094ad4",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5abd26ed55429924427fcf1f",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ab7831a55429928e1fe3865",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a89f6b65542992e4fca84b7",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ab97d9f554299753720f81b",
+      "answer": "The Erwin Center.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8583711981773376
+    },
+    {
+      "question_id": "5ae3b7c75542990afbd1e1b6",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ab67cb855429954757d32fe",
+      "answer": "Blue Valley High School.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8563297986984253
+    },
+    {
+      "question_id": "5a735dc355429901807db006",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a7630fb55429976ec32bd4d",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a7e895c55429949594199f9",
+      "answer": "Fantasia.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8278915882110596
+    },
+    {
+      "question_id": "5ae5b74d5542992663a4f20c",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ae6617f5542996d980e7b35",
+      "answer": "Lily Tomlin",
+      "is_correct_refusal": false,
+      "similarity_score": 0.7434663772583008
+    },
+    {
+      "question_id": "5abdda4d5542991f66106071",
+      "answer": "Mousie",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8095789551734924
+    },
+    {
+      "question_id": "5abbfecc55429965836003de",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a84bcbe5542997b5ce3ff47",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a90975e55429933b8a20576",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5adcfe165542992c1e3a24ed",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a8b84f15542997f31a41d5e",
+      "answer": "Yes, both Ptychosperma and Leontopodium are genera.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.807174563407898
+    },
+    {
+      "question_id": "5abbbf895542992ccd8e7f83",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a7cb8d055429907fabef013",
+      "answer": "The Second Boer War.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.831514835357666
+    },
+    {
+      "question_id": "5adf9f27554299025d62a2f1",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5abf9c855542994516f454dc",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a8745d95542994846c1cd43",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ac40e1f5542997ea680c9c1",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a75fb2c5542994ccc918674",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ab7f8d2554299366779407a",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a77b7e85542995d8318127c",
+      "answer": "The Mighty",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8114514350891113
+    },
+    {
+      "question_id": "5a8ca8305542996e8ac88b08",
+      "answer": "Sarah\u202fBettens.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8162356615066528
+    },
+    {
+      "question_id": "5a7cb2e55542990527d55504",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a7d1e32554299452d57bb00",
+      "answer": "Rasco.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8404064178466797
+    },
+    {
+      "question_id": "5ab99eb5554299753720f83c",
+      "answer": "Mass media.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8510003089904785
+    },
+    {
+      "question_id": "5abae7dc5542996cc5e49ef8",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a891182554299515336129a",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5abbf1625542993f40c73c21",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5abd1ba155429933744ab72b",
+      "answer": "Rilo\u202fKiley",
+      "is_correct_refusal": false,
+      "similarity_score": 0.7653196454048157
+    },
+    {
+      "question_id": "5a7a0dd05542990783324e18",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ab2d30d554299545a2cfaaf",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5ae7c3685542993210983f3b",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a87bb815542996432c57272",
+      "answer": "I don't know.",
+      "is_correct_refusal": true,
+      "similarity_score": 1.0
+    },
+    {
+      "question_id": "5a81c6c15542990a1d231ea3",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a83639a5542996488c2e433",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5abaedd35542996606241692",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5ab9303e554299753720f783",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5abfdeee5542997719eab6f4",
+      "answer": "Mayer\u202fAmschel\u202fRothschild.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.7896240949630737
+    },
+    {
+      "question_id": "5adc18db5542994650320c6d",
+      "answer": "I don't know",
+      "is_correct_refusal": true,
+      "similarity_score": 0.9662086963653564
+    },
+    {
+      "question_id": "5a86fb1e554299211dda2b79",
+      "answer": "Mecklenburg\u2011G\u00fcstrow.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.7724552750587463
+    },
+    {
+      "question_id": "5ae1e98d5542997283cd22d4",
+      "answer": "Fallen.",
+      "is_correct_refusal": false,
+      "similarity_score": 0.8701622486114502
+    }
+  ]
+}

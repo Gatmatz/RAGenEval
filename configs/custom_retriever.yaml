@@ -1,11 +1,17 @@
-number_of_questions: 1
-output_file: "custom_retriever"
-seed: 1
+number_of_questions: 300
+output_file: "custom_retriever_evaluation"
+random_seed: 1
 dataset_source: "huggingface"
 dataset_path: "hotpot_qa"
 dataset_name: "distractor"
 split: "train"
 models:
+  - name: "qwen3:0.6b"
+    generator: "ollama"
+    provider: "local"
+  - name: "qwen-3-32b"
+    generator: "openai_compatible"
+    provider: "cerebras"
   - name: "openai/gpt-oss-20b"
     generator: "openai_compatible"
     provider: "groq"
@@ -18,9 +24,3 @@ models:
   - name: "gemma-3-27b-it"
     generator: "google"
     provider: None
-  - name: "qwen/qwen3-4b:free"
-    generator: "openai_compatible"
-    provider: "openrouter"
-  - name: "qwen-3-32b"
-    generator: "openai_compatible"
-    provider: "cerebras"

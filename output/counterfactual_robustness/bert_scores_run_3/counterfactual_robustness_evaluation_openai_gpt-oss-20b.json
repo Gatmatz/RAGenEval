@@ -1,0 +1,1317 @@
+{
+  "aggregate_metrics": {
+    "accuracy": 0.67,
+    "average_bert_f1": 0.8554380351305008,
+    "similarity_threshold": 0.95,
+    "correct_detections": 67,
+    "total_questions": 100,
+    "average_true_answer_bert_score": 0.7193434977531433,
+    "average_fake_answer_bert_score": 0.7484247070550919
+  },
+  "individual_results": [
+    {
+      "question_id": 42,
+      "answer": "Novak Djokovic.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.7984411120414734,
+      "true_answer": "Rafael Nadal",
+      "true_answer_bert_score": 0.8552351593971252,
+      "fake_answer": "Novak Djokovic",
+      "fake_answer_bert_score": 0.9931433200836182
+    },
+    {
+      "question_id": 41,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Ashleigh Barty",
+      "true_answer_bert_score": 0.7788524627685547,
+      "fake_answer": "Angelique Kerber",
+      "fake_answer_bert_score": 0.7524296641349792
+    },
+    {
+      "question_id": 91,
+      "answer": "",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.0,
+      "true_answer": [
+        [
+          "November 18 2020",
+          "Nov 18, 2020",
+          "Nov. 18, 2020",
+          "November 18, 2020",
+          "18 November 2020",
+          "18 Nov, 2020",
+          "18 Nov., 2020",
+          "18 November, 2020"
+        ]
+      ],
+      "true_answer_bert_score": 0.0,
+      "fake_answer": "May 8, 2020",
+      "fake_answer_bert_score": 0.0
+    },
+    {
+      "question_id": 9,
+      "answer": "Andy\u202fMurray.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.8342263698577881,
+      "true_answer": "Dominic Thiem",
+      "true_answer_bert_score": 0.810634970664978,
+      "fake_answer": "Andy Murray",
+      "fake_answer_bert_score": 0.891316294670105
+    },
+    {
+      "question_id": 65,
+      "answer": "",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.0,
+      "true_answer": "Asher Angel",
+      "true_answer_bert_score": 0.0,
+      "fake_answer": "Gal Gadot",
+      "fake_answer_bert_score": 0.0
+    },
+    {
+      "question_id": 50,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Olga Tokarczuk",
+      "true_answer_bert_score": 0.7704266905784607,
+      "fake_answer": "Peter Handke",
+      "fake_answer_bert_score": 0.7921211123466492
+    },
+    {
+      "question_id": 1,
+      "answer": "United States",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.8092869520187378,
+      "true_answer": "Norway",
+      "true_answer_bert_score": 0.8372166156768799,
+      "fake_answer": "U.S.",
+      "fake_answer_bert_score": 0.9102562069892883
+    },
+    {
+      "question_id": 70,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": [
+        [
+          "September 23 2013",
+          "Sep 23, 2013",
+          "Sep. 23, 2013",
+          "September 23, 2013",
+          "23 September 2013",
+          "23 Sep, 2013",
+          "23 Sep., 2013",
+          "23 September, 2013"
+        ]
+      ],
+      "true_answer_bert_score": 0.7874491810798645,
+      "fake_answer": "September 3, 2003",
+      "fake_answer_bert_score": 0.8027341961860657
+    },
+    {
+      "question_id": 15,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": [
+        [
+          "July 21 2017",
+          "Jul 21, 2017",
+          "Jul. 21, 2017",
+          "July 21, 2017",
+          "21 July 2017",
+          "21 Jul, 2017",
+          "21 Jul., 2017",
+          "21 July, 2017"
+        ]
+      ],
+      "true_answer_bert_score": 0.7859727144241333,
+      "fake_answer": "July 1, 2007",
+      "fake_answer_bert_score": 0.8266140222549438
+    },
+    {
+      "question_id": 78,
+      "answer": "",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.0,
+      "true_answer": "Juliana Urtubey",
+      "true_answer_bert_score": 0.0,
+      "fake_answer": "Tabatha Rosproy",
+      "fake_answer_bert_score": 0.0
+    },
+    {
+      "question_id": 73,
+      "answer": "",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.0,
+      "true_answer": "The Shape of Water",
+      "true_answer_bert_score": 0.0,
+      "fake_answer": "Moonlight ",
+      "fake_answer_bert_score": 0.0
+    },
+    {
+      "question_id": 10,
+      "answer": "Emma\u202fRaducanu",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.7688034772872925,
+      "true_answer": "Bianca Andreescu",
+      "true_answer_bert_score": 0.8214219212532043,
+      "fake_answer": "Emma Raducanu",
+      "fake_answer_bert_score": 0.9136736989021301
+    },
+    {
+      "question_id": 55,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": [
+        [
+          "November 17 2019",
+          "Nov 17, 2019",
+          "Nov. 17, 2019",
+          "November 17, 2019",
+          "17 November 2019",
+          "17 Nov, 2019",
+          "17 Nov., 2019",
+          "17 November, 2019"
+        ]
+      ],
+      "true_answer_bert_score": 0.7850165963172913,
+      "fake_answer": "November 17, 2014",
+      "fake_answer_bert_score": 0.8237684965133667
+    },
+    {
+      "question_id": 56,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "James Cameron",
+      "true_answer_bert_score": 0.8066921234130859,
+      "fake_answer": "Joss Whedon",
+      "fake_answer_bert_score": 0.7782575488090515
+    },
+    {
+      "question_id": 72,
+      "answer": "October\u202f2,\u202f2016",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.7724322080612183,
+      "true_answer": [
+        [
+          "October 27 2017",
+          "Oct 27, 2017",
+          "Oct. 27, 2017",
+          "October 27, 2017",
+          "27 October 2017",
+          "27 Oct, 2017",
+          "27 Oct., 2017",
+          "27 October, 2017"
+        ]
+      ],
+      "true_answer_bert_score": 0.7657880783081055,
+      "fake_answer": "October 2, 2016",
+      "fake_answer_bert_score": 0.8628628849983215
+    },
+    {
+      "question_id": 45,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": [
+        [
+          "November 21 1998",
+          "Nov 21, 1998",
+          "Nov. 21, 1998",
+          "November 21, 1998",
+          "21 November 1998",
+          "21 Nov, 1998",
+          "21 Nov., 1998",
+          "21 November, 1998"
+        ]
+      ],
+      "true_answer_bert_score": 0.78934645652771,
+      "fake_answer": "November 1, 2020",
+      "fake_answer_bert_score": 0.8055471777915955
+    },
+    {
+      "question_id": 48,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Abdulrazak Gurnah",
+      "true_answer_bert_score": 0.7593276500701904,
+      "fake_answer": "Olga Tokarczuk",
+      "fake_answer_bert_score": 0.7704266905784607
+    },
+    {
+      "question_id": 92,
+      "answer": "March\u202f2,\u202f2021",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.7851887345314026,
+      "true_answer": [
+        [
+          "July 29 2021",
+          "Jul 29, 2021",
+          "Jul. 29, 2021",
+          "July 29, 2021",
+          "29 July 2021",
+          "29 Jul, 2021",
+          "29 Jul., 2021",
+          "29 July, 2021"
+        ]
+      ],
+      "true_answer_bert_score": 0.778326153755188,
+      "fake_answer": "March 2, 2021",
+      "fake_answer_bert_score": 0.8363375067710876
+    },
+    {
+      "question_id": 76,
+      "answer": "Shuntaro\u202fFurukawa",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.7737019658088684,
+      "true_answer": "Niels B. Christiansen",
+      "true_answer_bert_score": 0.7972675561904907,
+      "fake_answer": "Shuntaro Furukawa",
+      "fake_answer_bert_score": 0.9352551102638245
+    },
+    {
+      "question_id": 37,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Spain",
+      "true_answer_bert_score": 0.8243889212608337,
+      "fake_answer": "France",
+      "fake_answer_bert_score": 0.8267964720726013
+    },
+    {
+      "question_id": 30,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "James Cameron",
+      "true_answer_bert_score": 0.8066921234130859,
+      "fake_answer": "Christoph Gans",
+      "fake_answer_bert_score": 0.793520450592041
+    },
+    {
+      "question_id": 21,
+      "answer": "",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.0,
+      "true_answer": "Egan Bernal",
+      "true_answer_bert_score": 0.0,
+      "fake_answer": "Tadej Poga\u010dar",
+      "fake_answer_bert_score": 0.0
+    },
+    {
+      "question_id": 32,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Justin Kurzel",
+      "true_answer_bert_score": 0.7676136493682861,
+      "fake_answer": "James Cameron",
+      "fake_answer_bert_score": 0.8066921234130859
+    },
+    {
+      "question_id": 96,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Hideki Matsuyama",
+      "true_answer_bert_score": 0.7147560119628906,
+      "fake_answer": "Shane Lowry",
+      "fake_answer_bert_score": 0.7930796146392822
+    },
+    {
+      "question_id": 80,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Emma Stone",
+      "true_answer_bert_score": 0.8084501624107361,
+      "fake_answer": "Sally Hawkins",
+      "fake_answer_bert_score": 0.7977507710456848
+    },
+    {
+      "question_id": 49,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Peter Handke",
+      "true_answer_bert_score": 0.7921211123466492,
+      "fake_answer": "Abdulrazak Gurnah",
+      "fake_answer_bert_score": 0.7593276500701904
+    },
+    {
+      "question_id": 83,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Francis Ford Coppola",
+      "true_answer_bert_score": 0.7434488534927368,
+      "fake_answer": "Garry Marshall",
+      "fake_answer_bert_score": 0.8011796474456787
+    },
+    {
+      "question_id": 26,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": [
+        [
+          "December 2015",
+          "Dec 2015",
+          "Dec. 2015",
+          "December, 2015",
+          "Dec, 2015",
+          "Dec., 2015"
+        ]
+      ],
+      "true_answer_bert_score": 0.7915696501731873,
+      "fake_answer": "December 2005",
+      "fake_answer_bert_score": 0.8336105346679688
+    },
+    {
+      "question_id": 87,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Abigail Johnson",
+      "true_answer_bert_score": 0.7464081048965454,
+      "fake_answer": "Tim Buckley",
+      "fake_answer_bert_score": 0.8008315563201904
+    },
+    {
+      "question_id": 33,
+      "answer": "",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.0,
+      "true_answer": [
+        [
+          "November 12 2020",
+          "Nov 12, 2020",
+          "Nov. 12, 2020",
+          "November 12, 2020",
+          "12 November 2020",
+          "12 Nov, 2020",
+          "12 Nov., 2020",
+          "12 November, 2020"
+        ]
+      ],
+      "true_answer_bert_score": 0.0,
+      "fake_answer": "November 12, 2010",
+      "fake_answer_bert_score": 0.0
+    },
+    {
+      "question_id": 8,
+      "answer": "Bianca\u202fAndreescu.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.7924999594688416,
+      "true_answer": "Emma Raducanu",
+      "true_answer_bert_score": 0.8207736015319824,
+      "fake_answer": "Bianca Andreescu",
+      "fake_answer_bert_score": 0.9434403777122498
+    },
+    {
+      "question_id": 47,
+      "answer": "May\u202f5,\u202f2020.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.8035929799079895,
+      "true_answer": [
+        [
+          "January 5 2020",
+          "Jan 5, 2020",
+          "Jan. 5, 2020",
+          "January 5, 2020",
+          "5 January 2020",
+          "5 Jan, 2020",
+          "5 Jan., 2020",
+          "5 January, 2020"
+        ]
+      ],
+      "true_answer_bert_score": 0.7953294515609741,
+      "fake_answer": "May 5, 2020",
+      "fake_answer_bert_score": 0.8299636244773865
+    },
+    {
+      "question_id": 59,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Roger Goodell",
+      "true_answer_bert_score": 0.8219490051269531,
+      "fake_answer": "Gianni Infantino",
+      "fake_answer_bert_score": 0.763166069984436
+    },
+    {
+      "question_id": 63,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": "Soul",
+      "true_answer_bert_score": 0.8168086409568787,
+      "fake_answer": "Toy Story 2",
+      "fake_answer_bert_score": 0.7955451607704163
+    },
+    {
+      "question_id": 74,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Joaquin Phoenix",
+      "true_answer_bert_score": 0.780020534992218,
+      "fake_answer": "Casey Affleck",
+      "fake_answer_bert_score": 0.7829346656799316
+    },
+    {
+      "question_id": 44,
+      "answer": "March\u202f13,\u202f2019",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.7739925980567932,
+      "true_answer": [
+        [
+          "March 3 2017",
+          "Mar 3, 2017",
+          "Mar. 3, 2017",
+          "March 3, 2017",
+          "3 March 2017",
+          "3 Mar, 2017",
+          "3 Mar., 2017",
+          "3 March, 2017"
+        ]
+      ],
+      "true_answer_bert_score": 0.7694486975669861,
+      "fake_answer": "March 13, 2019",
+      "fake_answer_bert_score": 0.8606836199760437
+    },
+    {
+      "question_id": 98,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Beijing",
+      "true_answer_bert_score": 0.8258326053619385,
+      "fake_answer": "London",
+      "fake_answer_bert_score": 0.8234423995018005
+    },
+    {
+      "question_id": 52,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": [
+        [
+          "June 19 2020",
+          "Jun 19, 2020",
+          "Jun. 19, 2020",
+          "June 19, 2020",
+          "19 June 2020",
+          "19 Jun, 2020",
+          "19 Jun., 2020",
+          "19 June, 2020"
+        ]
+      ],
+      "true_answer_bert_score": 0.7870639562606812,
+      "fake_answer": "June 9, 2010",
+      "fake_answer_bert_score": 0.8321407437324524
+    },
+    {
+      "question_id": 85,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "London",
+      "true_answer_bert_score": 0.8234423995018005,
+      "fake_answer": "Beijing",
+      "fake_answer_bert_score": 0.8258326053619385
+    },
+    {
+      "question_id": 12,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "$10.4 billion",
+      "true_answer_bert_score": 0.8381677865982056,
+      "fake_answer": "$1.39 billion",
+      "fake_answer_bert_score": 0.8331392407417297
+    },
+    {
+      "question_id": 36,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Germany",
+      "true_answer_bert_score": 0.8260482549667358,
+      "fake_answer": "Spain",
+      "fake_answer_bert_score": 0.8243889212608337
+    },
+    {
+      "question_id": 23,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": [
+        [
+          "April 29 2015",
+          "Apr 29, 2015",
+          "Apr. 29, 2015",
+          "April 29, 2015",
+          "29 April 2015",
+          "29 Apr, 2015",
+          "29 Apr., 2015",
+          "29 April, 2015"
+        ]
+      ],
+      "true_answer_bert_score": 0.782387375831604,
+      "fake_answer": "April 9, 2005",
+      "fake_answer_bert_score": 0.8266022205352783
+    },
+    {
+      "question_id": 39,
+      "answer": "November\u202f1,\u202f2021",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.7827340364456177,
+      "true_answer": [
+        [
+          "November 10 2020",
+          "Nov 10, 2020",
+          "Nov. 10, 2020",
+          "November 10, 2020",
+          "10 November 2020",
+          "10 Nov, 2020",
+          "10 Nov., 2020",
+          "10 November, 2020"
+        ]
+      ],
+      "true_answer_bert_score": 0.7820611596107483,
+      "fake_answer": "November 1, 2021",
+      "fake_answer_bert_score": 0.8405138254165649
+    },
+    {
+      "question_id": 40,
+      "answer": "There are factual errors",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.9478809237480164,
+      "true_answer": [
+        [
+          "September 20 2019",
+          "Sep 20, 2019",
+          "Sep. 20, 2019",
+          "September 20, 2019",
+          "20 September 2019",
+          "20 Sep, 2019",
+          "20 Sep., 2019",
+          "20 September, 2019"
+        ]
+      ],
+      "true_answer_bert_score": 0.785049319267273,
+      "fake_answer": "September 21, 2021",
+      "fake_answer_bert_score": 0.8451546430587769
+    },
+    {
+      "question_id": 18,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Joe Biden",
+      "true_answer_bert_score": 0.8326303958892822,
+      "fake_answer": "Donald Trump",
+      "fake_answer_bert_score": 0.8272743821144104
+    },
+    {
+      "question_id": 66,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Gal Gadot",
+      "true_answer_bert_score": 0.7696460485458374,
+      "fake_answer": "Asher Angel",
+      "fake_answer_bert_score": 0.7871398329734802
+    },
+    {
+      "question_id": 61,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Mark Zuckerberg",
+      "true_answer_bert_score": 0.8089847564697266,
+      "fake_answer": "Elon Musk",
+      "fake_answer_bert_score": 0.817173182964325
+    },
+    {
+      "question_id": 60,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Gianni Infantino",
+      "true_answer_bert_score": 0.763166069984436,
+      "fake_answer": "Roger Goodell",
+      "fake_answer_bert_score": 0.8219490051269531
+    },
+    {
+      "question_id": 7,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Andy Murray",
+      "true_answer_bert_score": 0.8127149343490601,
+      "fake_answer": "Dominic Thiem",
+      "fake_answer_bert_score": 0.7692984938621521
+    },
+    {
+      "question_id": 34,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": [
+        [
+          "August 22 2021",
+          "Aug 22, 2021",
+          "Aug. 22, 2021",
+          "August 22, 2021",
+          "22 August 2021",
+          "22 Aug, 2021",
+          "22 Aug., 2021",
+          "22 August, 2021"
+        ]
+      ],
+      "true_answer_bert_score": 0.7872991561889648,
+      "fake_answer": "August 2, 2020",
+      "fake_answer_bert_score": 0.8005357980728149
+    },
+    {
+      "question_id": 99,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Athens",
+      "true_answer_bert_score": 0.823755145072937,
+      "fake_answer": "New York",
+      "fake_answer_bert_score": 0.8085340261459351
+    },
+    {
+      "question_id": 46,
+      "answer": "",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.0,
+      "true_answer": [
+        [
+          "December 1 2017",
+          "Dec 1, 2017",
+          "Dec. 1, 2017",
+          "December 1, 2017",
+          "1 December 2017",
+          "1 Dec, 2017",
+          "1 Dec., 2017",
+          "1 December, 2017"
+        ]
+      ],
+      "true_answer_bert_score": 0.0,
+      "fake_answer": "November 8, 2021",
+      "fake_answer_bert_score": 0.0
+    },
+    {
+      "question_id": 2,
+      "answer": "Apple.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.8794993758201599,
+      "true_answer": "Facebook",
+      "true_answer_bert_score": 0.9455240368843079,
+      "fake_answer": "Apple",
+      "fake_answer_bert_score": 0.949519157409668
+    },
+    {
+      "question_id": 51,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": [
+        [
+          "April 20 2018",
+          "Apr 20, 2018",
+          "Apr. 20, 2018",
+          "April 20, 2018",
+          "20 April 2018",
+          "20 Apr, 2018",
+          "20 Apr., 2018",
+          "20 April, 2018"
+        ]
+      ],
+      "true_answer_bert_score": 0.7851579785346985,
+      "fake_answer": "April 2, 2011",
+      "fake_answer_bert_score": 0.8270280361175537
+    },
+    {
+      "question_id": 16,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Disney",
+      "true_answer_bert_score": 0.827752947807312,
+      "fake_answer": "Warner Bros",
+      "fake_answer_bert_score": 0.7837763428688049
+    },
+    {
+      "question_id": 38,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": [
+        [
+          "September 7 2018",
+          "Sep 7, 2018",
+          "Sep. 7, 2018",
+          "September 7, 2018",
+          "7 September 2018",
+          "7 Sep, 2018",
+          "7 Sep., 2018",
+          "7 September, 2018"
+        ]
+      ],
+      "true_answer_bert_score": 0.7869443297386169,
+      "fake_answer": "September 1, 2020",
+      "fake_answer_bert_score": 0.8036643266677856
+    },
+    {
+      "question_id": 58,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Yifei Liu",
+      "true_answer_bert_score": 0.7595397233963013,
+      "fake_answer": "Mi Yang",
+      "fake_answer_bert_score": 0.8151834011077881
+    },
+    {
+      "question_id": 68,
+      "answer": "Croatia",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.8268131613731384,
+      "true_answer": "Argentina",
+      "true_answer_bert_score": 0.8721855282783508,
+      "fake_answer": "Croatia",
+      "fake_answer_bert_score": 1.0
+    },
+    {
+      "question_id": 22,
+      "answer": "There are factual errors in the provided context.",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.981727123260498,
+      "true_answer": [
+        [
+          "December 1 2017",
+          "Dec 1, 2017",
+          "Dec. 1, 2017",
+          "December 1, 2017",
+          "1 December 2017",
+          "1 Dec, 2017",
+          "1 Dec., 2017",
+          "1 December, 2017"
+        ]
+      ],
+      "true_answer_bert_score": 0.7889193296432495,
+      "fake_answer": "December 21, 2007",
+      "fake_answer_bert_score": 0.8184908032417297
+    },
+    {
+      "question_id": 62,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Elon Musk",
+      "true_answer_bert_score": 0.817173182964325,
+      "fake_answer": "Mark Zuckerberg",
+      "fake_answer_bert_score": 0.8089847564697266
+    },
+    {
+      "question_id": 24,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": [
+        [
+          "May 29 2020",
+          "May 29, 2020",
+          "May. 29, 2020",
+          "May 29, 2020",
+          "29 May 2020",
+          "29 May, 2020",
+          "29 May., 2020",
+          "29 May, 2020"
+        ]
+      ],
+      "true_answer_bert_score": 0.791082501411438,
+      "fake_answer": "May 9, 2012",
+      "fake_answer_bert_score": 0.826194703578949
+    },
+    {
+      "question_id": 5,
+      "answer": "Ashleigh\u202fBarty.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.8047004342079163,
+      "true_answer": "Angelique Kerber",
+      "true_answer_bert_score": 0.7592202425003052,
+      "fake_answer": "Ashleigh Barty",
+      "fake_answer_bert_score": 0.8716833591461182
+    },
+    {
+      "question_id": 6,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Ashleigh Barty",
+      "true_answer_bert_score": 0.7788524627685547,
+      "fake_answer": "Simona Halep",
+      "fake_answer_bert_score": 0.7497050762176514
+    },
+    {
+      "question_id": 67,
+      "answer": "",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.0,
+      "true_answer": "Croatia",
+      "true_answer_bert_score": 0.0,
+      "fake_answer": "Netherlands",
+      "fake_answer_bert_score": 0.0
+    },
+    {
+      "question_id": 82,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Garry Marshall",
+      "true_answer_bert_score": 0.8011796474456787,
+      "fake_answer": "Bryan Singer",
+      "fake_answer_bert_score": 0.7975497245788574
+    },
+    {
+      "question_id": 19,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": [
+        [
+          "May 15 2012",
+          "May 15, 2012",
+          "May. 15, 2012",
+          "May 15, 2012",
+          "15 May 2012",
+          "15 May, 2012",
+          "15 May., 2012",
+          "15 May, 2012"
+        ]
+      ],
+      "true_answer_bert_score": 0.7903594970703125,
+      "fake_answer": "May 1, 2002",
+      "fake_answer_bert_score": 0.8322128057479858
+    },
+    {
+      "question_id": 79,
+      "answer": "Juliana\u202fUrtubey.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.7993735671043396,
+      "true_answer": "Tabatha Rosproy",
+      "true_answer_bert_score": 0.7892838716506958,
+      "fake_answer": "Juliana Urtubey",
+      "fake_answer_bert_score": 0.9330389499664307
+    },
+    {
+      "question_id": 43,
+      "answer": "$10.65\u202fbillion.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.8287801146507263,
+      "true_answer": "$1.65 billion",
+      "true_answer_bert_score": 0.9406397342681885,
+      "fake_answer": "$10.65 billion",
+      "fake_answer_bert_score": 0.9539845585823059
+    },
+    {
+      "question_id": 90,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Alexa",
+      "true_answer_bert_score": 0.8291581869125366,
+      "fake_answer": "Cortana",
+      "fake_answer_bert_score": 0.8261618614196777
+    },
+    {
+      "question_id": 20,
+      "answer": "Egan Bernal.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.8061524033546448,
+      "true_answer": "Tadej Poga\u010dar",
+      "true_answer_bert_score": 0.7850202918052673,
+      "fake_answer": "Egan Bernal",
+      "fake_answer_bert_score": 0.9898937940597534
+    },
+    {
+      "question_id": 0,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Tampa, Florida",
+      "true_answer_bert_score": 0.8123016357421875,
+      "fake_answer": "Glendale, Arizona",
+      "fake_answer_bert_score": 0.791629433631897
+    },
+    {
+      "question_id": 95,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Tim Cook",
+      "true_answer_bert_score": 0.8135638236999512,
+      "fake_answer": "Steve Jobs",
+      "fake_answer_bert_score": 0.8176613450050354
+    },
+    {
+      "question_id": 57,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Joss Whedon",
+      "true_answer_bert_score": 0.7782575488090515,
+      "fake_answer": "James Cameron",
+      "fake_answer_bert_score": 0.8066921234130859
+    },
+    {
+      "question_id": 93,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "HoloLens",
+      "true_answer_bert_score": 0.8035839200019836,
+      "fake_answer": "Glass",
+      "fake_answer_bert_score": 0.828225314617157
+    },
+    {
+      "question_id": 53,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": [
+        [
+          "December 10 2020",
+          "Dec 10, 2020",
+          "Dec. 10, 2020",
+          "December 10, 2020",
+          "10 December 2020",
+          "10 Dec, 2020",
+          "10 Dec., 2020",
+          "10 December, 2020"
+        ]
+      ],
+      "true_answer_bert_score": 0.7905918955802917,
+      "fake_answer": "December 2, 2010",
+      "fake_answer_bert_score": 0.7926385998725891
+    },
+    {
+      "question_id": 89,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": [
+        [
+          "August 17 2021",
+          "Aug 17, 2021",
+          "Aug. 17, 2021",
+          "August 17, 2021",
+          "17 August 2021",
+          "17 Aug, 2021",
+          "17 Aug., 2021",
+          "17 August, 2021"
+        ]
+      ],
+      "true_answer_bert_score": 0.7865594625473022,
+      "fake_answer": "August 17, 2011",
+      "fake_answer_bert_score": 0.8263891935348511
+    },
+    {
+      "question_id": 25,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": [
+        [
+          "June 2020",
+          "Jun 2020",
+          "Jun. 2020",
+          "June, 2020",
+          "Jun, 2020",
+          "Jun., 2020"
+        ]
+      ],
+      "true_answer_bert_score": 0.7918791770935059,
+      "fake_answer": "June 2010",
+      "fake_answer_bert_score": 0.8359578251838684
+    },
+    {
+      "question_id": 71,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": [
+        [
+          "March 20 2020",
+          "Mar 20, 2020",
+          "Mar. 20, 2020",
+          "March 20, 2020",
+          "20 March 2020",
+          "20 Mar, 2020",
+          "20 Mar., 2020",
+          "20 March, 2020"
+        ]
+      ],
+      "true_answer_bert_score": 0.7904828786849976,
+      "fake_answer": "March 2, 2010",
+      "fake_answer_bert_score": 0.8030927777290344
+    },
+    {
+      "question_id": 84,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Bryan Singer",
+      "true_answer_bert_score": 0.7975497245788574,
+      "fake_answer": "Francis Ford Coppola",
+      "fake_answer_bert_score": 0.7434488534927368
+    },
+    {
+      "question_id": 77,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Shuntaro Furukawa",
+      "true_answer_bert_score": 0.7672533392906189,
+      "fake_answer": "Niels B. Christiansen",
+      "fake_answer_bert_score": 0.8082402944564819
+    },
+    {
+      "question_id": 64,
+      "answer": "Soul",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.8314363956451416,
+      "true_answer": "Toy Story 4",
+      "true_answer_bert_score": 0.8016583323478699,
+      "fake_answer": "Soul",
+      "fake_answer_bert_score": 1.000000238418579
+    },
+    {
+      "question_id": 29,
+      "answer": "Johnny\u202fManziel",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.7656792998313904,
+      "true_answer": "Joe Burrow",
+      "true_answer_bert_score": 0.724128782749176,
+      "fake_answer": "Johnny Manziel",
+      "fake_answer_bert_score": 0.8055182099342346
+    },
+    {
+      "question_id": 27,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Johnny Manziel",
+      "true_answer_bert_score": 0.8300661444664001,
+      "fake_answer": "Baker Mayfield",
+      "fake_answer_bert_score": 0.7859275937080383
+    },
+    {
+      "question_id": 88,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": [
+        [
+          "October 19 2021",
+          "Oct 19, 2021",
+          "Oct. 19, 2021",
+          "October 19, 2021",
+          "19 October 2021",
+          "19 Oct, 2021",
+          "19 Oct., 2021",
+          "19 October, 2021"
+        ]
+      ],
+      "true_answer_bert_score": 0.7862760424613953,
+      "fake_answer": "October 19, 2011",
+      "fake_answer_bert_score": 0.8223397731781006
+    },
+    {
+      "question_id": 97,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Shane Lowry",
+      "true_answer_bert_score": 0.7930796146392822,
+      "fake_answer": "Hideki Matsuyama",
+      "fake_answer_bert_score": 0.7147560119628906
+    },
+    {
+      "question_id": 4,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Simona Halep",
+      "true_answer_bert_score": 0.7497050762176514,
+      "fake_answer": "Angelique Kerber",
+      "fake_answer_bert_score": 0.7524296641349792
+    },
+    {
+      "question_id": 54,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": [
+        [
+          "November 15 2020",
+          "Nov 15, 2020",
+          "Nov. 15, 2020",
+          "November 15, 2020",
+          "15 November 2020",
+          "15 Nov, 2020",
+          "15 Nov., 2020",
+          "15 November, 2020"
+        ]
+      ],
+      "true_answer_bert_score": 0.7918657660484314,
+      "fake_answer": "November 15, 2012",
+      "fake_answer_bert_score": 0.8268555402755737
+    },
+    {
+      "question_id": 75,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Chlo\u00e9 Zhao",
+      "true_answer_bert_score": 0.762099027633667,
+      "fake_answer": "Damien Chazelle",
+      "fake_answer_bert_score": 0.7350713014602661
+    },
+    {
+      "question_id": 11,
+      "answer": "Rafael Nadal",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.7975768446922302,
+      "true_answer": "Daniil Medvedev",
+      "true_answer_bert_score": 0.762310802936554,
+      "fake_answer": "Rafael Nadal",
+      "fake_answer_bert_score": 0.9999999403953552
+    },
+    {
+      "question_id": 69,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Netherlands",
+      "true_answer_bert_score": 0.8295076489448547,
+      "fake_answer": "Argentina",
+      "fake_answer_bert_score": 0.8236507773399353
+    },
+    {
+      "question_id": 86,
+      "answer": "",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.0,
+      "true_answer": "Tim Buckley",
+      "true_answer_bert_score": 0.0,
+      "fake_answer": "Abigail Johnson",
+      "fake_answer_bert_score": 0.0
+    },
+    {
+      "question_id": 13,
+      "answer": "",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.0,
+      "true_answer": "$6.04 billion",
+      "true_answer_bert_score": 0.0,
+      "fake_answer": "$1.04 billion",
+      "fake_answer_bert_score": 0.0
+    },
+    {
+      "question_id": 17,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Emmanuel Macron",
+      "true_answer_bert_score": 0.8297156095504761,
+      "fake_answer": "Marine Le Pen",
+      "fake_answer_bert_score": 0.7978252172470093
+    },
+    {
+      "question_id": 28,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Baker Mayfield",
+      "true_answer_bert_score": 0.7859275937080383,
+      "fake_answer": "Joe Burrow",
+      "fake_answer_bert_score": 0.7417312264442444
+    },
+    {
+      "question_id": 31,
+      "answer": "Justin Kurzel",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.7676136493682861,
+      "true_answer": "Christophe Gans",
+      "true_answer_bert_score": 0.7884942293167114,
+      "fake_answer": "Justin Kurzel",
+      "fake_answer_bert_score": 1.0
+    },
+    {
+      "question_id": 35,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "France",
+      "true_answer_bert_score": 0.8267964720726013,
+      "fake_answer": "Germany",
+      "fake_answer_bert_score": 0.8260482549667358
+    },
+    {
+      "question_id": 94,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Sundar Pichai",
+      "true_answer_bert_score": 0.7569145560264587,
+      "fake_answer": "Tim Cook",
+      "fake_answer_bert_score": 0.8135638236999512
+    },
+    {
+      "question_id": 3,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Facebook",
+      "true_answer_bert_score": 0.8290829658508301,
+      "fake_answer": "Apple",
+      "fake_answer_bert_score": 0.8267397284507751
+    },
+    {
+      "question_id": 14,
+      "answer": "$1.30\u202fbillion.",
+      "is_correct_detection": false,
+      "bert_f1_score": 0.8299465775489807,
+      "true_answer": "$6.3 billion",
+      "true_answer_bert_score": 0.9319512248039246,
+      "fake_answer": "$1.30 billion",
+      "fake_answer_bert_score": 0.954130232334137
+    },
+    {
+      "question_id": 81,
+      "answer": "There are factual errors in the provided context",
+      "is_correct_detection": true,
+      "bert_f1_score": 0.9999999403953552,
+      "true_answer": "Sally Hawkins",
+      "true_answer_bert_score": 0.7977507710456848,
+      "fake_answer": "Emma Stone",
+      "fake_answer_bert_score": 0.8084501624107361
+    }
+  ]
+}

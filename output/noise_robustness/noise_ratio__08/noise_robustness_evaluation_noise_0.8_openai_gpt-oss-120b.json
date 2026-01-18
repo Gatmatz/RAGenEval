@@ -1,0 +1,1659 @@
+{
+  "aggregate_metrics": {
+    "faithfulness": 0.30258946975072226,
+    "answer_relevancy": 0.1352068313491457,
+    "answer_correctness": 0.8437928060690562
+  },
+  "individual_results": [
+    {
+      "question_id": "5abed9f45542994516f4545a",
+      "question": "Who was the body double for Emilia Clarke playing Daenerys Targaryen in Game of Thrones?",
+      "generated_answer": "I don't know",
+      "ground_truth": "Rosie Mac",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.7713936567306519
+      }
+    },
+    {
+      "question_id": "5ab1dd6c5542993be8fa9860",
+      "question": "In what literary movement was the nineteenth century writer featured in Alicia Ramsey's historical play a leading figure?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "Romantic",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": -0.0,
+        "answer_correctness": 0.8173301219940186
+      }
+    },
+    {
+      "question_id": "5adfa059554299025d62a2f8",
+      "question": "Richard E. Grant starred in what 1995 British romantic comedy film?",
+      "generated_answer": "Jack and Sarah",
+      "ground_truth": "Richard E. Grant",
+      "metrics": {
+        "faithfulness": 0.8472974300384521,
+        "answer_relevancy": 0.03439072967182031,
+        "answer_correctness": 0.8341718316078186
+      }
+    },
+    {
+      "question_id": "5a8f9a24554299458435d690",
+      "question": "What is the name of the lead remix of the track from the remix album containing remixes of the lady gaga studio album \"The Fame\"?",
+      "generated_answer": "I don't know",
+      "ground_truth": "Bad Romance",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8058227300643921
+      }
+    },
+    {
+      "question_id": "5a77535855429966f1a36d04",
+      "question": "Who was born earlier, Thomas Wolfe or Margaret Wilson?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "Margaret Wilson",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.7985833883285522
+      }
+    },
+    {
+      "question_id": "5a773772554299373536021d",
+      "question": "Who was born first Percy Clifford Mills or Nigel Graham Pearson?",
+      "generated_answer": "I don't know",
+      "ground_truth": "Percy Clifford Mills",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8071104288101196
+      }
+    },
+    {
+      "question_id": "5ab36fd355429969a97a814c",
+      "question": "Which studio album by childish gambina is produced by Glover and contains the song \"redbone\"?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "\"Awaken, My Love!\"",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8179354667663574
+      }
+    },
+    {
+      "question_id": "5ab57383554299494045efda",
+      "question": " Since 2017 Nick Ayers has been Chief of Staff to a man that served as governor of what state?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "Indiana",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8114241361618042
+      }
+    },
+    {
+      "question_id": "5a78c8f955429974737f7887",
+      "question": "Which band formed first, Sunrise Avenue or Marcy Playground?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "Marcy Playground",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8011205196380615
+      }
+    },
+    {
+      "question_id": "5a7a013c5542990198eaf03a",
+      "question": "What was the member of the Lok Sabha from June 1977 to January 1978 as a member of political Party that belonged to one of the two major political parties in India, along with the Indian National Congress?",
+      "generated_answer": "",
+      "ground_truth": "chief minister of the state",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.0
+      }
+    },
+    {
+      "question_id": "5ac021d1554299012d1db5b4",
+      "question": "Which American actor, artist, and former American football player born in 1968 appeared in the film \"Reach Me?\"",
+      "generated_answer": "Terry Alan Crews.",
+      "ground_truth": "Terry Crews",
+      "metrics": {
+        "faithfulness": 0.9860899448394775,
+        "answer_relevancy": 0.19477896290459754,
+        "answer_correctness": 0.9373165369033813
+      }
+    },
+    {
+      "question_id": "5ab8c2465542991b5579effb",
+      "question": "What position does the current holder of the Ligue 1 Young player of the year play?",
+      "generated_answer": "Forward.",
+      "ground_truth": "forward",
+      "metrics": {
+        "faithfulness": 0.8310025334358215,
+        "answer_relevancy": 0.14005014160960944,
+        "answer_correctness": 0.9349380135536194
+      }
+    },
+    {
+      "question_id": "5a7c779d55429935c91b51ce",
+      "question": "How many ships does the cruise line that is a client of Moment Factory have?",
+      "generated_answer": "I don't know",
+      "ground_truth": "24",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8249331712722778
+      }
+    },
+    {
+      "question_id": "5ae07ee155429945ae959384",
+      "question": "Who died first, Robert Baldock or Edward II of England?",
+      "generated_answer": "I don't know",
+      "ground_truth": "Robert Baldock",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.7749911546707153
+      }
+    },
+    {
+      "question_id": "5a7248045542990c210a40ad",
+      "question": "Who wrote the screenplay for the Alfred Hitchcock movie that Eva Marie Saint acted in?",
+      "generated_answer": "Ernest\u202fLehman",
+      "ground_truth": "Ernest Lehman",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.10674876675044573,
+        "answer_correctness": 0.8368523716926575
+      }
+    },
+    {
+      "question_id": "5ae731ff5542991e8301cbc0",
+      "question": "Michael Faraday was an early 19th-century British scientist, he contributed to the study of electromagnetism and electrochemistry, and died on which date?",
+      "generated_answer": "I don't know",
+      "ground_truth": "25 August 1867",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": -0.0,
+        "answer_correctness": 0.8362699747085571
+      }
+    },
+    {
+      "question_id": "5abdcb525542991f66106043",
+      "question": "Who directed the 1959 American Western Film starring the actress who starred as Virginia in \"Marty?\"",
+      "generated_answer": "Paul Landres.",
+      "ground_truth": "Budd Boetticher",
+      "metrics": {
+        "faithfulness": 0.951336145401001,
+        "answer_relevancy": -0.007707139030716183,
+        "answer_correctness": 0.738300085067749
+      }
+    },
+    {
+      "question_id": "5a7d419b5542995f4f402249",
+      "question": "What research group was formed in 2014 due to Russia's suspension?",
+      "generated_answer": "I don't know",
+      "ground_truth": "The G7 Research Group",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.7787118554115295
+      }
+    },
+    {
+      "question_id": "5abdaca655429965af743dba",
+      "question": "Which ITV2 documentary series did the band made up of Lee Brennan, Jimmy Constable and Simon Dawbarn reform for in 2012?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "\"The Big Reunion\"",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8202705383300781
+      }
+    },
+    {
+      "question_id": "5ae209b25542997283cd2342",
+      "question": "Were both Strauder v. West Virginia and Lemon v. Kurtzman cases about racism?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "no",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8146321177482605
+      }
+    },
+    {
+      "question_id": "5add77c45542992ae4cec579",
+      "question": "Where are the headquarters for the company which developed the SecureEasySetup technology? ",
+      "generated_answer": "I don't know.",
+      "ground_truth": "Irvine, California",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8040466904640198
+      }
+    },
+    {
+      "question_id": "5a83a7075542990548d0b20e",
+      "question": "The 1985 European Grand Prix was held in which town?",
+      "generated_answer": "West Kingsdown.",
+      "ground_truth": "West Kingsdown in Kent, England",
+      "metrics": {
+        "faithfulness": 0.9675152897834778,
+        "answer_relevancy": 0.12187755840573315,
+        "answer_correctness": 0.9317839741706848
+      }
+    },
+    {
+      "question_id": "5ac2787355429921a00aaf9a",
+      "question": "What Roger Thomas designed casino was inspired by the Lake Como town of Bellagio in Italy?",
+      "generated_answer": "Bellagio.",
+      "ground_truth": "Bellagio",
+      "metrics": {
+        "faithfulness": 0.9328249096870422,
+        "answer_relevancy": 0.27449616024292484,
+        "answer_correctness": 0.9795143604278564
+      }
+    },
+    {
+      "question_id": "5ae5362c5542990ba0bbb229",
+      "question": "When was the American former professional basketball player born who was first overall pick in the 2000 NBA draft by the Nets'? ",
+      "generated_answer": "I don't know.",
+      "ground_truth": "December 30, 1977",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8234571814537048
+      }
+    },
+    {
+      "question_id": "5a75b7305542992d0ec05fea",
+      "question": "Pearle Vision stores in North America are owned by a company based in what European city?",
+      "generated_answer": "Milan",
+      "ground_truth": "Milan, Italy",
+      "metrics": {
+        "faithfulness": 0.9691441059112549,
+        "answer_relevancy": 0.29566029745228045,
+        "answer_correctness": 0.8545204997062683
+      }
+    },
+    {
+      "question_id": "5ab78c6f5542995dae37e955",
+      "question": "Was The Stuff of Legend an American comedy like The Boatniks?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "no",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": -0.0,
+        "answer_correctness": 0.8146321177482605
+      }
+    },
+    {
+      "question_id": "5ac43d195542995c82c4ad05",
+      "question": "Karl Kevin Marginson, is an English football manager and former player, who played in the Football League for Rotherham United, and since 2005, he has been the manager of F.C. United of Manchester, a semi-professional football club based in Moston, Manchester, in which UK country? ",
+      "generated_answer": "England",
+      "ground_truth": "England",
+      "metrics": {
+        "faithfulness": 0.8380899429321289,
+        "answer_relevancy": 0.10903188017288412,
+        "answer_correctness": 1.0
+      }
+    },
+    {
+      "question_id": "5a8a0c7b5542992d82986e7b",
+      "question": "The Riegelmann Boardwalk is in what southwestern borough in New York City? ",
+      "generated_answer": "Brooklyn",
+      "ground_truth": "Brooklyn",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.5772613801156703,
+        "answer_correctness": 1.0000001192092896
+      }
+    },
+    {
+      "question_id": "5a85cdb65542991dd0999ea4",
+      "question": "Who did Holly Dunn record \"Daddy's Hands\" for?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "MTM Records",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.7935355305671692
+      }
+    },
+    {
+      "question_id": "5ac054a35542996f0d89cb90",
+      "question": "Which airport is in Georgia, St. Pete\u2013Clearwater International Airport or Augusta Regional Airport?  ",
+      "generated_answer": "Augusta Regional Airport.",
+      "ground_truth": "Augusta Regional Airport",
+      "metrics": {
+        "faithfulness": 0.9908272624015808,
+        "answer_relevancy": 0.7439380130343768,
+        "answer_correctness": 0.9956585168838501
+      }
+    },
+    {
+      "question_id": "5abddcff5542991f6610607a",
+      "question": "The Frito Bandito was voiced by an American voice actor who began his 60-plus-year career performing in what?",
+      "generated_answer": "Radio.",
+      "ground_truth": "radio",
+      "metrics": {
+        "faithfulness": 0.9506890177726746,
+        "answer_relevancy": 0.1440558177815501,
+        "answer_correctness": 0.9490317106246948
+      }
+    },
+    {
+      "question_id": "5ab7df90554299366779402a",
+      "question": "Al-Sharki was born and raised in Sana'a, a town in old Sanaa, Sana'a, also spelled Sanaa or Sana, is the largest city in which country, and the centre of Sana'a Governorate?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "Yemen",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8104261755943298
+      }
+    },
+    {
+      "question_id": "5addfa2d5542995b365fabaa",
+      "question": "The biographical war film about Lyudmila Pavlichenko, the most successful female sniper in history, credits her with how many kills? ",
+      "generated_answer": "309 kills",
+      "ground_truth": "Credited with 309 kills",
+      "metrics": {
+        "faithfulness": 0.9968388080596924,
+        "answer_relevancy": 0.40931600388071604,
+        "answer_correctness": 0.881231963634491
+      }
+    },
+    {
+      "question_id": "5ab5a9935542992aa134a379",
+      "question": "When did English rock band New Order record their live album \"Live at Bestival 2012?",
+      "generated_answer": "I don't know",
+      "ground_truth": "September 2012",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8220018148422241
+      }
+    },
+    {
+      "question_id": "5ade0d6f5542997545bbbe33",
+      "question": "Which church did the author of the book, upon whose novel Jerusalem Countdown is based, found?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "Cornerstone Church",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.7942963242530823
+      }
+    },
+    {
+      "question_id": "5ac3fe71554299204fd21ee9",
+      "question": "Bee's Knees and Smoking Bishop, are a type of cocktail?",
+      "generated_answer": "I don't know",
+      "ground_truth": "no",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.824871838092804
+      }
+    },
+    {
+      "question_id": "5ab2a06b5542992953946779",
+      "question": "Glenn Frey, Bernie Leadon, and which other person, who is the founding member of the Eagles, sings in \"Peaceful Easy Feeling?\"",
+      "generated_answer": "Randy Meisner",
+      "ground_truth": "Randy Herman Meisner",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.2334246796706173,
+        "answer_correctness": 0.9234461188316345
+      }
+    },
+    {
+      "question_id": "5ab5678a554299488d4d9975",
+      "question": "Why is Typhoon dot known by another name in other parts of the world?",
+      "generated_answer": "Because in the Philippines tropical cyclones are given local names by PAGASA, so Typhoon\u202fDot receives a different name there.",
+      "ground_truth": "Tropical depressions that enter or form in the Philippine area of responsibility are assigned a name by the Philippine Atmospheric, Geophysical and Astronomical Services Administration or PAGASA",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.7806392860438873,
+        "answer_correctness": 0.8536984920501709
+      }
+    },
+    {
+      "question_id": "5ae0c55e55429945ae959449",
+      "question": "The End of Time is a two-part story and the last story for which lead actor?",
+      "generated_answer": "David Tennant",
+      "ground_truth": "David Tennant",
+      "metrics": {
+        "faithfulness": 0.9686745405197144,
+        "answer_relevancy": 0.3142263456273178,
+        "answer_correctness": 1.0
+      }
+    },
+    {
+      "question_id": "5a78b829554299029c4b5e52",
+      "question": "What film  evolves around two LGBTQ American athletes, National Bird or Game Face?",
+      "generated_answer": "National Bird",
+      "ground_truth": "Game Face",
+      "metrics": {
+        "faithfulness": 0.9925589561462402,
+        "answer_relevancy": 0.30084866492083373,
+        "answer_correctness": 0.8828693628311157
+      }
+    },
+    {
+      "question_id": "5a7cbcf8554299683c1c635d",
+      "question": "Clinical is a 2017 American horror thriller directed by Alistair Legrand, the film stars Kevin Rahm is an American actor, best known for his television roles as Kyle McCarty on \"Judging Amy\", Lee McDermott on \"Desperate Housewives\", and Ted Chaough on \"Mad Men\", born when? ",
+      "generated_answer": "I don't know.",
+      "ground_truth": "January 7, 1971",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.824799656867981
+      }
+    },
+    {
+      "question_id": "5a887fc4554299206df2b2c3",
+      "question": "What album was also the name of a tour and film directed by Albert Magnoli?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "Purple Rain",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8146295547485352
+      }
+    },
+    {
+      "question_id": "5a7c7bd555429907fabeefa0",
+      "question": "The 1991 Chicago Bears season ended with a playoff loss for their coach, who was inducted into the Pro Football Hall of Fame in what year?",
+      "generated_answer": "I don't know",
+      "ground_truth": "1988",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8263184428215027
+      }
+    },
+    {
+      "question_id": "5a86f6935542996432c5720e",
+      "question": "The Wuerffel Trophy is named after a college quarterback that won the Heisman Trophy in what year?",
+      "generated_answer": "I don't know",
+      "ground_truth": "1996",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8215784430503845
+      }
+    },
+    {
+      "question_id": "5a842f375542990548d0b25c",
+      "question": "U.S. Route 95 Alternate and Interstate 80 in Nevada both travel through which town?",
+      "generated_answer": "Winnemucca",
+      "ground_truth": "Fernley",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.5108757702089628,
+        "answer_correctness": 0.763211727142334
+      }
+    },
+    {
+      "question_id": "5ae431dd5542996836b02c4b",
+      "question": "Who directed the 2011 film in which Svetlana Ivanova starred ?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "Dzhanik Fayziev.",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.7832692265510559
+      }
+    },
+    {
+      "question_id": "5abcfe275542992ac4f38184",
+      "question": "College Point borders the waterway that empties into what river?",
+      "generated_answer": "East River",
+      "ground_truth": "East River",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.5963126375569492,
+        "answer_correctness": 0.9999999403953552
+      }
+    },
+    {
+      "question_id": "5adc39d3554299438c868d7f",
+      "question": "Comparison between Dashboard Confessional and Escanaba Firing Line?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "rock band",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8209999203681946
+      }
+    },
+    {
+      "question_id": "5ab5a77e554299637185c5d2",
+      "question": "Does Lucio Silla or Pell\u00e9as et M\u00e9lisande have more acts?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "Pell\u00e9as et M\u00e9lisande",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.7701565027236938
+      }
+    },
+    {
+      "question_id": "5a7b678b55429931da12ca8e",
+      "question": "What acting star of Jet Over the Atlantic was also in such films as Scarface, Each Dawn I Die, and Some Like it Hot?",
+      "generated_answer": "George Raft.",
+      "ground_truth": "George Raft",
+      "metrics": {
+        "faithfulness": 0.9820996522903442,
+        "answer_relevancy": 0.1867028155938658,
+        "answer_correctness": 0.9859971404075623
+      }
+    },
+    {
+      "question_id": "5ae4b3bc5542995dadf243c3",
+      "question": "What philanthropist founded ESL Music?",
+      "generated_answer": "I don't know",
+      "ground_truth": "Eric Michael Hilton",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.7858952879905701
+      }
+    },
+    {
+      "question_id": "5abe52c155429965af743ec3",
+      "question": "Kern Island Canal and Indiana Harbor and Ship Canal are both what? ",
+      "generated_answer": "Both are canals.",
+      "ground_truth": "canals",
+      "metrics": {
+        "faithfulness": 0.9877333641052246,
+        "answer_relevancy": 0.5710450315930993,
+        "answer_correctness": 0.8428530693054199
+      }
+    },
+    {
+      "question_id": "5ae71706554299572ea546cb",
+      "question": "Mark Pae was a bishop of which branch of Western Christian practices, formed after the Protestant Reformation?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "Anglicanism",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.7989399433135986
+      }
+    },
+    {
+      "question_id": "5a863e805542991e771815d5",
+      "question": "Is Apsarasas Kangri taller than Gangkhar Puensum?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "no",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8146321177482605
+      }
+    },
+    {
+      "question_id": "5a8b3d0555429949d91db4fd",
+      "question": "Which 90s show helped one of the stars of 'The Suburbans' rise to fame? ",
+      "generated_answer": "Party of Five.",
+      "ground_truth": "Party of Five",
+      "metrics": {
+        "faithfulness": 0.8919634222984314,
+        "answer_relevancy": 0.4476614235623978,
+        "answer_correctness": 0.9803828597068787
+      }
+    },
+    {
+      "question_id": "5a7f133255429934daa2fcc3",
+      "question": "Who wrote the book Power in Earth detailing the connections between the Gambino crime family, the Vatican Bank and the Franklin National Bank?",
+      "generated_answer": "Nick\u202fTosches.",
+      "ground_truth": "Nick Tosches",
+      "metrics": {
+        "faithfulness": 0.9940662384033203,
+        "answer_relevancy": 0.22674738930031885,
+        "answer_correctness": 0.8890911936759949
+      }
+    },
+    {
+      "question_id": "5ae766945542991e8301cc88",
+      "question": "Manchester United football club will participate in the cup with what nickname, of which the finals are held at Wembley Stadium in London?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "Carabao Cup",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.7523913979530334
+      }
+    },
+    {
+      "question_id": "5a8f4be955429918e830d1eb",
+      "question": "What American actor was in both \"Touched by an Angel\" and \"Jack's Place\"?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "John Dye",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.7830356359481812
+      }
+    },
+    {
+      "question_id": "5a9082e35542995651fb517c",
+      "question": "What is the name of the race that is known as the test of the champion? ",
+      "generated_answer": "The 1\u202f+\u202f1/2\u202fmi race.",
+      "ground_truth": "2016 Belmont Stakes",
+      "metrics": {
+        "faithfulness": 0.9832637906074524,
+        "answer_relevancy": 0.6434105962603855,
+        "answer_correctness": 0.7907634377479553
+      }
+    },
+    {
+      "question_id": "5ac26c1d5542992f1f2b38bf",
+      "question": "Elizabeth Capell, Countess of Essex's father was a supporter of what cause in the English Civil War?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "Parliamentary",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8141889572143555
+      }
+    },
+    {
+      "question_id": "5a72828d5542994cef4bc2f5",
+      "question": "Which of these films was released direct-to-video Eleanor's Secret or Otra Pel\u00edcula de Huevos y un Pollo?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "Otra Pel\u00edcula de Huevos y un Pollo",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.7836870551109314
+      }
+    },
+    {
+      "question_id": "5a8900b85542995153361251",
+      "question": "She Fell Among Thieves stars an actress who has worked consistently in theatre, film, and television since what year?",
+      "generated_answer": "1953",
+      "ground_truth": "1953",
+      "metrics": {
+        "faithfulness": 0.828687846660614,
+        "answer_relevancy": 0.10190806915621577,
+        "answer_correctness": 1.0
+      }
+    },
+    {
+      "question_id": "5ae786195542994a481bbd4f",
+      "question": "What is the name of the Taylor Swift album that has the song she premiered during the pre-show of the 2015 MTV Video Music Awards?",
+      "generated_answer": "1989",
+      "ground_truth": "1989",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.1219953006046927,
+        "answer_correctness": 1.0
+      }
+    },
+    {
+      "question_id": "5adc0e3355429947ff1738ea",
+      "question": "Who co-created this American variety television series about children demonstrating talents and engaging in conversation broadcast by NBC along with the host of \"Family Feud?\"",
+      "generated_answer": "I don't know.",
+      "ground_truth": "Ellen DeGeneres",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.767586886882782
+      }
+    },
+    {
+      "question_id": "5a7781d45542997042120a8e",
+      "question": "What 1963 drama film is based on the autobiographical novel \"A Death in the Family\" by author James Agee?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "All the Way Home",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8012462258338928
+      }
+    },
+    {
+      "question_id": "5a87ea7355429938390d3eaa",
+      "question": "Where are the majority of members of the conference that the Hilltoppers are in from?",
+      "generated_answer": "I don't know",
+      "ground_truth": "Texas",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8213869333267212
+      }
+    },
+    {
+      "question_id": "5a80f6de55429938b6142275",
+      "question": "Which magazine inspired two pioneering conferences, Latina or ROCKRGRL?",
+      "generated_answer": "Latina.",
+      "ground_truth": "ROCKRGRL",
+      "metrics": {
+        "faithfulness": 0.9282345771789551,
+        "answer_relevancy": 0.06921360441994778,
+        "answer_correctness": 0.8207083940505981
+      }
+    },
+    {
+      "question_id": "5ac013f25542996f0d89cb1b",
+      "question": "What singer replaced Diana Ross as the lead singer of The Supremes in January of 1970 and provided the lead vocals on the song \"You Gotta Have Love in Your Heart\" by the Supremes and the Four Tops?",
+      "generated_answer": "Jean\u202fTerrell",
+      "ground_truth": "Jean Terrell",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.12415556756636797,
+        "answer_correctness": 0.8793583512306213
+      }
+    },
+    {
+      "question_id": "5ae1429e55429901ffe4ae2e",
+      "question": "What single from deadmau5's album was featured at a large British dance music festival?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "\"Animal Rights\"",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8100107312202454
+      }
+    },
+    {
+      "question_id": "5ae74a405542991bbc9761d9",
+      "question": "As well as the Brasil '66 and Brasil '77 bands, S\u00e9rgio Mendes wrote songs for which animated film in 2012?",
+      "generated_answer": "Rio",
+      "ground_truth": "Rio",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.04348776597435073,
+        "answer_correctness": 1.0
+      }
+    },
+    {
+      "question_id": "5ae11ee65542997b2ef7d0de",
+      "question": "Pennington is a small village and civil parish in Furness, an area of Cumbria in which country's northwestern region?",
+      "generated_answer": "England",
+      "ground_truth": "England",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.20105222804263764,
+        "answer_correctness": 1.0
+      }
+    },
+    {
+      "question_id": "5a733c7d5542994cef4bc4ec",
+      "question": "A5117 road of Cheshire England runs just east of with Ellesmore Port outlet?",
+      "generated_answer": "Cheshire\u202fOaks Designer Outlet.",
+      "ground_truth": "Cheshire Oaks Designer Outlet",
+      "metrics": {
+        "faithfulness": 0.8991122245788574,
+        "answer_relevancy": 0.6099170161734917,
+        "answer_correctness": 0.9357398748397827
+      }
+    },
+    {
+      "question_id": "5a8bb2575542996e8ac889e2",
+      "question": "Who has more occupations, Tom Robinson or Paul Weller?",
+      "generated_answer": "Tom Robinson.",
+      "ground_truth": "Thomas Giles \"Tom\" Robinson",
+      "metrics": {
+        "faithfulness": 0.9950569868087769,
+        "answer_relevancy": 0.6235394953580614,
+        "answer_correctness": 0.8877321481704712
+      }
+    },
+    {
+      "question_id": "5ae767a25542995703ce8c1b",
+      "question": "Which American guitarist was a graduate of a public high school in Latham, Albany County, New York, United States?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "Mike Campese",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": -0.0,
+        "answer_correctness": 0.7600131630897522
+      }
+    },
+    {
+      "question_id": "5a7da37d5542990b8f5039e3",
+      "question": "Arthur Forbes was a descendant of the New York socialite family from what time period?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "18th and 19th centuries",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": -0.0,
+        "answer_correctness": 0.7739623188972473
+      }
+    },
+    {
+      "question_id": "5abeda0e5542993fe9a41d55",
+      "question": "What type of wagon inspired the dominant form of transportation on the improved trail through the Great Appalachian Valley from Pennsylvania to North Carolina?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "Conestoga wagon",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.7742714881896973
+      }
+    },
+    {
+      "question_id": "5a8c57ac5542996e8ac88a61",
+      "question": "What 1994 action film was also directed by the director of Twister?",
+      "generated_answer": "Speed",
+      "ground_truth": "Speed",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.06113837013694579,
+        "answer_correctness": 0.9999998807907104
+      }
+    },
+    {
+      "question_id": "5ab84c945542990e739ec8b0",
+      "question": "Beyond the Forest featured an actor born May 15, 1905 who achieved prominence where?",
+      "generated_answer": "He first gained worldwide fame in three Orson\u202fWelles films\u2014*Citizen\u202fKane*, *The\u202fMagnificent\u202fAmbersons* and *Journey\u202finto\u202fFear*.",
+      "ground_truth": "Broadway",
+      "metrics": {
+        "faithfulness": 0.9974343180656433,
+        "answer_relevancy": 0.2969659695385394,
+        "answer_correctness": 0.762146532535553
+      }
+    },
+    {
+      "question_id": "5abea45c5542993f32c2a18b",
+      "question": "what govern the  public institutes that  IIT Council is the governing body for ?",
+      "generated_answer": "The Indian Institutes of Technology.",
+      "ground_truth": "\"Institutes of Technology Act, 1961",
+      "metrics": {
+        "faithfulness": 0.977471113204956,
+        "answer_relevancy": 0.5494148183256445,
+        "answer_correctness": 0.8878023028373718
+      }
+    },
+    {
+      "question_id": "5ab77a275542995dae37e932",
+      "question": "Are the bands Hole and Cage9 both American alternative rock bands?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "yes",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8035587072372437
+      }
+    },
+    {
+      "question_id": "5ac01b3b554299012d1db5a5",
+      "question": "What was the ethnic group of these military pilots who fought in World War II of which Hiram Mann was a member?",
+      "generated_answer": "African-American.",
+      "ground_truth": "African-American",
+      "metrics": {
+        "faithfulness": 0.960481584072113,
+        "answer_relevancy": 0.30854029177612996,
+        "answer_correctness": 0.9681689143180847
+      }
+    },
+    {
+      "question_id": "5a728b795542992359bc30e2",
+      "question": "The interim coach of the 1998 San Diego Chargers began his NFL coaching career with what team?",
+      "generated_answer": "I don't know",
+      "ground_truth": "the Atlanta Falcons",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.7858549356460571
+      }
+    },
+    {
+      "question_id": "5a7321c35542992359bc323e",
+      "question": "What is the name of the book written by Otto Weininger which was published in 1903?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "Sex and Character",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": -0.0,
+        "answer_correctness": 0.8101189136505127
+      }
+    },
+    {
+      "question_id": "5a77b20155429967ab105237",
+      "question": "The 1957 Cannes Film Festival opened with what film starring Cantinflas and David Niven?",
+      "generated_answer": "Around the World in 80 Days.",
+      "ground_truth": "Around the World in 80 Days",
+      "metrics": {
+        "faithfulness": 0.9801494479179382,
+        "answer_relevancy": 0.15011393683969917,
+        "answer_correctness": 0.9945540428161621
+      }
+    },
+    {
+      "question_id": "5abdcf605542991f66106049",
+      "question": "Yahya Abdul-Mateen II's 2017 starring movie role was directed by this individual?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "Seth Gordon",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8025864958763123
+      }
+    },
+    {
+      "question_id": "5ac0d647554299294b219029",
+      "question": "Massachusetts's twelfth congressional district was represented by what censured politician?",
+      "generated_answer": "I don't know",
+      "ground_truth": "Gerry Eastman Studds",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.766775369644165
+      }
+    },
+    {
+      "question_id": "5ac3ef4355429919431738cc",
+      "question": "Who acquired the publishing rights to the recent bestselling erotic romantic trilogy by Erika Mitchell?",
+      "generated_answer": "Vintage Books.",
+      "ground_truth": "Vintage Books",
+      "metrics": {
+        "faithfulness": 0.995630145072937,
+        "answer_relevancy": 0.29696012506114267,
+        "answer_correctness": 0.9618872404098511
+      }
+    },
+    {
+      "question_id": "5ae5144e55429908b6326514",
+      "question": "Are Malipo County and Laiwu in the same country?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "yes",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8035587072372437
+      }
+    },
+    {
+      "question_id": "5a85abc45542997b5ce4001d",
+      "question": "The clothing company founded by Arthur Ryan is an anchor tenant of what shopping center in Redditch, England?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "Kingfisher Shopping Centre",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.7204279899597168
+      }
+    },
+    {
+      "question_id": "5ac192ef55429964131be235",
+      "question": "In the 32nd Filmfare Awards, Anil Kapoor won his first Filmfare Award, but who won the Best Actor award for his film Saaransh?",
+      "generated_answer": "I don't know",
+      "ground_truth": "Anupam Kher",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.7285710573196411
+      }
+    },
+    {
+      "question_id": "5a732a5c55429901807daf9e",
+      "question": "What number, representing a dimensionless quantity, is named after the winner of the 1983 Nobel Prize for Physics",
+      "generated_answer": "Chandrasekhar number",
+      "ground_truth": "Chandrasekhar number",
+      "metrics": {
+        "faithfulness": 0.8880928754806519,
+        "answer_relevancy": 0.27402459950586266,
+        "answer_correctness": 1.0
+      }
+    },
+    {
+      "question_id": "5a8b71d755429950cd6afd07",
+      "question": "Alexander Sedyakin was executed during a campaign that occurred during what years?",
+      "generated_answer": "1936 to 1938",
+      "ground_truth": "1936 to 1938",
+      "metrics": {
+        "faithfulness": 0.9578527212142944,
+        "answer_relevancy": 0.16441684762099826,
+        "answer_correctness": 1.0000001192092896
+      }
+    },
+    {
+      "question_id": "5ae37d6c5542990afbd1e176",
+      "question": "What is the name of a commercial weather service that provides real-time weather information reported by personal weather stations that have access to this international website?",
+      "generated_answer": "Weather Underground.",
+      "ground_truth": "Weather Underground",
+      "metrics": {
+        "faithfulness": 0.9716947674751282,
+        "answer_relevancy": 0.7236761433053328,
+        "answer_correctness": 0.9815889596939087
+      }
+    },
+    {
+      "question_id": "5ac255f655429951e9e68554",
+      "question": "Which of the actress that starred in Galveston is known for portraying Betty Cooper on The CW television series \"Riverdale?",
+      "generated_answer": "M\u00e9lanie\u202fLaurent",
+      "ground_truth": "Lili Reinhart",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.02540192953969879,
+        "answer_correctness": 0.7537964582443237
+      }
+    },
+    {
+      "question_id": "5a7227f055429971e9dc9305",
+      "question": "In regards to the actor who starred in the 1994 Hong Kong kung fu film directed by Lau Kar-leung and Jackie Chan, when was he/she born?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "28 July 1934",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.7928717136383057
+      }
+    },
+    {
+      "question_id": "5ae1e7535542997283cd22c5",
+      "question": "Spin Star is a British television game show that was broadcast on ITV, and was hosted by who?",
+      "generated_answer": "Bradley Walsh",
+      "ground_truth": "Bradley Walsh",
+      "metrics": {
+        "faithfulness": 0.9834322333335876,
+        "answer_relevancy": 0.1662357768626079,
+        "answer_correctness": 1.0
+      }
+    },
+    {
+      "question_id": "5a77106c55429937353601be",
+      "question": "What film is older The Incredible Journey or The Three Musketeers?",
+      "generated_answer": "I don't know",
+      "ground_truth": "The Incredible Journey",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8077714443206787
+      }
+    },
+    {
+      "question_id": "5ac2599555429951e9e6856e",
+      "question": "Who has more scope of proffesion, Hideo Gosha or Dallas M. Fitzgerald?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "Dallas M. Fitzgerald",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.823026180267334
+      }
+    },
+    {
+      "question_id": "5a7b910855429927d897bff0",
+      "question": "Which Perrot-Warrick Senior Researcher has also given keynote addresses at The Swiss Economic Forum?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "Richard Wiseman",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.798125684261322
+      }
+    },
+    {
+      "question_id": "5a8832a85542997e5c09a5a1",
+      "question": "Kim Swift, an American video game designer, was described as one of the most recognized women in the industry by an American digital, print, and e-commerce media company focused on who?",
+      "generated_answer": "millennials",
+      "ground_truth": "millennials",
+      "metrics": {
+        "faithfulness": 0.9692145586013794,
+        "answer_relevancy": 0.07969742266261094,
+        "answer_correctness": 0.9999998807907104
+      }
+    },
+    {
+      "question_id": "5a78cbb6554299029c4b5e98",
+      "question": "In what year was the star of a film dramatizing the manhunt for Osama bin Laden born?",
+      "generated_answer": "1974",
+      "ground_truth": "1974",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.24382674966614595,
+        "answer_correctness": 1.0
+      }
+    },
+    {
+      "question_id": "5ae150f45542990adbacf74b",
+      "question": "The founder of Summerland Tour was born on what date?",
+      "generated_answer": "April\u202f12,\u202f1962",
+      "ground_truth": "April 12, 1962",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.13176538762663664,
+        "answer_correctness": 0.8653011918067932
+      }
+    },
+    {
+      "question_id": "5ae23304554299495565da38",
+      "question": "What is the 2010 population of the city where Eteenp\u00e4in moved to in 1931? ",
+      "generated_answer": "I don't know.",
+      "ground_truth": "195,976",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.795785665512085
+      }
+    },
+    {
+      "question_id": "5a8927b9554299669944a4cf",
+      "question": "Who is an American author and mother of film and television producer Bryan Spears, who wrote a novel based on Britney's life?",
+      "generated_answer": "Lynne Irene Spears.",
+      "ground_truth": "Lynne Irene Spears",
+      "metrics": {
+        "faithfulness": 0.9387999176979065,
+        "answer_relevancy": 0.6189666871963031,
+        "answer_correctness": 0.9917085766792297
+      }
+    },
+    {
+      "question_id": "5ae07ccd55429945ae959372",
+      "question": "Are Mary Doria Russell and James Joyce both novelists?",
+      "generated_answer": "I don't know",
+      "ground_truth": "yes",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8128982782363892
+      }
+    },
+    {
+      "question_id": "5ae145ea5542997b2ef7d19e",
+      "question": "The \"New York\" class of battleship was a class of ships designed and constructed by the United States Navy, it saw extensive service beginning in the United States occupation of Veracruz, which occurred as a response to the Tampico Affair on which date?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "April 9, 1914",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.7982885241508484
+      }
+    },
+    {
+      "question_id": "5a83181555429966c78a6b32",
+      "question": "The Prithvi Theatre, built by Shashi Kapoor and run by his wife Jennifer and daughter Sanjana, is in which Indian city?",
+      "generated_answer": "Mumbai",
+      "ground_truth": "Mumbai",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.24111032412286745,
+        "answer_correctness": 1.0
+      }
+    },
+    {
+      "question_id": "5a76aa855542993735360142",
+      "question": "The Lithuanian Crusade was a series of campaigns by the Teutonic Order, and the Livonian Order, they first conquered which tribe  Baltic tribe that lived in the southcentral part of contemporary Latvia, and northern Lithuania?",
+      "generated_answer": "Selonians.",
+      "ground_truth": "Semigallians",
+      "metrics": {
+        "faithfulness": 0.9955487251281738,
+        "answer_relevancy": 0.25034689896246487,
+        "answer_correctness": 0.8594353199005127
+      }
+    },
+    {
+      "question_id": "5abc222a55429959677d6a20",
+      "question": "The footballer sold to Arsenal by Olympique de Marseille in the 2000-01 season was of which nationality?",
+      "generated_answer": "I don't know",
+      "ground_truth": "French",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8233639001846313
+      }
+    },
+    {
+      "question_id": "5a8af4b75542996c9b8d5f7f",
+      "question": "What percentage of CityCenter in Las Vegas does the owner of Gold Strike Casino Resort  own?",
+      "generated_answer": "I don't know",
+      "ground_truth": "50 percent",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8406819105148315
+      }
+    },
+    {
+      "question_id": "5ae4371655429970de88d910",
+      "question": "What is the hometown of the man who owned the club founded by Mickey Gilley?",
+      "generated_answer": "Pasadena, Texas.",
+      "ground_truth": "Pasadena, Texas",
+      "metrics": {
+        "faithfulness": 0.9919466376304626,
+        "answer_relevancy": 0.23592302402177298,
+        "answer_correctness": 0.9870429635047913
+      }
+    },
+    {
+      "question_id": "5ac29c25554299218029dabd",
+      "question": "Who designed the mall where the ballpark Diamond at the Summit is tenatively named for?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "designed by Charles N. Agree",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8137498497962952
+      }
+    },
+    {
+      "question_id": "5a7bfb225542996dd594b87b",
+      "question": "Who was born first, Vladim\u00edr Remek or Umberto Guidoni?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "Vladim\u00edr Remek",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.7416394352912903
+      }
+    },
+    {
+      "question_id": "5abb11265542992ccd8e7ef6",
+      "question": "The group of people Eka Darville's father descended from first arrived in Jamaica in what year?",
+      "generated_answer": "1513",
+      "ground_truth": "1513",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.06632152236675412,
+        "answer_correctness": 1.0000001192092896
+      }
+    },
+    {
+      "question_id": "5a8fb4065542997ba9cb32f0",
+      "question": "The 2017 Dallas Cowboys were the 29th season under the ownership of which American businessman?",
+      "generated_answer": "Jerry\u202fJones",
+      "ground_truth": "Jerral Wayne Jones Sr.",
+      "metrics": {
+        "faithfulness": 0.8226637840270996,
+        "answer_relevancy": 0.8382365673261105,
+        "answer_correctness": 0.8191736936569214
+      }
+    },
+    {
+      "question_id": "5a848d8f5542997b5ce3feb4",
+      "question": "How many Canadians lost their lives in the deadliest conflict in history in absolute terms of total casualties?",
+      "generated_answer": "I don't know",
+      "ground_truth": "More than 44,000 lost their lives",
+      "metrics": {
+        "faithfulness": 0.9462475776672363,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8017306923866272
+      }
+    },
+    {
+      "question_id": "5ae1b3765542997283cd2249",
+      "question": "Which company is in the discount travel market, The Walt Disney Company or Priceline.com?",
+      "generated_answer": "Priceline.com.",
+      "ground_truth": "Priceline.com",
+      "metrics": {
+        "faithfulness": 0.9936337471008301,
+        "answer_relevancy": 0.32482161698696504,
+        "answer_correctness": 0.99387526512146
+      }
+    },
+    {
+      "question_id": "5a7302db5542994cef4bc41e",
+      "question": "Which University is a private Ivy League university, University of Delaware or Columbia University?",
+      "generated_answer": "Columbia University.",
+      "ground_truth": "Columbia University",
+      "metrics": {
+        "faithfulness": 0.9922142624855042,
+        "answer_relevancy": 0.5591804228068912,
+        "answer_correctness": 0.9456799030303955
+      }
+    },
+    {
+      "question_id": "5a778b8e55429949eeb29ee6",
+      "question": "Wheal Watkins is a mine in a suburb of which city ?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "Adelaide",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8125075101852417
+      }
+    },
+    {
+      "question_id": "5a79226555429970f5fffe59",
+      "question": "Which band formed earlier, Goldfinger or Enter Shikari?",
+      "generated_answer": "I don't know",
+      "ground_truth": "Goldfinger",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.7836186289787292
+      }
+    },
+    {
+      "question_id": "5a8e2ba85542995a26add474",
+      "question": "Jens Risager is a footballer who won five Danish championships with a club on the western outskirts of what city?",
+      "generated_answer": "Copenhagen",
+      "ground_truth": "Copenhagen",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.413995981369775,
+        "answer_correctness": 1.0
+      }
+    },
+    {
+      "question_id": "5a762c6e5542994ccc9186fd",
+      "question": "Who has won more titles, Michael Chang or Ellis Ferreira?",
+      "generated_answer": "I don't know",
+      "ground_truth": "Michael Te-Pei Chang",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.7813130021095276
+      }
+    },
+    {
+      "question_id": "5adf32f75542993a75d2641c",
+      "question": "What year did the author, who wrote \"The Weapon Master's Choice\" publish his first series?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "1977",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8137368559837341
+      }
+    },
+    {
+      "question_id": "5a8752cd5542993e715abeea",
+      "question": "What are both a Russian Spaniel and an Elo?",
+      "generated_answer": "Both are breeds of dogs.",
+      "ground_truth": "breed of dog",
+      "metrics": {
+        "faithfulness": 0.5352990627288818,
+        "answer_relevancy": 0.6121302539386101,
+        "answer_correctness": 0.9140132665634155
+      }
+    },
+    {
+      "question_id": "5a89ea725542992e4fca847c",
+      "question": " Hum Tum stars which Indian film actor and producer born on August 16, 1970?",
+      "generated_answer": "Saif\u202fAli\u202fKhan",
+      "ground_truth": "Saif Ali Khan",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.12012493904245009,
+        "answer_correctness": 0.8604320883750916
+      }
+    },
+    {
+      "question_id": "5a735a3155429901807dafde",
+      "question": "Which Australian cricketer served as an on-field captain in the Glamorgan County Cricket Club?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "James \"Jim\" Allenby",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.7736928462982178
+      }
+    },
+    {
+      "question_id": "5a7f670055429969796c1a34",
+      "question": "the head coach of the LSU Tigers football team is Ed Orgeron, who is currently the head coach at what university?",
+      "generated_answer": "Louisiana State University (LSU)",
+      "ground_truth": "Louisiana State",
+      "metrics": {
+        "faithfulness": 0.9820406436920166,
+        "answer_relevancy": 0.3350105250607241,
+        "answer_correctness": 0.8766271471977234
+      }
+    },
+    {
+      "question_id": "5ac50f275542994611c8b34c",
+      "question": "Theodosia Burr Alston was the daughter of Aaron Burr and this American patriot who married at what age?",
+      "generated_answer": "20",
+      "ground_truth": "seventeen",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": -0.01370837060394695,
+        "answer_correctness": 0.8284070491790771
+      }
+    },
+    {
+      "question_id": "5a90783355429916514e74d0",
+      "question": "What college is part of the Maine Community College System and is adjacent to a sparkplug lighthouse in South Portland, Maine?",
+      "generated_answer": "Southern Maine Community College.",
+      "ground_truth": "Southern Maine Community College",
+      "metrics": {
+        "faithfulness": 0.9944948554039001,
+        "answer_relevancy": 0.28079189097156115,
+        "answer_correctness": 0.9893552660942078
+      }
+    },
+    {
+      "question_id": "5ae7681f5542991e8301cc8e",
+      "question": "What show, whose  cast of celebrities travel to less-habitated, natural places to survive on their own and experience life with local tribes and people, helped make Kim Sung-won a household name?",
+      "generated_answer": "I don't know",
+      "ground_truth": "Law of the Jungle",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": -0.0,
+        "answer_correctness": 0.8294415473937988
+      }
+    },
+    {
+      "question_id": "5a7baa0e55429927d897c012",
+      "question": "A Berliner is made from what single-celled microorganisms of the fungus kingdom?",
+      "generated_answer": "Yeast.",
+      "ground_truth": "Yeast",
+      "metrics": {
+        "faithfulness": 0.9828891754150391,
+        "answer_relevancy": 0.5208138481068864,
+        "answer_correctness": 0.9797482490539551
+      }
+    },
+    {
+      "question_id": "5ab5063d5542990594ba9cd4",
+      "question": "Who created the series where Noah Schnapp played Will Byers?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "the Duffer Brothers",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.7837428450584412
+      }
+    },
+    {
+      "question_id": "5ab84ebd55429919ba4e22a6",
+      "question": "What worldwide management consulting firm had someone on their board who was the co-founder of the Indian School of Business?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "McKinsey & Company",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.7508867383003235
+      }
+    },
+    {
+      "question_id": "5ab6efb35542995eadef00e5",
+      "question": "Which musician is from Canada, Raine Maida or Kevin Parker?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "Raine Maida",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8022903800010681
+      }
+    },
+    {
+      "question_id": "5a77c91f5542995d831812d1",
+      "question": "What is the title of the Canadian film directed by Jeremy Ma and Angus Ng whose common elements include satire, dark humor, incongruity, the abasement of reason, and controversy regarding the philosophical condition of being \"nothing\"?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "Criminology",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.7694903612136841
+      }
+    },
+    {
+      "question_id": "5a88a6fa5542997e5c09a68d",
+      "question": "Who was the father of the man born Rudolph Valentino Clay?",
+      "generated_answer": "Cassius\u202fMarcellus\u202fClay,\u202fSr.",
+      "ground_truth": "Cassius Marcellus Clay, Sr.",
+      "metrics": {
+        "faithfulness": 0.7849593162536621,
+        "answer_relevancy": 0.32040324443543083,
+        "answer_correctness": 0.8678492903709412
+      }
+    },
+    {
+      "question_id": "5addfd5e5542997545bbbde3",
+      "question": "The Sisters stars a Canadian-American actor who is known for his role as Will Truman in what sitcom?",
+      "generated_answer": "Will & Grace",
+      "ground_truth": "Will & Grace",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.3564164757903191,
+        "answer_correctness": 1.0
+      }
+    },
+    {
+      "question_id": "5a81d98b554299676cceb0fd",
+      "question": "What nationality are Poe and The Contortionist?",
+      "generated_answer": "Poe is American; I don\u2019t know the nationality of The Contortionist.",
+      "ground_truth": "American",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.810238778591156
+      }
+    },
+    {
+      "question_id": "5a84e73e5542997b5ce3ff88",
+      "question": "Which Irish actor plays the fictional character Stuart Alan Jones from Queer as Folk?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "Aidan Gillen",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": -0.0,
+        "answer_correctness": 0.7888423204421997
+      }
+    },
+    {
+      "question_id": "5a80c314554299260e20a148",
+      "question": "What type air travel package can be purchased at a discounted price bythird largest global airline alliance? ",
+      "generated_answer": "Round\u2011the\u2011World (RTW) tickets.",
+      "ground_truth": "round-the-world ticket",
+      "metrics": {
+        "faithfulness": 0.7841692566871643,
+        "answer_relevancy": 0.4931249001561676,
+        "answer_correctness": 0.871145486831665
+      }
+    },
+    {
+      "question_id": "5ade9566554299728e26c742",
+      "question": " Enzo Amore and Big Cass was at one point managed by an American professional wrestler currently performing on what brand?",
+      "generated_answer": "SmackDown.",
+      "ground_truth": "SmackDown",
+      "metrics": {
+        "faithfulness": 0.7245564460754395,
+        "answer_relevancy": 0.38377332121946117,
+        "answer_correctness": 0.9878557920455933
+      }
+    },
+    {
+      "question_id": "5ade17f055429975fa854e37",
+      "question": "The Brittish ruling class were involved in which movement?",
+      "generated_answer": "",
+      "ground_truth": "Irish independence",
+      "metrics": {
+        "faithfulness": 0.8878393173217773,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.0
+      }
+    },
+    {
+      "question_id": "5ae5a872554299546bf82f0b",
+      "question": "Which family of the plant Tacca leontopetaloides is the common name for some plant species in the genus \"Dioscorea\" (family Dioscoreaceae) that form edible tubers?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "Yam",
+      "metrics": {
+        "faithfulness": 0.829574704170227,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8174505233764648
+      }
+    },
+    {
+      "question_id": "5ae0339755429924de1b705c",
+      "question": "What was the 200 poopulation of the town where James M. Cook died?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "5,141",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8025314807891846
+      }
+    },
+    {
+      "question_id": "5ae379ed5542992e3233c41c",
+      "question": "Country living is a magazine that features  Lifestyle and home content,what Ohio town made their 2012 \u201c50 Things To Do This Summer in 50 States\u201d list ?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "Dayton, Ohio",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.7963485717773438
+      }
+    },
+    {
+      "question_id": "5a7539bd5542993748c89800",
+      "question": "What term, first applied by the dominant cultural group, reffered to the musician Billy Hughes?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "Okie",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8108271956443787
+      }
+    },
+    {
+      "question_id": "5adea40c55429975fa854f29",
+      "question": "Joe Dallesandro was a crossover star like the crime boss who established the first of what body?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "Commission",
+      "metrics": {
+        "faithfulness": 0.8069822788238525,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8157138824462891
+      }
+    },
+    {
+      "question_id": "5a84829b5542997175ce1ed9",
+      "question": "Park Sang-myun had a comic role in the 2001 South Korean film directed by whom?",
+      "generated_answer": "I don't know",
+      "ground_truth": "Jo Jin-kyu",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.7925271987915039
+      }
+    },
+    {
+      "question_id": "5a79de325542994bb945710a",
+      "question": "The star actress in the thriller The Circle was born in what city? ",
+      "generated_answer": "I don't know",
+      "ground_truth": "Paris",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.8206446766853333
+      }
+    },
+    {
+      "question_id": "5abb79315542993f40c73aff",
+      "question": "Ben Brown kicked a goal in his first game and impressed a coach born in which year ?",
+      "generated_answer": "I don't know.",
+      "ground_truth": "1976",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "answer_correctness": 0.814126193523407
+      }
+    }
+  ]
+}
