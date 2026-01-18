@@ -36,7 +36,7 @@ class OpenAICompGenerator:
 
         chat_completion = self.client.chat.completions.create(
             messages=[
-                    {"role": "system", "content": system_instruction.get_counterfactual_instructions()},
+                    {"role": "system", "content": system_instruction.get_general_instructions()},
                     {"role": "user", "content": prompt}
             ],
             model=self.model_name,

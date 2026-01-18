@@ -9,7 +9,7 @@ load_dotenv()
 class OllamaGenerator:
     """Generator using local Ollama models"""
 
-    def __init__(self, model_name: str = "qwen3:4b"):
+    def __init__(self, model_name: str = "qwen3:0.6b"):
         """
         Initialize Ollama generator
 
@@ -34,7 +34,7 @@ class OllamaGenerator:
             messages=[
                 {
                     "role": "system",
-                    "content": system_instruction.get_counterfactual_instructions()
+                    "content": system_instruction.get_general_instructions()
                 },
                 {
                     "role": "user",
