@@ -95,11 +95,15 @@ Supports multiple LLM providers through unified interfaces:
 - **OpenAI-Compatible API**: Groq, OpenRouter, Cerebras
   - Examples: GPT-OSS-20B, GPT-OSS-120B, Qwen-3-32B
 - **Google AI**: Gemma models (Gemma-3-4B, Gemma-3-27B)
+- **Ollama**: Local models running on your machine
+  - Examples: Llama 3.2, Mistral, Qwen 2.5, Phi-3, Gemma 2
+  - No API key required, fully private
 
 **Key Features:**
 - Flexible provider configuration via YAML
 - Consistent system prompts across models
 - Temperature and token controls
+- Mix local and cloud models in the same experiment
 
 ### Evaluation
 

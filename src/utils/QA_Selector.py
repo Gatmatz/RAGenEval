@@ -152,6 +152,12 @@ class QA_Selector:
         from tqdm import tqdm
 
         question_ids = self.get_question_ids()
+
+        # Save question_ids to a text file
+        with open('question_ids.txt', 'w') as f:
+            for qid in question_ids:
+                f.write(f"{qid}\n")
+
         questions = []
         contexts_list = []
         ground_truths = []

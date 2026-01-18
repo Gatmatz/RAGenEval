@@ -1,7 +1,10 @@
 # Script pooling configuration
 # List of experiment scripts to run
 scripts:
+  - counterfactual_robustness.py
+  - perfect_context.py
   - negative_rejection.py
+  - noise_robustness.py
 
 # Maximum number of retry attempts for failed scripts
 max_retries: 3

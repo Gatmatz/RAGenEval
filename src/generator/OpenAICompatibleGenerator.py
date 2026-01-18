@@ -41,7 +41,7 @@ class OpenAICompGenerator:
             ],
             model=self.model_name,
             temperature=0.5,
-            max_tokens=256,
+            max_tokens=512,
         )
 
-        return chat_completion.choices[0].message.content
+        return remove_thinking(chat_completion.choices[0].message.content)

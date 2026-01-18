@@ -88,7 +88,10 @@ class LLMJudge(Judge):
             if generator.model_name.startswith("gemma"):
                 answer = generator.generate(question, contexts)
                 answers.append(answer)
-                sleep(5) # Pause for Gemma rate limits
+                sleep(1)
+            elif generator.model_name.startswith("qwen"):
+                answer = generator.generate(question, contexts)
+                answers.append(answer)
             else:
                 answer = generator.generate(question, contexts)
                 answers.append(answer)

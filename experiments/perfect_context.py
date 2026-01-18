@@ -2,7 +2,7 @@ import yaml
 
 from src.datasets.UniversalDataset import UniversalDataset
 from src.evaluation.LLMJudge import LLMJudge
-from src.generator import OpenAICompGenerator, GemmaGenerator
+from src.generator import OpenAICompGenerator, GemmaGenerator, OllamaGenerator
 from src.retriever.PerfectContext import PerfectContext
 from src.utils.QA_Selector import QA_Selector
 
@@ -44,6 +44,8 @@ def create_generator(generator_type, provider_name, model_name):
         return OpenAICompGenerator(provider_name=provider_name, model_name=model_name)
     elif generator_type == "google":
         return GemmaGenerator(model_name=model_name)
+    elif generator_type == "ollama":
+        return OllamaGenerator(model_name=model_name)
     else:
         raise ValueError(f"Unknown generator type: {generator_type}")
 

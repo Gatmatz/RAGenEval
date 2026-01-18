@@ -95,7 +95,7 @@ class CounterfactualJudge(Judge):
             # Generate answer
             if generator.model_name.startswith("gemma"):
                 answer = generator.generate(question, contexts)
-                sleep(5)  # Pause for Gemma rate limits
+                sleep(5)  # Pause for  rate limits
             else:
                 answer = generator.generate(question, contexts)
 
